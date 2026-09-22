@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "heading": "Collections",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-4 col-one_fifth",
+        "mobile_grid": "12",
+        "design_type": "text-below-image",
+        "sort": "alphabetical",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "hover_underline": false,
+        "show_products_count": true,
+        "texts_aligment_mobile": "text-center-mobile",
+        "color_texts": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_button_hover": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_list_7cmEyw": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_DHfAfG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bird",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "featured_collection_RMWEYm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fish",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "featured_collection_kH7RWL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cat",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "featured_collection_VDzFjy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dog",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "featured_collection_bNH4aq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "small-pet",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "featured_collection_CPtn4P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "reptile",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_DHfAfG",
+        "featured_collection_RMWEYm",
+        "featured_collection_kH7RWL",
+        "featured_collection_VDzFjy",
+        "featured_collection_bNH4aq",
+        "featured_collection_CPtn4P"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Collection list",
+        "heading_aligment": "text-center",
+        "link_name": "Shop all",
+        "link_url": "",
+        "top_spacing": "medium",
+        "width": "default",
+        "grid": "col-4",
+        "mobile_grid": "6",
+        "swipe_on_mobile": false,
+        "design_type": "text-below-image",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "hover_underline": false,
+        "show_products_count": true,
+        "texts_aligment_mobile": "text-center-mobile",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_link": "rgba(0,0,0,0)",
+        "color_texts": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_button_hover": "rgba(0,0,0,0)"
+      }
+    },
+    "165761322871d1c1e6": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 20,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>FREE SHIPPING</strong> — no code needed, just head for checkout!</p>",
+        "show_icon": "svg",
+        "icon_name": "truck_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_7cmEyw",
+    "165761322871d1c1e6"
+  ]
+}

@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-4 col-2",
+        "enable_filtering": "horizontal",
+        "enable_sorting": false,
+        "enable_products_count": true,
+        "pagination_aligment": "text-left",
+        "product_limit": 6,
+        "image_ratio": "auto",
+        "show_secondary_image": true,
+        "texts_aligment": "text-center",
+        "product_name_size": "body2",
+        "show_vendor": true,
+        "show_type": true,
+        "show_price": true,
+        "truncate_product_name": false,
+        "hover_underline": false,
+        "button_type_product": "show",
+        "show_badge_on_sale": true,
+        "show_badge_sold_out": true,
+        "image_ratio_b": "auto",
+        "texts_aligment_b": "text-center",
+        "show_image": true,
+        "truncate_post_heading": false,
+        "hover_underline_b": false,
+        "show_date": true,
+        "show_author": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

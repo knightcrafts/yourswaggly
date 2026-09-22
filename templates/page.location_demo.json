@@ -1,0 +1,258 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "16526200998559102b": {
+      "type": "text",
+      "settings": {
+        "subheading": "",
+        "heading": "Find a store near you 😻",
+        "description": "",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "medium",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1643624234e4f43fc4": {
+      "type": "map",
+      "blocks": {
+        "1643624233e9486f46-0": {
+          "type": "image",
+          "settings": {
+            "api_key": "",
+            "map_address": "",
+            "show_pin": true,
+            "map_zoom_level": 14,
+            "image": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643624233e9486f46-0"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "medium",
+        "width": "page-width",
+        "desktop_content_height": 540,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
+    },
+    "164381848748f09681": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16438184863509923d-0": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "hide",
+            "url": "",
+            "heading": "Minion #1",
+            "description": "<h3>📞<strong> Tel: +1 123  456 7890</strong></h3><p>895 Piermont Dr NE Albuquerque, NM 198866, USA</p><p>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+          }
+        },
+        "16438184863509923d-1": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "hide",
+            "url": "",
+            "heading": "Minion #2",
+            "description": "<h3>📞<strong> Tel: +1 123  456 7890</strong></h3><p>895 Piermont Dr NE Albuquerque, NM 198866, USA</p><p>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+          }
+        },
+        "16438184863509923d-2": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "hide",
+            "url": "",
+            "heading": "Minion #3",
+            "description": "<h3>📞<strong> Tel: +1 123  456 7890</strong></h3><p>895 Piermont Dr NE Albuquerque, NM 198866, USA</p><p>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+          }
+        },
+        "b0706218-f205-4c69-b333-f8b653cae08d": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "hide",
+            "url": "",
+            "heading": "Minion #4",
+            "description": "<h3>📞<strong> Tel: +1 123  456 7890</strong></h3><p>895 Piermont Dr NE Albuquerque, NM 198866, USA</p><p>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+          }
+        },
+        "1320ca58-3d49-40c6-94e4-cb36ca71b87d": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "hide",
+            "url": "",
+            "heading": "Minion #5",
+            "description": "<h3>📞<strong> Tel: +1 123  456 7890</strong></h3><p>895 Piermont Dr NE Albuquerque, NM 198866, USA</p><p>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438184863509923d-0",
+        "16438184863509923d-1",
+        "16438184863509923d-2",
+        "b0706218-f205-4c69-b333-f8b653cae08d",
+        "1320ca58-3d49-40c6-94e4-cb36ca71b87d"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "medium",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "body2",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "164362436593a738b9": {
+      "type": "icon-banners",
+      "blocks": {
+        "164362436584ed89b1-0": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "Free same-day delivery",
+            "description": "Free shipping - no code needed, just head for checkout!",
+            "button_name": ""
+          }
+        },
+        "164362436584ed89b1-1": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "calendar",
+            "url": "",
+            "heading": "Repeat delivery",
+            "description": "Repeat delivery with  <b>5% OFF </b> every order.",
+            "button_name": ""
+          }
+        },
+        "d0822152-5a45-41cc-b983-4c20bcfad1a1": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "parking",
+            "url": "",
+            "heading": "Curbside pickup",
+            "description": "Order online, drive up, check in & pick up.",
+            "button_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "164362436584ed89b1-0",
+        "164362436584ed89b1-1",
+        "d0822152-5a45-41cc-b983-4c20bcfad1a1"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "grid-columns-3",
+        "swipe_on_mobile": false,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "body2",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_heading_banner": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)"
+      }
+    },
+    "164362441060da37a7": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 10,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>A NOTE ON CORONAVIRUS:</strong> Shipping in compliance with social distancing measures and current U.S. government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "#142c73",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16526200998559102b",
+    "1643624234e4f43fc4",
+    "164381848748f09681",
+    "164362436593a738b9",
+    "164362441060da37a7"
+  ]
+}

@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1638547312801f0794": {
+      "type": "slideshow",
+      "blocks": {
+        "68d55d4a-f0f1-4f5c-ab6b-2d7117f80206": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image": "",
+            "image_overlay_opacity": 0,
+            "image_mobile": "",
+            "subheading": "",
+            "heading": "Typography theme (h1)",
+            "description": "Use fine typography to present your design and content as clearly and efficiently as possible. Free access to Shopify's library with premium fonts.",
+            "call_to_action": "none",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "description_size": "normal",
+            "show_background": false,
+            "hover_underline": false,
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "68d55d4a-f0f1-4f5c-ab6b-2d7117f80206"
+      ],
+      "settings": {
+        "top_spacing": "none",
+        "bottom_spacing": "none",
+        "width": "page-width",
+        "image_size": "auto",
+        "desktop_image_height": 540,
+        "texts_aligment_mobile": "text-center-mobile",
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": false,
+        "heading_aligment": "text-center"
+      }
+    },
+    "1652961757f5414b6a": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "medium",
+        "ticker_time": 15,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>THE NEXT GENERATION IN CUSTOMIZABILITY AND SPEED. </strong>Minion Shopify theme comes with flexible, well-designed blocks for images, products, video, quotes, and more.</p>",
+        "show_icon": "image",
+        "image": "",
+        "icon_name": "",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "1638547312801f0794",
+    "main",
+    "1652961757f5414b6a"
+  ]
+}

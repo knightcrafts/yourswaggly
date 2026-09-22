@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header.name",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
+          "type": "mega_menu",
+          "settings": {
+            "mega_menu_item_name": "Cat",
+            "grid": "col-3",
+            "show_banner": true,
+            "banner_link": "",
+            "heading": "Lorem ipsum dolor",
+            "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+            "button_label": "Shop Now!"
+          }
+        },
+        "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+          "type": "main_menu_icons",
+          "settings": {
+            "icon1": "dog_sm",
+            "icon2": "cat_sm",
+            "icon3": "fish_sm",
+            "icon4": "mouse_sm",
+            "icon5": "snake_sm",
+            "icon6": "bird_sm",
+            "icon7": "pharmacy_sm",
+            "icon8": "brand_sm",
+            "icon9": "sale_sm",
+            "icon10": "grooming_sm",
+            "icon11": "new_sm"
+          }
+        },
+        "1901cb37-14a2-4d76-81c5-51750872f161": {
+          "type": "mega_menu",
+          "settings": {
+            "mega_menu_item_name": "Dog",
+            "grid": "col-3",
+            "show_banner": true,
+            "banner_link": "",
+            "heading": "Free shipping",
+            "text": "No code needed, just head for checkout!",
+            "button_label": "Shop now!"
+          }
+        }
+      },
+      "block_order": [
+        "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
+        "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
+        "1901cb37-14a2-4d76-81c5-51750872f161"
+      ],
+      "settings": {
+        "header_layout": "header-layout-classic",
+        "menu": "main-menu",
+        "secondary_menu": "",
+        "width": "page-wide",
+        "show_search": true,
+        "open_search": true,
+        "enable_sticky_header": true,
+        "show_color_line": false,
+        "menu_font_weight": "strong",
+        "icons_color": "rgba(0,0,0,0)",
+        "logo": "shopify://shop_images/Your_s_Waggly.png",
+        "logo_svg": "",
+        "logo_max_width": 130,
+        "logo_position": "left",
+        "logo_mobile": "shopify://shop_images/Logo.jpg",
+        "logo_svg_mobile": "",
+        "logo_max_width_mobile": 150,
+        "logo_position_mobile": "center",
+        "show_menu_animation_tiles": true,
+        "visible_items_count": 10,
+        "icons_size": 32,
+        "color_tile_base": "#f6f7fa",
+        "color_tile_active": "#142c73",
+        "menu_classic_position": "center",
+        "show_menu_animation_vertical": true,
+        "vertical_menu_item_padding": 15,
+        "color_button": "rgba(0,0,0,0)",
+        "sections_count": "1"
+      }
+    },
+    "7d523903-fdcf-4c91-be93-04d178b1c8d3": {
+      "type": "ticker-header",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "ticker_time": 10,
+        "direction": "ticker-to-right",
+        "text_size": "ticker-text-5",
+        "url": "",
+        "text": "<p><strong>MEGA SALE!</strong> Special up to <strong>30% OFF!</strong></p>",
+        "show_icon": "svg",
+        "icon_name": "lightning_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "gradient",
+        "color_background": "#fff0d9",
+        "gradient": "linear-gradient(90deg, rgba(255, 240, 217, 1) 15%, rgba(255, 193, 148, 1) 83%)"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "7d523903-fdcf-4c91-be93-04d178b1c8d3"
+  ]
+}

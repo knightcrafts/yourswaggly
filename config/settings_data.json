@@ -1,0 +1,1429 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_base": "#142c73",
+    "color_accent": "#f46800",
+    "color_background": "#F6F2EF",
+    "color_price": "#f46800",
+    "color_save_price": "#d20404",
+    "color_save_badge": "#d20404",
+    "color_addtocart": "#f46800",
+    "image_overlay_color": "#142c73",
+    "type_header_font": "figtree_n6",
+    "heading_scale": 110,
+    "type_header_font2": "figtree_n6",
+    "heading_scale2": 110,
+    "type_body_font": "figtree_n4",
+    "body_scale": 110,
+    "enable_breadcrumb": false,
+    "customer_account_legacy": true,
+    "enable_zoom_animation": true,
+    "roundness": 16,
+    "roundness_buttons": 10,
+    "roundness_input": 10,
+    "roundness_menu_submenu": 10,
+    "enable_btn_with_arrow": true,
+    "page_width": 1500,
+    "spacing_grid_horizontal": 19,
+    "swatches_design": "image",
+    "variants_names": "Color",
+    "product_card_image_resize": "cover",
+    "price_size": 18,
+    "cart_icon": "basket",
+    "cart_type": "drawer",
+    "show_cart_note": true,
+    "terms_and_condition_checkbox": true,
+    "show_add_discount_code": true,
+    "show_installments": true,
+    "cart_drawer_collection": "popular",
+    "continue_shopping_link": "",
+    "enable_recently_viewed_products": true,
+    "recently_viewed_products_limit": 5,
+    "social_media_1": "https://twitter.com/shopify",
+    "social_media_2": "https://facebook.com/shopify",
+    "social_media_3": "https://pinterest.com/shopify",
+    "social_media_4": "http://instagram.com/shopify",
+    "social_media_5": "https://tiktok.com/@shopify",
+    "social_media_6": "https://shopify.tumblr.com",
+    "social_media_7": "https://www.snapchat.com/add/shopify",
+    "social_media_8": "https://www.youtube.com/shopify",
+    "social_media_9": "https://vimeo.com/shopify",
+    "social_media_10": "https://www.whatsapp.com/?lang=ru",
+    "favicon": "",
+    "currency_code_enabled": false,
+    "roundness_input_buttons": 8,
+    "secondary_background": "#f6f7fa",
+    "colors_solid_button_labels": "rgba(0,0,0,0)",
+    "colors_accent_1": "#121212",
+    "colors_accent_2": "#334FB4",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F3F3F3",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "9932750d-e339-4919-b434-1159e7c6cce9": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "😺🥩 FREE SHIPPING - no code needed, just head for checkout!",
+              "link_name": "Link",
+              "link_url": "",
+              "color_background": "#142c73",
+              "color_text": "#ffffff",
+              "color_link": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "9932750d-e339-4919-b434-1159e7c6cce9"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
+            "type": "mega_menu",
+            "settings": {
+              "mega_menu_item_name": "Cat",
+              "grid": "col-3",
+              "show_banner": true,
+              "banner_link": "",
+              "heading": "Lorem ipsum dolor",
+              "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+              "button_label": "Shop Now!"
+            }
+          },
+          "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+            "type": "main_menu_icons",
+            "settings": {
+              "icon1": "dog_sm",
+              "icon2": "cat_sm",
+              "icon3": "fish_sm",
+              "icon4": "mouse_sm",
+              "icon5": "snake_sm",
+              "icon6": "bird_sm",
+              "icon7": "pharmacy_sm",
+              "icon8": "brand_sm",
+              "icon9": "sale_sm",
+              "icon10": "grooming_sm",
+              "icon11": "new_sm"
+            }
+          },
+          "1901cb37-14a2-4d76-81c5-51750872f161": {
+            "type": "mega_menu",
+            "settings": {
+              "mega_menu_item_name": "Dog",
+              "grid": "col-3",
+              "show_banner": true,
+              "banner_link": "",
+              "image": "",
+              "heading": "Free shipping",
+              "text": "No code needed, just head for checkout!",
+              "button_label": "Shop now!"
+            }
+          }
+        },
+        "block_order": [
+          "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
+          "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
+          "1901cb37-14a2-4d76-81c5-51750872f161"
+        ],
+        "settings": {
+          "header_layout": "header-layout-tiles",
+          "menu": "main-menu",
+          "secondary_menu": "secondary-menu",
+          "width": "page-width",
+          "show_search": true,
+          "open_search": false,
+          "enable_sticky_header": true,
+          "show_color_line": true,
+          "menu_font_weight": "strong",
+          "icons_color": "rgba(0,0,0,0)",
+          "logo_svg": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517325 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517325 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint0_linear_2376_27807)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"#F46800\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint1_linear_2376_27807)\"></path>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 20 20)\" fill=\"#142C73\"></circle>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 30 20)\" fill=\"#142C73\"></circle>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.45609 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.45609 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_2376_27807\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_2376_27807\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+          "logo_max_width": 160,
+          "logo_position": "center",
+          "logo_svg_mobile": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517324 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517324 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint0_linear_4403_6116)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"#F46800\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint1_linear_4403_6116)\"></path>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 20 20)\" fill=\"#142C73\"></circle>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 30 20)\" fill=\"#142C73\"></circle>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.45609 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.45609 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_4403_6116\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_4403_6116\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+          "logo_max_width_mobile": 150,
+          "logo_position_mobile": "center",
+          "visible_items_count": 10,
+          "icons_size": 28,
+          "color_tile_base": "#f6f7fa",
+          "color_tile_active": "#142c73",
+          "color_button": "rgba(0,0,0,0)",
+          "sections_count": "1"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "645b3ef8-625f-4882-b4ec-0099eac178ff": {
+            "type": "link_list",
+            "settings": {
+              "heading": "CORPORATE",
+              "menu": "main-menu"
+            }
+          },
+          "c103923d-e013-41a1-b43e-151a87948e30": {
+            "type": "link_list",
+            "settings": {
+              "heading": "SERVICES",
+              "menu": "main-menu"
+            }
+          },
+          "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+            "type": "text",
+            "settings": {
+              "heading": "NEED ASSISTANCE?",
+              "subtext": "<p><strong>Tel: (123) 456-7890<br/></strong><br/>7895 Piermont Dr NE Albuquerque,<br/>NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+            }
+          },
+          "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+            "type": "newsletter",
+            "settings": {
+              "show_newsletter": true,
+              "heading": "NEWSLETTER SIGNUP",
+              "subtext": "<p>Sign up for our e-mail and be the first who know our special offers!</p>",
+              "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+              "show_social": true,
+              "heading_social": "FOLLOW US:"
+            }
+          }
+        },
+        "block_order": [
+          "645b3ef8-625f-4882-b4ec-0099eac178ff",
+          "c103923d-e013-41a1-b43e-151a87948e30",
+          "a02006d6-62ca-4b97-83cf-132b52a8a539",
+          "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+        ],
+        "settings": {
+          "top_spacing": "normal",
+          "width": "page-width",
+          "show_top_line": true,
+          "heading_tag": "h5",
+          "description_size": "body2",
+          "show_all_text_in_admin": true,
+          "enable_accordion": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "color_heading": "rgba(0,0,0,0)",
+          "color_text": "rgba(0,0,0,0)",
+          "color_links": "rgba(0,0,0,0)",
+          "color_input_bg": "rgba(0,0,0,0)",
+          "color_input_bg_active": "rgba(0,0,0,0)",
+          "background": "hide",
+          "color_background": "rgba(0,0,0,0)",
+          "gradient": ""
+        }
+      },
+      "documentation": {
+        "type": "documentation",
+        "settings": {}
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "settings": {}
+      }
+    },
+    "content_for_index": []
+  },
+  "installed_preset_name": "Domestic",
+  "presets": {
+    "Devices": {
+      "color_base": "#2c3c4d",
+      "color_accent": "#008060",
+      "color_background": "#ffffff",
+      "color_secondary_background": "#f0f2f5",
+      "color_price": "#2c3c4d",
+      "color_save_price": "#e2231a",
+      "color_save_badge": "#e2231a",
+      "color_featured_badge": "#ffff00",
+      "color_soldout_badge": "#2c3c4d",
+      "color_quickview": "#e2231a",
+      "color_addtocart": "#008060",
+      "color_input_background": "#f0f2f5",
+      "color_input_text": "#2c3c4d",
+      "icon_opacity": 40,
+      "image_overlay_color": "#2c3c4d",
+      "color_alert": "#e2231a",
+      "color_text_link": "#0568d6",
+      "type_header_font": "instrument_sans_n6",
+      "heading_scale": 110,
+      "type_header_font2": "instrument_sans_n6",
+      "heading_scale2": 110,
+      "type_body_font": "instrument_sans_n4",
+      "body_scale": 105,
+      "buttons_font_weight": "strong",
+      "enable_breadcrumb": true,
+      "animate_content_show": true,
+      "animate_image_show": false,
+      "enable_zoom_animation": true,
+      "roundness": 10,
+      "roundness_buttons": 10,
+      "roundness_input": 10,
+      "roundness_menu_submenu": 10,
+      "headings_uppercase": false,
+      "buttons_uppercase": false,
+      "page_width_main": "page-width",
+      "page_width": 1500,
+      "spacing_grid_horizontal": 30,
+      "swatches_design": "image",
+      "variants_names": "Color",
+      "css_colors": "black:#000000,\nwhite:#FFFFFF,\nbeige:#CFB695,\nred:#F44336,\npink:#E91E63,\npurple:#9C27B0,\ndeep purple:#673AB7,\nviolet:#C11FDD,\nindigo:#3F51B5,\nblue:#2196F3,\nlight blue:#03A9F4,\ncyan:#00BCD4,\nteal:#009688,\ngreen:#4CAF50,\nlight green:#8BC34A,\nlime:#CDDC39,\nyellow:#FFEB3B,\namber:#FFC107,\nAorange:#FF9800,\ndeep orange:#FF5722,\nbrown:#795548,\ngrey:#9E9E9E,\nblue grey:#607D8B",
+      "enable_color_swatches": false,
+      "product_card_image_resize": "cover",
+      "price_size": 22,
+      "cart_icon": "basket",
+      "terms_and_condition_checkbox": true,
+      "show_add_discount_code": true,
+      "cart_drawer_collection": "featured-collection",
+      "continue_shopping_link": "",
+      "enable_recently_viewed_products": true,
+      "recently_viewed_products_limit": 6,
+      "social_media_1": "https://facebook.com/shopify",
+      "social_media_2": "https://tiktok.com/@shopify",
+      "social_media_3": "https://www.youtube.com/shopify",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": true,
+      "predictive_search_show_price": true,
+      "filter_tabs": "Capacity",
+      "favicon": "",
+      "roundness_input_buttons": 10,
+      "mobile_grid": "6",
+      "color_icons": "#fff",
+      "secondary_background": "#f6f7fa",
+      "colors_solid_button_labels": "rgba(0,0,0,0)",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "9932750d-e339-4919-b434-1159e7c6cce9": {
+              "type": "announcement",
+              "disabled": true,
+              "settings": {
+                "text": "ANNOUNCE something here",
+                "link_name": "Learn more",
+                "link_url": "",
+                "color_background": "rgba(0,0,0,0)",
+                "color_text": "rgba(0,0,0,0)",
+                "color_link": "rgba(0,0,0,0)"
+              }
+            }
+          },
+          "block_order": [
+            "9932750d-e339-4919-b434-1159e7c6cce9"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "9d3705fa-bd9f-4fe5-b495-029c95673ea5": {
+              "type": "main_menu_icons",
+              "settings": {
+                "icon1": "smartphone",
+                "icon2": "laptop",
+                "icon3": "monitor",
+                "icon4": "tablet",
+                "icon5": "smart_watch",
+                "icon6": "wireless_headphones",
+                "icon7": "portable_speakers",
+                "icon8": "gaming",
+                "icon9": "scooter",
+                "icon10": "drone",
+                "icon11": "dog"
+              }
+            }
+          },
+          "block_order": [
+            "9d3705fa-bd9f-4fe5-b495-029c95673ea5"
+          ],
+          "settings": {
+            "header_layout": "header-layout-tiles",
+            "menu": "main-menu",
+            "secondary_menu": "secondary",
+            "width": "page-wide",
+            "show_search": true,
+            "open_search": true,
+            "enable_sticky_header": false,
+            "show_color_line": true,
+            "menu_font_weight": "font-weight-normal",
+            "icons_color": "#e2231a",
+            "logo_svg": "<svg width=\"188\" height=\"54\" viewbox=\"0 0 188 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25 30C25 33.866 28.134 37 32 37H42C45.866 37 49 33.866 49 30C49 26.134 45.866 23 42 23C40.0413 23 38.2705 23.8045 37 25.101C35.7295 23.8045 33.9587 23 32 23C28.134 23 25 26.134 25 30ZM30 30C30 31.1046 30.8954 32 32 32C33.1046 32 34 31.1046 34 30C34 28.8954 33.1046 28 32 28C30.8954 28 30 28.8954 30 30ZM42 32C40.8954 32 40 31.1046 40 30C40 28.8954 40.8954 28 42 28C43.1046 28 44 28.8954 44 30C44 31.1046 43.1046 32 42 32Z\" fill=\"#E2231A\"></path>\n<path d=\"M147.688 29.2516C147.688 28.1376 147.344 27.1656 146.656 26.3355C145.968 25.5055 145.032 25.0904 143.85 25.0904C142.667 25.0904 141.743 25.5055 141.076 26.3355C140.41 27.1437 140.076 28.1158 140.076 29.2516C140.076 30.3875 140.41 31.3814 141.076 32.2333C141.764 33.0633 142.7 33.4784 143.882 33.4784C145.065 33.4784 145.989 33.0633 146.656 32.2333C147.344 31.3814 147.688 30.3875 147.688 29.2516Z\" fill=\"#E2231A\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C5.37258 0 0 5.37258 0 12V42C0 48.6274 5.37258 54 12 54H176C182.627 54 188 48.6274 188 42V12C188 5.37258 182.627 0 176 0H12ZM55 30C55 28.5201 54.7527 27.098 54.2972 25.7727C54.9438 25.2686 55.56 24.7242 56.1421 24.1421C57.9994 22.285 59.4726 20.0802 60.4776 17.6537C61.4825 15.2271 62 12.6264 62 10C59.3737 10 56.7727 10.5173 54.3463 11.5224C51.9198 12.5275 49.7151 14.0007 47.8579 15.8579C47.2757 16.44 46.7313 17.0562 46.2272 17.7027C44.902 17.2473 43.4799 17 42 17C40.2282 17 38.5392 17.3545 37 17.9963C35.4608 17.3545 33.7718 17 32 17C30.5201 17 29.098 17.2473 27.7728 17.7027C27.2687 17.0562 26.7243 16.44 26.1421 15.8579C24.2849 14.0007 22.0802 12.5275 19.6537 11.5224C17.2273 10.5173 14.6263 10 12 10C12 12.6264 12.5175 15.2271 13.5224 17.6537C14.5274 20.0802 16.0006 22.285 17.8579 24.1421C18.44 24.7242 19.0562 25.2686 19.7028 25.7727C19.2473 27.098 19 28.5201 19 30C19 36.8432 24.2876 42.4515 31 42.9621V43H42C49.1797 43 55 37.1797 55 30ZM101.632 18.0459C102.234 17.4779 102.536 16.7789 102.536 15.9489C102.536 15.1407 102.234 14.4526 101.632 13.8847C101.052 13.2949 100.342 13 99.5039 13C98.6653 13 97.9451 13.2949 97.343 13.8847C96.7625 14.4744 96.4722 15.1625 96.4722 15.9489C96.4722 16.7571 96.7625 17.4561 97.343 18.0459C97.9451 18.6138 98.6653 18.8978 99.5039 18.8978C100.342 18.8978 101.052 18.6138 101.632 18.0459ZM96.8593 37.4758V21.1586H102.148V37.4758H96.8593ZM87.5119 37.4758H92.8011V27.384C92.8011 26.27 92.6291 25.2324 92.2851 24.2713C91.9411 23.3102 91.3068 22.4801 90.3823 21.7811C89.4792 21.0603 88.3397 20.6999 86.9636 20.6999C84.706 20.6999 82.9967 21.6282 81.8356 23.4849C80.8896 21.6282 79.277 20.6999 76.9979 20.6999C75.8799 20.6999 74.9016 20.962 74.0631 21.4862C73.2245 22.0105 72.601 22.6549 72.1925 23.4194H72.128V21.1586H67V37.4758H72.3215V28.6291C72.3215 27.6243 72.558 26.7942 73.031 26.1389C73.504 25.4618 74.1491 25.1232 74.9661 25.1232C76.4927 25.1232 77.256 26.1389 77.256 28.1704V37.4758H82.5452V28.6619C82.5452 27.6789 82.7709 26.8488 83.2225 26.1717C83.6955 25.4727 84.362 25.1232 85.222 25.1232C86.7486 25.1232 87.5119 26.27 87.5119 28.5636V37.4758ZM116.884 37.4758H122.206V27.384C122.206 25.5273 121.722 23.9546 120.754 22.6658C119.808 21.3552 118.335 20.6999 116.336 20.6999C115.261 20.6999 114.282 20.962 113.401 21.4862C112.541 22.0105 111.917 22.6549 111.53 23.4194H111.466V21.1586H106.338V37.4758H111.659V28.6291C111.659 27.6461 111.907 26.8161 112.401 26.1389C112.896 25.4618 113.594 25.1232 114.498 25.1232C116.089 25.1232 116.884 26.27 116.884 28.5636V37.4758ZM131.049 18.0459C131.651 17.4779 131.952 16.7789 131.952 15.9489C131.952 15.1407 131.651 14.4526 131.049 13.8847C130.469 13.2949 129.759 13 128.921 13C128.082 13 127.362 13.2949 126.76 13.8847C126.179 14.4744 125.889 15.1625 125.889 15.9489C125.889 16.7571 126.179 17.4561 126.76 18.0459C127.362 18.6138 128.082 18.8978 128.921 18.8978C129.759 18.8978 130.469 18.6138 131.049 18.0459ZM126.276 37.4758V21.1586H131.565V37.4758H126.276ZM150.203 22.9934C151.923 24.5662 152.783 26.6523 152.783 29.2516C152.783 31.851 151.923 33.9589 150.203 35.5754C148.483 37.1918 146.365 38 143.85 38C141.356 38 139.249 37.1918 137.529 35.5754C135.808 33.9589 134.948 31.851 134.948 29.2516C134.948 26.6523 135.808 24.5662 137.529 22.9934C139.249 21.4207 141.356 20.6343 143.85 20.6343C146.365 20.6343 148.483 21.4207 150.203 22.9934ZM172 37.4758H166.679V28.5636C166.679 26.27 165.883 25.1232 164.292 25.1232C163.389 25.1232 162.69 25.4618 162.196 26.1389C161.701 26.8161 161.454 27.6461 161.454 28.6291V37.4758H156.132V21.1586H161.26V23.4194H161.325C161.712 22.6549 162.335 22.0105 163.195 21.4862C164.077 20.962 165.055 20.6999 166.13 20.6999C168.13 20.6999 169.603 21.3552 170.549 22.6658C171.516 23.9546 172 25.5273 172 27.384V37.4758Z\" fill=\"#E2231A\"></path>\n</svg>",
+            "logo_max_width": 160,
+            "logo_position": "center",
+            "logo_svg_mobile": "<svg width=\"74\" height=\"53\" viewbox=\"0 0 74 53\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M32 37C28.134 37 25 33.866 25 30C25 26.134 28.134 23 32 23C33.9587 23 35.7295 23.8045 37 25.101C38.2705 23.8045 40.0413 23 42 23C45.866 23 49 26.134 49 30C49 33.866 45.866 37 42 37H32ZM30 30C30 31.1046 30.8954 32 32 32C33.1046 32 34 31.1046 34 30C34 28.8954 33.1046 28 32 28C30.8954 28 30 28.8954 30 30ZM42 32C40.8954 32 40 31.1046 40 30C40 28.8954 40.8954 28 42 28C43.1046 28 44 28.8954 44 30C44 31.1046 43.1046 32 42 32Z\" fill=\"#E2231A\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C5.37258 0 0 5.37258 0 12V41C0 47.6274 5.37258 53 12 53H62C68.6274 53 74 47.6274 74 41V12C74 5.37258 68.6274 0 62 0H12ZM54.2972 25.7727C54.7527 27.098 55 28.5201 55 30C55 37.1797 49.1797 43 42 43H31V42.9621C24.2876 42.4515 19 36.8432 19 30C19 28.5201 19.2473 27.098 19.7028 25.7727C19.0562 25.2686 18.44 24.7242 17.8579 24.1421C16.0006 22.285 14.5274 20.0802 13.5224 17.6537C12.5175 15.2271 12 12.6264 12 10C14.6263 10 17.2273 10.5173 19.6537 11.5224C22.0802 12.5275 24.2849 14.0007 26.1421 15.8579C26.7243 16.44 27.2687 17.0562 27.7728 17.7027C29.098 17.2473 30.5201 17 32 17C33.7718 17 35.4608 17.3545 37 17.9963C38.5392 17.3545 40.2282 17 42 17C43.4799 17 44.902 17.2473 46.2272 17.7027C46.7313 17.0562 47.2757 16.44 47.8579 15.8579C49.7151 14.0007 51.9198 12.5275 54.3463 11.5224C56.7727 10.5173 59.3737 10 62 10C62 12.6264 61.4825 15.2271 60.4776 17.6537C59.4726 20.0802 57.9994 22.285 56.1421 24.1421C55.56 24.7242 54.9438 25.2686 54.2972 25.7727Z\" fill=\"#E2231A\"></path>\n</svg>",
+            "logo_max_width_mobile": 50,
+            "logo_position_mobile": "center",
+            "visible_items_count": 10,
+            "icons_size": 40,
+            "color_tile_base": "#f6f7fa",
+            "color_tile_active": "#e2231a",
+            "color_button": "rgba(0,0,0,0)",
+            "sections_count": "1"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "c103923d-e013-41a1-b43e-151a87948e30": {
+              "type": "link_list",
+              "settings": {
+                "heading": "",
+                "menu": "main-menu"
+              }
+            },
+            "2a699c51-11bd-409b-9688-3239b7ab4da2": {
+              "type": "link_list",
+              "settings": {
+                "heading": "",
+                "menu": "main-menu"
+              }
+            },
+            "394c1b82-26e6-452d-8fd9-3108574d51c8": {
+              "type": "link_list",
+              "settings": {
+                "heading": "",
+                "menu": "main-menu"
+              }
+            },
+            "ed927a4a-83c3-437f-a4c7-d24de049b08b": {
+              "type": "link_list",
+              "settings": {
+                "heading": "",
+                "menu": "main-menu"
+              }
+            },
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+              "type": "newsletter",
+              "settings": {
+                "show_newsletter": true,
+                "heading": "Newsletter",
+                "subtext": "",
+                "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+                "show_social": true,
+                "heading_social": ""
+              }
+            }
+          },
+          "block_order": [
+            "c103923d-e013-41a1-b43e-151a87948e30",
+            "2a699c51-11bd-409b-9688-3239b7ab4da2",
+            "394c1b82-26e6-452d-8fd9-3108574d51c8",
+            "ed927a4a-83c3-437f-a4c7-d24de049b08b",
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+          ],
+          "settings": {
+            "top_spacing": "normal",
+            "width": "page-wide",
+            "show_top_line": true,
+            "heading_tag": "h4",
+            "description_size": "normal",
+            "show_all_text_in_admin": true,
+            "enable_accordion": false,
+            "enable_country_selector": true,
+            "enable_language_selector": true,
+            "payment_enable": true,
+            "color_heading": "#ffffff",
+            "color_text": "#ffffff",
+            "color_links": "#0568d6",
+            "color_input_bg": "#4a5867",
+            "color_input_bg_active": "rgba(0,0,0,0)",
+            "background": "color",
+            "color_background": "#2c3c4d",
+            "gradient": ""
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "show_color_line": true,
+            "width": "page-width",
+            "logo_svg": "",
+            "logo_max_width": 160
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "top_spacing": "medium",
+            "width": "page-width",
+            "show_top_line": true,
+            "show_social": true,
+            "color_text": "rgba(0,0,0,0)",
+            "color_links": "rgba(0,0,0,0)",
+            "background": "hide",
+            "color_background": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "documentation": {
+          "type": "documentation",
+          "settings": {}
+        },
+        "cart-drawer": {
+          "type": "cart-drawer",
+          "settings": {}
+        }
+      },
+      "content_for_index": []
+    },
+    "Domestic": {
+      "color_base": "#142c73",
+      "color_accent": "#f46800",
+      "color_background": "#ffffff",
+      "color_price": "#f46800",
+      "color_save_price": "#d20404",
+      "color_save_badge": "#d20404",
+      "color_addtocart": "#f46800",
+      "image_overlay_color": "#142c73",
+      "type_header_font": "figtree_n6",
+      "heading_scale": 110,
+      "type_header_font2": "figtree_n6",
+      "heading_scale2": 110,
+      "type_body_font": "figtree_n4",
+      "body_scale": 110,
+      "enable_breadcrumb": false,
+      "enable_zoom_animation": true,
+      "roundness": 16,
+      "roundness_buttons": 10,
+      "roundness_input": 10,
+      "roundness_menu_submenu": 10,
+      "enable_btn_with_arrow": true,
+      "page_width": 1500,
+      "spacing_grid_horizontal": 19,
+      "swatches_design": "image",
+      "variants_names": "Color",
+      "product_card_image_resize": "cover",
+      "price_size": 18,
+      "cart_icon": "basket",
+      "cart_type": "drawer",
+      "show_cart_note": true,
+      "terms_and_condition_checkbox": true,
+      "show_add_discount_code": true,
+      "show_installments": true,
+      "cart_drawer_collection": "popular",
+      "continue_shopping_link": "",
+      "enable_recently_viewed_products": true,
+      "recently_viewed_products_limit": 5,
+      "social_media_1": "https://twitter.com/shopify",
+      "social_media_2": "https://facebook.com/shopify",
+      "social_media_3": "https://pinterest.com/shopify",
+      "social_media_4": "http://instagram.com/shopify",
+      "social_media_5": "https://tiktok.com/@shopify",
+      "social_media_6": "https://shopify.tumblr.com",
+      "social_media_7": "https://www.snapchat.com/add/shopify",
+      "social_media_8": "https://www.youtube.com/shopify",
+      "social_media_9": "https://vimeo.com/shopify",
+      "social_media_10": "https://www.whatsapp.com/?lang=ru",
+      "favicon": "",
+      "currency_code_enabled": false,
+      "roundness_input_buttons": 8,
+      "secondary_background": "#f6f7fa",
+      "colors_solid_button_labels": "rgba(0,0,0,0)",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "9932750d-e339-4919-b434-1159e7c6cce9": {
+              "type": "announcement",
+              "disabled": true,
+              "settings": {
+                "text": "😺🥩 FREE SHIPPING - no code needed, just head for checkout!",
+                "link_name": "Link",
+                "link_url": "",
+                "color_background": "#142c73",
+                "color_text": "#ffffff",
+                "color_link": "rgba(0,0,0,0)"
+              }
+            }
+          },
+          "block_order": [
+            "9932750d-e339-4919-b434-1159e7c6cce9"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Cat",
+                "grid": "col-3",
+                "show_banner": true,
+                "banner_link": "",
+                "heading": "Lorem ipsum dolor",
+                "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+                "button_label": "Shop Now!"
+              }
+            },
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+              "type": "main_menu_icons",
+              "settings": {
+                "icon1": "dog_sm",
+                "icon2": "cat_sm",
+                "icon3": "fish_sm",
+                "icon4": "mouse_sm",
+                "icon5": "snake_sm",
+                "icon6": "bird_sm",
+                "icon7": "pharmacy_sm",
+                "icon8": "brand_sm",
+                "icon9": "sale_sm",
+                "icon10": "grooming_sm",
+                "icon11": "new_sm"
+              }
+            },
+            "1901cb37-14a2-4d76-81c5-51750872f161": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Dog",
+                "grid": "col-3",
+                "show_banner": true,
+                "banner_link": "",
+                "image": "",
+                "heading": "Free shipping",
+                "text": "No code needed, just head for checkout!",
+                "button_label": "Shop now!"
+              }
+            }
+          },
+          "block_order": [
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
+            "1901cb37-14a2-4d76-81c5-51750872f161"
+          ],
+          "settings": {
+            "header_layout": "header-layout-tiles",
+            "menu": "main-menu",
+            "secondary_menu": "secondary-menu",
+            "width": "page-width",
+            "show_search": true,
+            "open_search": false,
+            "enable_sticky_header": true,
+            "show_color_line": true,
+            "menu_font_weight": "strong",
+            "icons_color": "rgba(0,0,0,0)",
+            "logo_svg": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517325 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517325 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint0_linear_2376_27807)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"#F46800\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint1_linear_2376_27807)\"></path>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 20 20)\" fill=\"#142C73\"></circle>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 30 20)\" fill=\"#142C73\"></circle>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.45609 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.45609 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_2376_27807\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_2376_27807\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+            "logo_max_width": 160,
+            "logo_position": "center",
+            "logo_svg_mobile": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517324 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517324 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"#F46800\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint0_linear_4403_6116)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"#F46800\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint1_linear_4403_6116)\"></path>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 20 20)\" fill=\"#142C73\"></circle>\n<circle r=\"2\" transform=\"matrix(-1 0 0 1 30 20)\" fill=\"#142C73\"></circle>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.45609 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.45609 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_4403_6116\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_4403_6116\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+            "logo_max_width_mobile": 150,
+            "logo_position_mobile": "center",
+            "visible_items_count": 10,
+            "icons_size": 28,
+            "color_tile_base": "#f6f7fa",
+            "color_tile_active": "#142c73",
+            "color_button": "rgba(0,0,0,0)",
+            "sections_count": "1"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "645b3ef8-625f-4882-b4ec-0099eac178ff": {
+              "type": "link_list",
+              "settings": {
+                "heading": "CORPORATE",
+                "menu": "main-menu"
+              }
+            },
+            "c103923d-e013-41a1-b43e-151a87948e30": {
+              "type": "link_list",
+              "settings": {
+                "heading": "SERVICES",
+                "menu": "main-menu"
+              }
+            },
+            "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+              "type": "text",
+              "settings": {
+                "heading": "NEED ASSISTANCE?",
+                "subtext": "<p><strong>Tel: (123) 456-7890<br/></strong><br/>7895 Piermont Dr NE Albuquerque,<br/>NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+              }
+            },
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+              "type": "newsletter",
+              "settings": {
+                "show_newsletter": true,
+                "heading": "NEWSLETTER SIGNUP",
+                "subtext": "<p>Sign up for our e-mail and be the first who know our special offers!</p>",
+                "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+                "show_social": true,
+                "heading_social": "FOLLOW US:"
+              }
+            }
+          },
+          "block_order": [
+            "645b3ef8-625f-4882-b4ec-0099eac178ff",
+            "c103923d-e013-41a1-b43e-151a87948e30",
+            "a02006d6-62ca-4b97-83cf-132b52a8a539",
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+          ],
+          "settings": {
+            "top_spacing": "normal",
+            "width": "page-width",
+            "show_top_line": true,
+            "heading_tag": "h5",
+            "description_size": "body2",
+            "show_all_text_in_admin": true,
+            "enable_accordion": true,
+            "enable_country_selector": true,
+            "enable_language_selector": true,
+            "payment_enable": true,
+            "color_heading": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_links": "rgba(0,0,0,0)",
+            "color_input_bg": "rgba(0,0,0,0)",
+            "color_input_bg_active": "rgba(0,0,0,0)",
+            "background": "hide",
+            "color_background": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "documentation": {
+          "type": "documentation",
+          "settings": {}
+        },
+        "cart-drawer": {
+          "type": "cart-drawer",
+          "settings": {}
+        }
+      },
+      "content_for_index": []
+    },
+    "Furry": {
+      "color_base": "#142c73",
+      "color_accent": "#009688",
+      "color_background": "#ffffff",
+      "color_price": "#009688",
+      "color_save_price": "#d20404",
+      "color_save_badge": "#d20404",
+      "color_featured_badge": "#ef6c00",
+      "image_overlay_color": "#142C73",
+      "type_header_font": "figtree_n6",
+      "heading_scale": 105,
+      "type_header_font2": "figtree_n6",
+      "heading_scale2": 105,
+      "type_body_font": "figtree_n4",
+      "body_scale": 100,
+      "enable_breadcrumb": false,
+      "animate_content_show": true,
+      "animate_image_show": true,
+      "enable_zoom_animation": true,
+      "roundness": 12,
+      "page_width": 1360,
+      "spacing_grid_horizontal": 30,
+      "variants_names": "Color",
+      "price_size": 24,
+      "cart_icon": "bag",
+      "cart_type": "drawer",
+      "show_cart_note": true,
+      "terms_and_condition_checkbox": true,
+      "show_add_discount_code": true,
+      "show_vendor": true,
+      "cart_drawer_collection": "home-page-featured-block",
+      "continue_shopping_link": "",
+      "social_media_1": "https://twitter.com/shopify",
+      "social_media_2": "https://facebook.com/shopify",
+      "social_media_3": "https://pinterest.com/shopify",
+      "social_media_4": "http://instagram.com/shopify",
+      "social_media_5": "https://tiktok.com/@shopify",
+      "social_media_6": "https://shopify.tumblr.com",
+      "social_media_7": "https://www.snapchat.com/add/shopify",
+      "social_media_8": "https://www.youtube.com/shopify",
+      "social_media_9": "https://vimeo.com/shopify",
+      "social_media_10": "https://www.whatsapp.com/?lang=ru",
+      "favicon": "",
+      "roundness_input_buttons": 5,
+      "secondary_background": "#f6f7fa",
+      "colors_solid_button_labels": "rgba(0,0,0,0)",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "9932750d-e339-4919-b434-1159e7c6cce9": {
+              "type": "announcement",
+              "settings": {
+                "text": "😺🥩 FREE SHIPPING - no code needed, just head for checkout!",
+                "link_name": "Learn more",
+                "link_url": "",
+                "color_background": "#142c73",
+                "color_text": "#ffffff",
+                "color_link": "#00ccb9"
+              }
+            }
+          },
+          "block_order": [
+            "9932750d-e339-4919-b434-1159e7c6cce9"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Cat",
+                "grid": "col-3",
+                "show_banner": true,
+                "banner_link": "",
+                "heading": "Lorem ipsum dolor",
+                "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+                "button_label": "Shop Now!"
+              }
+            },
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+              "type": "main_menu_icons",
+              "settings": {
+                "icon1": "dog",
+                "icon2": "cat",
+                "icon3": "fish",
+                "icon4": "mouse",
+                "icon5": "reptile",
+                "icon6": "bird",
+                "icon7": "brand",
+                "icon8": "pharmacy",
+                "icon9": "grooming",
+                "icon10": "sale",
+                "icon11": "new"
+              }
+            },
+            "1901cb37-14a2-4d76-81c5-51750872f161": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Fish",
+                "grid": "col-6",
+                "show_banner": false,
+                "banner_link": "",
+                "heading": "",
+                "text": "",
+                "button_label": "Shop Now!"
+              }
+            }
+          },
+          "block_order": [
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
+            "1901cb37-14a2-4d76-81c5-51750872f161"
+          ],
+          "settings": {
+            "header_layout": "header-layout-classic",
+            "menu": "main-menu",
+            "secondary_menu": "",
+            "width": "page-wide",
+            "show_search": false,
+            "open_search": true,
+            "enable_sticky_header": true,
+            "show_color_line": false,
+            "menu_font_weight": "strong",
+            "icons_color": "rgba(0,0,0,0)",
+            "logo_svg": "<svg width=\"105\" height=\"25\" viewbox=\"0 0 105 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M25.8011 24.4758H20.5119V15.5636C20.5119 13.27 19.7486 12.1232 18.222 12.1232C17.362 12.1232 16.6955 12.4727 16.2225 13.1717C15.7709 13.8488 15.5452 14.6789 15.5452 15.6619V24.4758H10.2559V15.1704C10.2559 13.1389 9.49267 12.1232 7.9661 12.1232C7.14906 12.1232 6.50403 12.4618 6.03101 13.1389C5.55799 13.7942 5.32148 14.6243 5.32148 15.6291V24.4758H0V8.15858H5.12797V10.4194H5.19248C5.601 9.65487 6.22452 9.01049 7.06306 8.48624C7.9016 7.96199 8.87989 7.69987 9.99794 7.69987C12.277 7.69987 13.8896 8.62822 14.8356 10.4849C15.9967 8.62822 17.706 7.69987 19.9636 7.69987C21.3397 7.69987 22.4792 8.06029 23.3823 8.78113C24.3068 9.48012 24.9411 10.3102 25.2851 11.2713C25.6291 12.2324 25.8011 13.27 25.8011 14.384V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M35.5355 2.94889C35.5355 3.77894 35.2345 4.47794 34.6325 5.04587C34.0519 5.61381 33.3424 5.89777 32.5039 5.89777C31.6653 5.89777 30.9451 5.61381 30.343 5.04587C29.7625 4.45609 29.4722 3.7571 29.4722 2.94889C29.4722 2.16252 29.7625 1.47444 30.343 0.884666C30.9451 0.294889 31.6653 0 32.5039 0C33.3424 0 34.0519 0.294889 34.6325 0.884666C35.2345 1.4526 35.5355 2.14067 35.5355 2.94889ZM35.1485 24.4758H29.8593V8.15858H35.1485V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M55.2056 24.4758H49.8841V15.5636C49.8841 13.27 49.0886 12.1232 47.4975 12.1232C46.5945 12.1232 45.8957 12.4618 45.4012 13.1389C44.9066 13.8161 44.6594 14.6461 44.6594 15.6291V24.4758H39.3379V8.15858H44.4659V10.4194H44.5304C44.9174 9.65487 45.5409 9.01049 46.401 8.48624C47.2825 7.96199 48.2608 7.69987 49.3358 7.69987C51.3354 7.69987 52.8082 8.35518 53.7543 9.66579C54.7218 10.9546 55.2056 12.5273 55.2056 14.384V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M64.9523 2.94889C64.9523 3.77894 64.6513 4.47794 64.0493 5.04587C63.4688 5.61381 62.7592 5.89777 61.9207 5.89777C61.0821 5.89777 60.3619 5.61381 59.7598 5.04587C59.1793 4.45609 58.8891 3.7571 58.8891 2.94889C58.8891 2.16252 59.1793 1.47444 59.7598 0.884666C60.3619 0.294889 61.0821 0 61.9207 0C62.7592 0 63.4688 0.294889 64.0493 0.884666C64.6513 1.4526 64.9523 2.14067 64.9523 2.94889ZM64.5653 24.4758H59.2761V8.15858H64.5653V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M83.2033 9.99345C84.9234 11.5662 85.7835 13.6523 85.7835 16.2516C85.7835 18.851 84.9234 20.9589 83.2033 22.5754C81.4833 24.1918 79.3654 25 76.8498 25C74.3557 25 72.2486 24.1918 70.5285 22.5754C68.8085 20.9589 67.9484 18.851 67.9484 16.2516C67.9484 13.6523 68.8085 11.5662 70.5285 9.99345C72.2486 8.42071 74.3557 7.63434 76.8498 7.63434C79.3654 7.63434 81.4833 8.42071 83.2033 9.99345ZM80.6877 16.2516C80.6877 15.1376 80.3437 14.1656 79.6557 13.3355C78.9677 12.5055 78.0324 12.0904 76.8498 12.0904C75.6673 12.0904 74.7427 12.5055 74.0762 13.3355C73.4097 14.1437 73.0764 15.1158 73.0764 16.2516C73.0764 17.3875 73.4097 18.3814 74.0762 19.2333C74.7642 20.0633 75.6995 20.4784 76.8821 20.4784C78.0646 20.4784 78.9892 20.0633 79.6557 19.2333C80.3437 18.3814 80.6877 17.3875 80.6877 16.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M105 24.4758H99.6785V15.5636C99.6785 13.27 98.883 12.1232 97.2919 12.1232C96.3889 12.1232 95.6901 12.4618 95.1956 13.1389C94.701 13.8161 94.4538 14.6461 94.4538 15.6291V24.4758H89.1323V8.15858H94.2603V10.4194H94.3248C94.7118 9.65487 95.3353 9.01049 96.1954 8.48624C97.0769 7.96199 98.0552 7.69987 99.1302 7.69987C101.13 7.69987 102.603 8.35518 103.549 9.66579C104.516 10.9546 105 12.5273 105 14.384V24.4758Z\" fill=\"#142C73\"></path>\n</svg>",
+            "logo_max_width": 120,
+            "logo_position": "center",
+            "logo_svg_mobile": "<svg width=\"105\" height=\"25\" viewbox=\"0 0 105 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M25.8011 24.4758H20.5119V15.5636C20.5119 13.27 19.7486 12.1232 18.222 12.1232C17.362 12.1232 16.6955 12.4727 16.2225 13.1717C15.7709 13.8488 15.5452 14.6789 15.5452 15.6619V24.4758H10.2559V15.1704C10.2559 13.1389 9.49267 12.1232 7.9661 12.1232C7.14906 12.1232 6.50403 12.4618 6.03101 13.1389C5.55799 13.7942 5.32148 14.6243 5.32148 15.6291V24.4758H0V8.15858H5.12797V10.4194H5.19248C5.601 9.65487 6.22452 9.01049 7.06306 8.48624C7.9016 7.96199 8.87989 7.69987 9.99794 7.69987C12.277 7.69987 13.8896 8.62822 14.8356 10.4849C15.9967 8.62822 17.706 7.69987 19.9636 7.69987C21.3397 7.69987 22.4792 8.06029 23.3823 8.78113C24.3068 9.48012 24.9411 10.3102 25.2851 11.2713C25.6291 12.2324 25.8011 13.27 25.8011 14.384V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M35.5355 2.94889C35.5355 3.77894 35.2345 4.47794 34.6325 5.04587C34.0519 5.61381 33.3424 5.89777 32.5039 5.89777C31.6653 5.89777 30.9451 5.61381 30.343 5.04587C29.7625 4.45609 29.4722 3.7571 29.4722 2.94889C29.4722 2.16252 29.7625 1.47444 30.343 0.884666C30.9451 0.294889 31.6653 0 32.5039 0C33.3424 0 34.0519 0.294889 34.6325 0.884666C35.2345 1.4526 35.5355 2.14067 35.5355 2.94889ZM35.1485 24.4758H29.8593V8.15858H35.1485V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M55.2056 24.4758H49.8841V15.5636C49.8841 13.27 49.0886 12.1232 47.4975 12.1232C46.5945 12.1232 45.8957 12.4618 45.4012 13.1389C44.9066 13.8161 44.6594 14.6461 44.6594 15.6291V24.4758H39.3379V8.15858H44.4659V10.4194H44.5304C44.9174 9.65487 45.5409 9.01049 46.401 8.48624C47.2825 7.96199 48.2608 7.69987 49.3358 7.69987C51.3354 7.69987 52.8082 8.35518 53.7543 9.66579C54.7218 10.9546 55.2056 12.5273 55.2056 14.384V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M64.9523 2.94889C64.9523 3.77894 64.6513 4.47794 64.0493 5.04587C63.4688 5.61381 62.7592 5.89777 61.9207 5.89777C61.0821 5.89777 60.3619 5.61381 59.7598 5.04587C59.1793 4.45609 58.8891 3.7571 58.8891 2.94889C58.8891 2.16252 59.1793 1.47444 59.7598 0.884666C60.3619 0.294889 61.0821 0 61.9207 0C62.7592 0 63.4688 0.294889 64.0493 0.884666C64.6513 1.4526 64.9523 2.14067 64.9523 2.94889ZM64.5653 24.4758H59.2761V8.15858H64.5653V24.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M83.2033 9.99345C84.9234 11.5662 85.7835 13.6523 85.7835 16.2516C85.7835 18.851 84.9234 20.9589 83.2033 22.5754C81.4833 24.1918 79.3654 25 76.8498 25C74.3557 25 72.2486 24.1918 70.5285 22.5754C68.8085 20.9589 67.9484 18.851 67.9484 16.2516C67.9484 13.6523 68.8085 11.5662 70.5285 9.99345C72.2486 8.42071 74.3557 7.63434 76.8498 7.63434C79.3654 7.63434 81.4833 8.42071 83.2033 9.99345ZM80.6877 16.2516C80.6877 15.1376 80.3437 14.1656 79.6557 13.3355C78.9677 12.5055 78.0324 12.0904 76.8498 12.0904C75.6673 12.0904 74.7427 12.5055 74.0762 13.3355C73.4097 14.1437 73.0764 15.1158 73.0764 16.2516C73.0764 17.3875 73.4097 18.3814 74.0762 19.2333C74.7642 20.0633 75.6995 20.4784 76.8821 20.4784C78.0646 20.4784 78.9892 20.0633 79.6557 19.2333C80.3437 18.3814 80.6877 17.3875 80.6877 16.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M105 24.4758H99.6785V15.5636C99.6785 13.27 98.883 12.1232 97.2919 12.1232C96.3889 12.1232 95.6901 12.4618 95.1956 13.1389C94.701 13.8161 94.4538 14.6461 94.4538 15.6291V24.4758H89.1323V8.15858H94.2603V10.4194H94.3248C94.7118 9.65487 95.3353 9.01049 96.1954 8.48624C97.0769 7.96199 98.0552 7.69987 99.1302 7.69987C101.13 7.69987 102.603 8.35518 103.549 9.66579C104.516 10.9546 105 12.5273 105 14.384V24.4758Z\" fill=\"#142C73\"></path>\n</svg>",
+            "logo_max_width_mobile": 100,
+            "logo_position_mobile": "center",
+            "visible_items_count": 10,
+            "icons_size": 20,
+            "color_tile_base": "rgba(0,0,0,0)",
+            "color_tile_active": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "sections_count": "1"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "645b3ef8-625f-4882-b4ec-0099eac178ff": {
+              "type": "link_list",
+              "settings": {
+                "heading": "CORPORATE",
+                "menu": "main-menu"
+              }
+            },
+            "c103923d-e013-41a1-b43e-151a87948e30": {
+              "type": "link_list",
+              "settings": {
+                "heading": "SERVICES",
+                "menu": "main-menu"
+              }
+            },
+            "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+              "type": "text",
+              "settings": {
+                "heading": "NEED ASSISTANCE?",
+                "subtext": "<p>📞 Tel: (123) 456-7890<br/><br/>7895 Piermont Dr NE Albuquerque,<br/>NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+              }
+            },
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+              "type": "newsletter",
+              "settings": {
+                "show_newsletter": true,
+                "heading": "NEWSLETTER SIGNUP",
+                "subtext": "<p>Sign up for our e-mail and be the first who knows our special offers!</p>",
+                "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+                "show_social": true,
+                "heading_social": "FOLLOW US:"
+              }
+            }
+          },
+          "block_order": [
+            "645b3ef8-625f-4882-b4ec-0099eac178ff",
+            "c103923d-e013-41a1-b43e-151a87948e30",
+            "a02006d6-62ca-4b97-83cf-132b52a8a539",
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+          ],
+          "settings": {
+            "top_spacing": "none",
+            "width": "page-width",
+            "show_top_line": false,
+            "heading_tag": "h5",
+            "description_size": "normal",
+            "show_all_text_in_admin": true,
+            "enable_accordion": true,
+            "enable_country_selector": true,
+            "enable_language_selector": true,
+            "payment_enable": true,
+            "color_heading": "#ffffff",
+            "color_text": "#ffffff",
+            "color_links": "#ffffff",
+            "color_input_bg": "rgba(0,0,0,0)",
+            "color_input_bg_active": "rgba(0,0,0,0)",
+            "background": "color",
+            "color_background": "#142c73",
+            "gradient": ""
+          }
+        },
+        "documentation": {
+          "type": "documentation",
+          "settings": {}
+        },
+        "cart-drawer": {
+          "type": "cart-drawer",
+          "settings": {}
+        }
+      },
+      "content_for_index": []
+    },
+    "Looks": {
+      "color_base": "#333333",
+      "color_accent": "#333333",
+      "color_background": "#ffffff",
+      "color_secondary_background": "#f2f2f2",
+      "color_price": "#333333",
+      "color_save_price": "#d20404",
+      "color_save_badge": "#d20404",
+      "color_featured_badge": "#ef6c00",
+      "color_soldout_badge": "#333333",
+      "color_addtocart": "#333333",
+      "color_input_background": "#f2f2f2",
+      "color_input_text": "#333333",
+      "icon_opacity": 40,
+      "image_overlay_color": "#000000",
+      "color_alert": "#d20404",
+      "color_text_link": "#333333",
+      "type_header_font": "figtree_n5",
+      "heading_scale": 110,
+      "type_header_font2": "figtree_n5",
+      "heading_scale2": 110,
+      "type_body_font": "figtree_n4",
+      "body_scale": 105,
+      "buttons_font_weight": "font-weight-normal",
+      "enable_breadcrumb": false,
+      "animate_content_show": true,
+      "animate_image_show": false,
+      "enable_zoom_animation": true,
+      "roundness": 8,
+      "roundness_buttons": 40,
+      "roundness_input": 40,
+      "roundness_menu_submenu": 8,
+      "headings_uppercase": true,
+      "buttons_uppercase": true,
+      "page_width": 1470,
+      "spacing_grid_horizontal": 20,
+      "top_small_desktop": 20,
+      "top_small_mobile": 20,
+      "swatches_design": "image",
+      "variants_names": "Color",
+      "enable_color_swatches": true,
+      "product_card_image_resize": "cover",
+      "cart_icon": "bag",
+      "cart_type": "drawer",
+      "show_cart_note": true,
+      "show_add_discount_code": true,
+      "show_vendor": true,
+      "cart_drawer_collection": "sale",
+      "cart_drawer_image_ratio": "auto",
+      "continue_shopping_link": "",
+      "social_media_1": "https://www.tiktok.com/@shopify",
+      "social_media_2": "https://www.snapchat.com/add/shopify",
+      "social_media_3": "https://www.pinterest.com/shopify/_created/",
+      "social_media_4": "https://www.instagram.com/shopify/",
+      "social_media_5": "https://www.youtube.com/shopify",
+      "social_media_6": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": true,
+      "predictive_search_show_price": true,
+      "filter_tabs": "Size",
+      "filter_image_grid": "3",
+      "filter_image": "show-center",
+      "favicon": "",
+      "currency_code_enabled": false,
+      "roundness_input_buttons": 30,
+      "color_icons": "#fff",
+      "secondary_background": "#f6f7fa",
+      "colors_solid_button_labels": "rgba(0,0,0,0)",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "9932750d-e339-4919-b434-1159e7c6cce9": {
+              "type": "announcement",
+              "settings": {
+                "text": "ECO-FRIENDLY CLOTHING. 100% COTTON",
+                "link_name": "",
+                "link_url": "",
+                "color_background": "#000000",
+                "color_text": "#ffffff",
+                "color_link": "#ffffff"
+              }
+            }
+          },
+          "block_order": [
+            "9932750d-e339-4919-b434-1159e7c6cce9"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+              "type": "main_menu_icons",
+              "settings": {
+                "icon1": "dog",
+                "icon2": "cat_sm",
+                "icon3": "fish_sm",
+                "icon4": "mouse_sm",
+                "icon5": "snake_sm",
+                "icon6": "bird_sm",
+                "icon7": "brand_sm",
+                "icon8": "pharmacy_sm",
+                "icon9": "grooming_sm",
+                "icon10": "sale_sm",
+                "icon11": "new_sm"
+              }
+            }
+          },
+          "block_order": [
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e"
+          ],
+          "settings": {
+            "header_layout": "header-layout-classic",
+            "menu": "main-menu",
+            "secondary_menu": "",
+            "width": "page-wide",
+            "show_search": true,
+            "open_search": false,
+            "enable_sticky_header": true,
+            "show_color_line": false,
+            "menu_font_weight": "font-weight-normal",
+            "icons_color": "rgba(0,0,0,0)",
+            "logo_svg": "<svg width=\"170\" height=\"26\" viewbox=\"0 0 170 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.78488 0.629033L12.0428 21.1075H12.0772L20.2319 0.629033H24.0168V25.371H21.5394V3.87903H21.4706L12.6622 25.371H11.3546L2.54619 3.87903H2.47738V25.371H0V0.629033H3.78488Z\" fill=\"black\"></path>\n<path d=\"M42.2177 0.629033V25.371H39.7403V0.629033H42.2177Z\" fill=\"black\"></path>\n<path d=\"M61.0388 0.629033L75.2149 21.7016H75.2837V0.629033H77.7611V25.371H74.6644L60.4882 4.08871H60.4194V25.371H57.9421V0.629033H61.0388Z\" fill=\"black\"></path>\n<path d=\"M95.9596 0.629033V25.371H93.4822V0.629033H95.9596Z\" fill=\"black\"></path>\n<path d=\"M132.157 3.7043C134.565 6.15054 135.77 9.2491 135.77 13C135.77 16.7509 134.565 19.8611 132.157 22.3306C129.748 24.7769 126.72 26 123.073 26C119.426 26 116.398 24.7769 113.989 22.3306C111.581 19.8611 110.376 16.7509 110.376 13C110.376 9.2491 111.581 6.15054 113.989 3.7043C116.398 1.23477 119.426 0 123.073 0C126.72 0 129.748 1.23477 132.157 3.7043ZM130.367 20.6532C132.226 18.5565 133.155 16.0054 133.155 13C133.155 9.99462 132.226 7.44355 130.367 5.34677C128.532 3.25 126.101 2.20161 123.073 2.20161C120.045 2.20161 117.602 3.25 115.744 5.34677C113.909 7.44355 112.991 9.99462 112.991 13C112.991 16.0054 113.909 18.5565 115.744 20.6532C117.602 22.7267 120.045 23.7634 123.073 23.7634C126.101 23.7634 128.532 22.7267 130.367 20.6532Z\" fill=\"black\"></path>\n<path d=\"M153.278 0.629033L167.454 21.7016H167.523V0.629033H170V25.371H166.903L152.727 4.08871H152.658V25.371H150.181V0.629033H153.278Z\" fill=\"black\"></path>\n</svg>",
+            "logo_max_width": 160,
+            "logo_position": "center",
+            "logo_svg_mobile": "<svg width=\"170\" height=\"26\" viewbox=\"0 0 170 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3.78488 0.629033L12.0428 21.1075H12.0772L20.2319 0.629033H24.0168V25.371H21.5394V3.87903H21.4706L12.6622 25.371H11.3546L2.54619 3.87903H2.47738V25.371H0V0.629033H3.78488Z\" fill=\"black\"></path>\n<path d=\"M42.2177 0.629033V25.371H39.7403V0.629033H42.2177Z\" fill=\"black\"></path>\n<path d=\"M61.0388 0.629033L75.2149 21.7016H75.2837V0.629033H77.7611V25.371H74.6644L60.4882 4.08871H60.4194V25.371H57.9421V0.629033H61.0388Z\" fill=\"black\"></path>\n<path d=\"M95.9596 0.629033V25.371H93.4822V0.629033H95.9596Z\" fill=\"black\"></path>\n<path d=\"M132.157 3.7043C134.565 6.15054 135.77 9.2491 135.77 13C135.77 16.7509 134.565 19.8611 132.157 22.3306C129.748 24.7769 126.72 26 123.073 26C119.426 26 116.398 24.7769 113.989 22.3306C111.581 19.8611 110.376 16.7509 110.376 13C110.376 9.2491 111.581 6.15054 113.989 3.7043C116.398 1.23477 119.426 0 123.073 0C126.72 0 129.748 1.23477 132.157 3.7043ZM130.367 20.6532C132.226 18.5565 133.155 16.0054 133.155 13C133.155 9.99462 132.226 7.44355 130.367 5.34677C128.532 3.25 126.101 2.20161 123.073 2.20161C120.045 2.20161 117.602 3.25 115.744 5.34677C113.909 7.44355 112.991 9.99462 112.991 13C112.991 16.0054 113.909 18.5565 115.744 20.6532C117.602 22.7267 120.045 23.7634 123.073 23.7634C126.101 23.7634 128.532 22.7267 130.367 20.6532Z\" fill=\"black\"></path>\n<path d=\"M153.278 0.629033L167.454 21.7016H167.523V0.629033H170V25.371H166.903L152.727 4.08871H152.658V25.371H150.181V0.629033H153.278Z\" fill=\"black\"></path>\n</svg>",
+            "logo_max_width_mobile": 150,
+            "logo_position_mobile": "center",
+            "visible_items_count": 10,
+            "icons_size": 20,
+            "color_tile_base": "#f6f7fa",
+            "color_tile_active": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "sections_count": "1"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+              "type": "text",
+              "settings": {
+                "heading": "Can We Help You?",
+                "subtext": "<p>START CHAT<br/>From Mondays to Fridays from 09:00 to 18:00<br/><br/>TEL: (123) 456-7890<br/>From Mondays to Fridays from 09:00 to 18:00.<br/><br/><a href=\"/pages/contact\" title=\"Contact\">SEND EMAIL</a><br/>We'll reply asap</p>"
+              }
+            },
+            "23f65062-4bcd-453b-8e4b-52e7065a009c": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Company",
+                "menu": "main-menu"
+              }
+            },
+            "e1335254-3efe-462a-8a17-f847e812d187": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Help",
+                "menu": "main-menu"
+              }
+            },
+            "c103923d-e013-41a1-b43e-151a87948e30": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Theme",
+                "menu": "main-menu"
+              }
+            },
+            "5106f90d-bb04-4f76-b206-def03b71dfe5": {
+              "type": "newsletter",
+              "settings": {
+                "show_newsletter": false,
+                "heading": "Heading",
+                "subtext": "<p>Share store details, promotions, or brand content with your customers.</p>",
+                "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+                "show_social": true,
+                "heading_social": "Follow Us:"
+              }
+            }
+          },
+          "block_order": [
+            "a02006d6-62ca-4b97-83cf-132b52a8a539",
+            "23f65062-4bcd-453b-8e4b-52e7065a009c",
+            "e1335254-3efe-462a-8a17-f847e812d187",
+            "c103923d-e013-41a1-b43e-151a87948e30",
+            "5106f90d-bb04-4f76-b206-def03b71dfe5"
+          ],
+          "settings": {
+            "top_spacing": "medium",
+            "width": "page-wide",
+            "show_top_line": true,
+            "heading_tag": "h5",
+            "description_size": "body2",
+            "show_all_text_in_admin": true,
+            "enable_accordion": true,
+            "enable_country_selector": true,
+            "enable_language_selector": true,
+            "payment_enable": true,
+            "color_heading": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_links": "rgba(0,0,0,0)",
+            "color_input_bg": "rgba(0,0,0,0)",
+            "color_input_bg_active": "rgba(0,0,0,0)",
+            "background": "hide",
+            "color_background": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "show_color_line": true,
+            "width": "page-width",
+            "logo_svg": "",
+            "logo_max_width": 160
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "top_spacing": "medium",
+            "width": "page-width",
+            "show_top_line": true,
+            "show_social": true,
+            "color_text": "rgba(0,0,0,0)",
+            "color_links": "rgba(0,0,0,0)",
+            "background": "hide",
+            "color_background": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "documentation": {
+          "type": "documentation",
+          "settings": {}
+        },
+        "cart-drawer": {
+          "type": "cart-drawer",
+          "settings": {}
+        }
+      },
+      "content_for_index": []
+    },
+    "Minion": {
+      "color_base": "#142c73",
+      "color_accent": "#ffd701",
+      "color_background": "#fff",
+      "color_price": "#142c73",
+      "color_save_price": "#d20404",
+      "color_save_badge": "#d20404",
+      "color_featured_badge": "#ef6c00",
+      "image_overlay_color": "#142C73",
+      "type_header_font": "figtree_n6",
+      "heading_scale": 110,
+      "type_header_font2": "figtree_n6",
+      "heading_scale2": 110,
+      "type_body_font": "figtree_n3",
+      "body_scale": 105,
+      "enable_breadcrumb": true,
+      "animate_content_show": true,
+      "enable_zoom_animation": true,
+      "roundness": 8,
+      "page_width_main": "page-width",
+      "page_width": 1400,
+      "spacing_grid_horizontal": 20,
+      "top_normal_desktop": 90,
+      "top_medium_desktop": 70,
+      "top_normal_mobile": 80,
+      "top_medium_mobile": 60,
+      "swatches_design": "image",
+      "variants_names": "Color",
+      "enable_color_swatches": true,
+      "product_card_image_resize": "cover",
+      "price_size": 18,
+      "cart_icon": "basket",
+      "cart_type": "drawer",
+      "show_cart_note": true,
+      "show_add_discount_code": true,
+      "show_vendor": true,
+      "cart_drawer_collection": "featured-collection",
+      "enable_recently_viewed_products": true,
+      "recently_viewed_products_limit": 5,
+      "social_media_1": "https://twitter.com/shopify",
+      "social_media_2": "https://facebook.com/shopify",
+      "social_media_3": "https://pinterest.com/shopify",
+      "social_media_4": "http://instagram.com/shopify",
+      "social_media_5": "https://tiktok.com/@shopify",
+      "social_media_6": "https://shopify.tumblr.com",
+      "social_media_7": "https://www.snapchat.com/add/shopify",
+      "social_media_8": "https://www.youtube.com/shopify",
+      "social_media_9": "https://vimeo.com/shopify",
+      "social_media_10": "https://www.whatsapp.com/?lang=ru",
+      "favicon": "",
+      "currency_code_enabled": false,
+      "roundness_input_buttons": 8,
+      "secondary_background": "#f6f7fa",
+      "colors_solid_button_labels": "rgba(0,0,0,0)",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "9932750d-e339-4919-b434-1159e7c6cce9": {
+              "type": "announcement",
+              "settings": {
+                "text": "😼🥩 FREE SHIPPING - no code needed, just head for checkout!",
+                "link_name": "Learn more",
+                "link_url": "",
+                "color_background": "#deefff",
+                "color_text": "rgba(0,0,0,0)",
+                "color_link": "#142c73"
+              }
+            }
+          },
+          "block_order": [
+            "9932750d-e339-4919-b434-1159e7c6cce9"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Cat",
+                "grid": "col-3",
+                "show_banner": true,
+                "banner_link": "",
+                "heading": "Lorem ipsum dolor",
+                "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+                "button_label": "Shop Now!"
+              }
+            },
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+              "type": "main_menu_icons",
+              "settings": {
+                "icon1": "dog_sm",
+                "icon2": "cat_sm",
+                "icon3": "fish_sm",
+                "icon4": "mouse_sm",
+                "icon5": "snake_sm",
+                "icon6": "bird_sm",
+                "icon7": "brand_sm",
+                "icon8": "pharmacy_sm",
+                "icon9": "grooming_sm",
+                "icon10": "sale_sm",
+                "icon11": "new_sm"
+              }
+            },
+            "1901cb37-14a2-4d76-81c5-51750872f161": {
+              "type": "mega_menu",
+              "settings": {
+                "mega_menu_item_name": "Dog",
+                "grid": "col-3",
+                "show_banner": true,
+                "banner_link": "",
+                "image": "",
+                "heading": "Free shipping",
+                "text": "No code needed, just head for checkout!",
+                "button_label": "Shop now!"
+              }
+            }
+          },
+          "block_order": [
+            "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
+            "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
+            "1901cb37-14a2-4d76-81c5-51750872f161"
+          ],
+          "settings": {
+            "header_layout": "header-layout-vertical",
+            "menu": "main-menu",
+            "secondary_menu": "main-menu",
+            "width": "page-width",
+            "show_search": true,
+            "open_search": true,
+            "enable_sticky_header": true,
+            "show_color_line": true,
+            "menu_font_weight": "strong",
+            "icons_color": "rgba(0,0,0,0)",
+            "logo_svg": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517324 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"url(#paint0_linear_2376_18045)\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517324 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"url(#paint1_linear_2376_18045)\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint2_linear_2376_18045)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"url(#paint3_linear_2376_18045)\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint4_linear_2376_18045)\"></path>\n<path d=\"M18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20Z\" fill=\"#142C73\"></path>\n<path d=\"M28 20C28 21.1046 28.8954 22 30 22C31.1046 22 32 21.1046 32 20C32 18.8954 31.1046 18 30 18C28.8954 18 28 18.8954 28 20Z\" fill=\"#142C73\"></path>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.4561 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.4561 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_2376_18045\" x1=\"11.3889\" y1=\"35.3846\" x2=\"11.3889\" y2=\"0\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_2376_18045\" x1=\"38.6111\" y1=\"35.3846\" x2=\"38.6111\" y2=\"0\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint2_linear_2376_18045\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint3_linear_2376_18045\" x1=\"27.5\" y1=\"53\" x2=\"27.5\" y2=\"7\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint4_linear_2376_18045\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+            "logo_max_width": 170,
+            "logo_position": "center",
+            "logo_svg_mobile": "<svg width=\"160\" height=\"33\" viewbox=\"0 0 160 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.4776 12.3463C19.4825 14.7729 20 17.3736 20 20C17.3737 20 14.7727 19.4827 12.3463 18.4776C9.91985 17.4725 7.7151 15.9993 5.85785 14.1421C4.00061 12.285 2.52739 10.0802 1.52242 7.65368C0.517451 5.22715 0 2.62645 0 0C2.62632 0 5.22727 0.517324 7.65371 1.52242C10.0802 2.52749 12.2849 4.0007 14.1421 5.85785C15.9994 7.71503 17.4726 9.91981 18.4776 12.3463Z\" fill=\"url(#paint0_linear_4400_6106)\"></path>\n<path d=\"M31.5224 12.3463C30.5175 14.7729 30 17.3736 30 20C32.6263 20 35.2273 19.4827 37.6537 18.4776C40.0802 17.4725 42.2849 15.9993 44.1421 14.1421C45.9994 12.285 47.4726 10.0802 48.4776 7.65368C49.4825 5.22715 50 2.62645 50 0C47.3737 0 44.7727 0.517324 42.3463 1.52242C39.9198 2.52749 37.7151 4.0007 35.8579 5.85785C34.0006 7.71503 32.5274 9.91981 31.5224 12.3463Z\" fill=\"url(#paint1_linear_4400_6106)\"></path>\n<path d=\"M40 20C40 25.5228 35.5228 30 30 30H20C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C21.8214 10 23.5291 10.487 25 11.3378C26.4709 10.487 28.1786 10 30 10C35.5228 10 40 14.4772 40 20Z\" fill=\"url(#paint2_linear_4400_6106)\"></path>\n<path d=\"M43 20C43 27.1797 37.1797 33 30 33H19V32.9621C12.2876 32.4515 7 26.8432 7 20C7 12.8203 12.8203 7 20 7C21.7718 7 23.4608 7.35446 25 7.99633C26.5392 7.35446 28.2282 7 30 7C37.1797 7 43 12.8203 43 20Z\" fill=\"url(#paint3_linear_4400_6106)\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30 29H20C15.0294 29 11 24.9706 11 20C11 15.0294 15.0294 11 20 11C21.8495 11 23.5703 11.5593 25 12.5159C26.4297 11.5593 28.1505 11 30 11C34.9706 11 39 15.0294 39 20C39 24.9706 34.9706 29 30 29Z\" fill=\"white\"></path>\n<path d=\"M30 27H20C16.134 27 13 23.866 13 20C13 16.134 16.134 13 20 13C21.9587 13 23.7295 13.8045 25 15.101C26.2705 13.8045 28.0413 13 30 13C33.866 13 37 16.134 37 20C37 23.866 33.866 27 30 27Z\" fill=\"url(#paint4_linear_4400_6106)\"></path>\n<path d=\"M18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20Z\" fill=\"#142C73\"></path>\n<path d=\"M28 20C28 21.1046 28.8954 22 30 22C31.1046 22 32 21.1046 32 20C32 18.8954 31.1046 18 30 18C28.8954 18 28 18.8954 28 20Z\" fill=\"#142C73\"></path>\n<path d=\"M80.8011 28.4758H75.5119V19.5636C75.5119 17.27 74.7486 16.1232 73.222 16.1232C72.362 16.1232 71.6955 16.4727 71.2225 17.1717C70.7709 17.8488 70.5452 18.6789 70.5452 19.6619V28.4758H65.2559V19.1704C65.2559 17.1389 64.4927 16.1232 62.9661 16.1232C62.1491 16.1232 61.504 16.4618 61.031 17.1389C60.558 17.7942 60.3215 18.6243 60.3215 19.6291V28.4758H55V12.1586H60.128V14.4194H60.1925C60.601 13.6549 61.2245 13.0105 62.0631 12.4862C62.9016 11.962 63.8799 11.6999 64.9979 11.6999C67.277 11.6999 68.8896 12.6282 69.8356 14.4849C70.9967 12.6282 72.706 11.6999 74.9636 11.6999C76.3397 11.6999 77.4792 12.0603 78.3823 12.7811C79.3068 13.4801 79.9411 14.3102 80.2851 15.2713C80.6291 16.2324 80.8011 17.27 80.8011 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M90.5355 6.94889C90.5355 7.77894 90.2345 8.47794 89.6325 9.04587C89.0519 9.61381 88.3424 9.89777 87.5039 9.89777C86.6653 9.89777 85.9451 9.61381 85.343 9.04587C84.7625 8.4561 84.4722 7.7571 84.4722 6.94889C84.4722 6.16252 84.7625 5.47444 85.343 4.88467C85.9451 4.29489 86.6653 4 87.5039 4C88.3424 4 89.0519 4.29489 89.6325 4.88467C90.2345 5.4526 90.5355 6.14067 90.5355 6.94889ZM90.1485 28.4758H84.8593V12.1586H90.1485V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M110.206 28.4758H104.884V19.5636C104.884 17.27 104.089 16.1232 102.498 16.1232C101.594 16.1232 100.896 16.4618 100.401 17.1389C99.9066 17.8161 99.6594 18.6461 99.6594 19.6291V28.4758H94.3379V12.1586H99.4659V14.4194H99.5304C99.9174 13.6549 100.541 13.0105 101.401 12.4862C102.282 11.962 103.261 11.6999 104.336 11.6999C106.335 11.6999 107.808 12.3552 108.754 13.6658C109.722 14.9546 110.206 16.5273 110.206 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M119.952 6.94889C119.952 7.77894 119.651 8.47794 119.049 9.04587C118.469 9.61381 117.759 9.89777 116.921 9.89777C116.082 9.89777 115.362 9.61381 114.76 9.04587C114.179 8.4561 113.889 7.7571 113.889 6.94889C113.889 6.16252 114.179 5.47444 114.76 4.88467C115.362 4.29489 116.082 4 116.921 4C117.759 4 118.469 4.29489 119.049 4.88467C119.651 5.4526 119.952 6.14067 119.952 6.94889ZM119.565 28.4758H114.276V12.1586H119.565V28.4758Z\" fill=\"#142C73\"></path>\n<path d=\"M138.203 13.9934C139.923 15.5662 140.783 17.6523 140.783 20.2516C140.783 22.851 139.923 24.9589 138.203 26.5754C136.483 28.1918 134.365 29 131.85 29C129.356 29 127.249 28.1918 125.529 26.5754C123.808 24.9589 122.948 22.851 122.948 20.2516C122.948 17.6523 123.808 15.5662 125.529 13.9934C127.249 12.4207 129.356 11.6343 131.85 11.6343C134.365 11.6343 136.483 12.4207 138.203 13.9934ZM135.688 20.2516C135.688 19.1376 135.344 18.1656 134.656 17.3355C133.968 16.5055 133.032 16.0904 131.85 16.0904C130.667 16.0904 129.743 16.5055 129.076 17.3355C128.41 18.1437 128.076 19.1158 128.076 20.2516C128.076 21.3875 128.41 22.3814 129.076 23.2333C129.764 24.0633 130.7 24.4784 131.882 24.4784C133.065 24.4784 133.989 24.0633 134.656 23.2333C135.344 22.3814 135.688 21.3875 135.688 20.2516Z\" fill=\"#142C73\"></path>\n<path d=\"M160 28.4758H154.679V19.5636C154.679 17.27 153.883 16.1232 152.292 16.1232C151.389 16.1232 150.69 16.4618 150.196 17.1389C149.701 17.8161 149.454 18.6461 149.454 19.6291V28.4758H144.132V12.1586H149.26V14.4194H149.325C149.712 13.6549 150.335 13.0105 151.195 12.4862C152.077 11.962 153.055 11.6999 154.13 11.6999C156.13 11.6999 157.603 12.3552 158.549 13.6658C159.516 14.9546 160 16.5273 160 18.384V28.4758Z\" fill=\"#142C73\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_4400_6106\" x1=\"11.3889\" y1=\"35.3846\" x2=\"11.3889\" y2=\"0\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint1_linear_4400_6106\" x1=\"38.6111\" y1=\"35.3846\" x2=\"38.6111\" y2=\"0\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint2_linear_4400_6106\" x1=\"26.25\" y1=\"-5.55556\" x2=\"26.25\" y2=\"38.8889\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint3_linear_4400_6106\" x1=\"27.5\" y1=\"53\" x2=\"27.5\" y2=\"7\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#FF8C1A\"></stop>\n<stop offset=\"1\" stop-color=\"#FFD701\"></stop>\n</lineargradient>\n<lineargradient id=\"paint4_linear_4400_6106\" x1=\"25\" y1=\"13\" x2=\"25\" y2=\"27\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#E6EAF5\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</lineargradient>\n</defs>\n</svg>",
+            "logo_max_width_mobile": 150,
+            "logo_position_mobile": "center",
+            "visible_items_count": 10,
+            "icons_size": 20,
+            "color_tile_base": "#f6f7fa",
+            "color_tile_active": "#142c73",
+            "color_button": "rgba(0,0,0,0)",
+            "sections_count": "1"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "645b3ef8-625f-4882-b4ec-0099eac178ff": {
+              "type": "link_list",
+              "settings": {
+                "heading": "CORPORATE",
+                "menu": "main-menu"
+              }
+            },
+            "c103923d-e013-41a1-b43e-151a87948e30": {
+              "type": "link_list",
+              "settings": {
+                "heading": "SERVICES",
+                "menu": "main-menu"
+              }
+            },
+            "a02006d6-62ca-4b97-83cf-132b52a8a539": {
+              "type": "text",
+              "settings": {
+                "heading": "NEED ASSISTANCE?",
+                "subtext": "<p>📞 Tel: (123) 456-7890<br/><br/>7895 Piermont Dr NE Albuquerque,<br/>NM 198866, USA<br/><br/>Our hours of operation are <br/>Monday-Thursday: 10 AM-7 PM EST, <br/>Friday: 10 AM-6 PM EST, <br/>Saturday-Sunday: 1 PM-6 PM EST.</p>"
+              }
+            },
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
+              "type": "newsletter",
+              "settings": {
+                "show_newsletter": true,
+                "heading": "NEWSLETTER SIGNUP",
+                "subtext": "<p>Sign up for our e-mail and be the first who know our special offers!</p>",
+                "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"/\"><strong>Privacy Policy</strong></a> and <a href=\"/\"><strong>Terms and Conditions</strong></a>.</p>",
+                "show_social": true,
+                "heading_social": "FOLLOW US:"
+              }
+            }
+          },
+          "block_order": [
+            "645b3ef8-625f-4882-b4ec-0099eac178ff",
+            "c103923d-e013-41a1-b43e-151a87948e30",
+            "a02006d6-62ca-4b97-83cf-132b52a8a539",
+            "359796ef-2c18-41e5-baf4-b897ea8ba40b"
+          ],
+          "settings": {
+            "top_spacing": "none",
+            "width": "page-width",
+            "show_top_line": false,
+            "heading_tag": "h5",
+            "description_size": "body2",
+            "show_all_text_in_admin": false,
+            "enable_accordion": true,
+            "enable_country_selector": true,
+            "enable_language_selector": true,
+            "payment_enable": true,
+            "color_heading": "#142c73",
+            "color_text": "#142c73",
+            "color_links": "rgba(0,0,0,0)",
+            "color_input_bg": "rgba(0,0,0,0)",
+            "color_input_bg_active": "rgba(0,0,0,0)",
+            "background": "hide",
+            "color_background": "rgba(0,0,0,0)",
+            "gradient": ""
+          }
+        },
+        "documentation": {
+          "type": "documentation",
+          "settings": {}
+        },
+        "cart-drawer": {
+          "type": "cart-drawer",
+          "settings": {}
+        }
+      },
+      "content_for_index": []
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".hero-text {max-width: 34rem;}",
+      ".hero-eyebrow {font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; color: #8a8578; margin: 0 0 0.75rem; text-transform: uppercase;}",
+      ".hero-eyebrow .paw {font-size: 0.9em;}",
+      ".hero-heading {font-family: \"Baloo 2\", \"Fredoka\", sans-serif; /* swap for your theme's display font */ font-weight: 700; font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 1.05; color: #2c2a28; margin: 0 0 1rem;}",
+      ".hero-heading--accent {color: #b5754a; /* terracotta accent */}",
+      ".hero-subtext {font-size: 1.05rem; line-height: 1.5; color: #6f6a63; margin: 0; max-width: 30rem;}"
+    ]
+  }
+}

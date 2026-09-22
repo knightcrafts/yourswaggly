@@ -1,0 +1,104 @@
+{% comment %}
+    Sticky add to cart modal
+
+    Accepts:
+    - section: {Object} Section object
+    - product: {Object} Product main Object.
+    - current_variant: {Object} Selected or first availabled product variant
+    - enable_sticky_addtocart: {Boolean} Enable/disable this snippent
+
+    Usage:
+	{%- render "sticky-add-to-cart",
+    			section: section,
+				product: product,
+				current_variant: current_variant,
+				enable_sticky_addtocart: enable_sticky_addtocart -%}
+{% endcomment %}
+
+{%- if enable_sticky_addtocart -%}
+
+{%- if settings.animate_content_show -%}
+<link rel="stylesheet" href="{{ 'component-sticky-addtocart.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-sticky-addtocart.css' | asset_url | stylesheet_tag }}</noscript>
+{%- else -%}
+{{ 'component-sticky-addtocart.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- case section.settings.media_size -%}
+{%- when 'small' -%}
+{%- assign right_column = "cart-right-large" -%}
+{%- when 'medium' -%}
+{%- assign right_column = "cart-right-medium" -%}
+{%- when 'large' -%}
+{%- assign right_column = "cart-right-small" -%}
+{%- endcase -%}
+
+<sticky-cart-modal class="sticky-cart-modal" id="sticky-cart-{{ section.id }}" data-section="{{ section.id }}">
+  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+    <div class="grid justify-content-center">
+      <div class="col-st-12 col-8 sticky-cart">
+        <div class="sticky-cart-media">
+          {%- assign image = current_variant.featured_image | default: product.featured_image -%}
+          {% if image %}
+          {% assign imagealt = image.alt | default: product.title | escape %}
+            <img src="{{ image | image_url: width: 80 }}"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                loading="lazy"
+                alt="{{ imagealt | escape }}"
+                {% render "additional-image-attributes" %}
+            >
+          {% endif %}
+          <div class="sticky-cart-media__info">
+            <div class="sticky-cart-media__text">
+              <p class="mt0 h6 sticky-cart__heading">{{ product.title | escape }}</p>
+              {%- unless product.has_only_default_variant -%}
+              <p class="body3 mt5">{{ product.selected_or_first_available_variant.title }}</p>
+              {%- endunless -%}
+            </div>
+            {%- assign blockitem = section.blocks | where: "type", "price" -%}
+            {%- if blockitem != empty -%}
+            {%- render 'main-product-price', product: product, use_variant: true -%}
+            {%- endif -%%}
+          </div>
+        </div>
+        
+        <div class="sticky-cart-right {{ right_column }}">
+          <product-form class="product-form sticky-cart-button__container">       
+            <div class="product-form__error-message-wrapper" role="alert" hidden>
+              {%- render "icon-attention" -%}
+              <span class="product-form__error-message"></span>
+            </div>
+            
+            {%- form 'product', product, id: product_form_id, class: 'form sticky-cart-button__form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+            <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+
+            <button type="submit"
+                    name="add"
+                    class="sticky-cart-button product-form__submit btn btn_zoom{% if block.settings.button_type_product == "only_text" %} button_type_product--text{% endif %}{% if block.settings.button_type_product == "only_icon" %} product-form__submit__hide-text{% endif %}"
+                    {% if current_variant.available == false %}disabled{% endif %}
+                    >
+              {%- render "icon-cart" -%}
+              <span>
+                {%- if current_variant.available and block.settings.button_type_product != "only_icon" -%}
+                {{ 'products.product.add_to_cart' | t }}
+                {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
+              </span>
+
+              <div class="loading-overlay__spinner hidden">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+
+            </button>
+            {%- endform -%}
+          </product-form>
+        </div>
+      </div>
+    </div>
+  </div>
+</sticky-cart-modal>
+{%- endif -%}

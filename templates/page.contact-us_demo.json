@@ -1,0 +1,157 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width"
+      }
+    },
+    "1642517885e89622c3": {
+      "type": "text",
+      "settings": {
+        "subheading": "THEME FEATURES",
+        "heading": "The next generation in customizability and speed",
+        "description": "<p>Chameleon Shopify theme comes with flexible, well-designed blocks for images, products, video, quotes, and more.</p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "#142c73",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_width": "content_width",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1642517981c7899a65": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16425179810c792857-0": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        },
+        "16425179810c792857-1": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        },
+        "16425179810c792857-2": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16425179810c792857-0",
+        "16425179810c792857-1",
+        "16425179810c792857-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "164251821746f03fa2": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "subheading": "SUBHEADING",
+        "heading": "Heading",
+        "heading_aligment": "text-center",
+        "link_name": "Show All",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "post_limit": 3,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "excerpt_size": "normal",
+        "show_image": true,
+        "truncate_post_heading": false,
+        "hover_underline": false,
+        "showtags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_comment_count": true,
+        "excerpt": "show",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_link": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_author_date_comments": "rgba(0,0,0,0)",
+        "color_heading_post": "rgba(0,0,0,0)",
+        "color_excerpt": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1642517885e89622c3",
+    "1642517981c7899a65",
+    "164251821746f03fa2"
+  ]
+}

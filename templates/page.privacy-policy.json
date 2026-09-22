@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "1642517885e89622c3": {
+      "type": "text",
+      "settings": {
+        "subheading": "",
+        "heading": "Privacy policy",
+        "description": "",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "small",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "content_width",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1642517981c7899a65": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16425179810c792857-0": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        },
+        "16425179810c792857-1": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        },
+        "16425179810c792857-2": {
+          "type": "blurb_image",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "Heading",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16425179810c792857-0",
+        "16425179810c792857-1",
+        "16425179810c792857-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "164251821746f03fa2": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "blog": "news",
+        "subheading": "SUBHEADING",
+        "heading": "Heading",
+        "heading_aligment": "text-center",
+        "link_name": "Show All",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "post_limit": 3,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "excerpt_size": "normal",
+        "show_image": true,
+        "truncate_post_heading": false,
+        "hover_underline": false,
+        "showtags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_comment_count": true,
+        "excerpt": "show",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_link": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_author_date_comments": "rgba(0,0,0,0)",
+        "color_heading_post": "rgba(0,0,0,0)",
+        "color_excerpt": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "16498456223e194a00": {
+      "type": "accordion",
+      "blocks": {
+        "164984562230330ed6-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Information you provide to us",
+            "description": "<p>We collect your personal information when you provide it to us, such as by purchasing products or Services from us; using or registering for our Services; leaving reviews or ratings of our products on our Sites; or when you contact or communicate with us. The personal information we collect directly from you may include your name, online usernames or account identifiers, postal address, zip code, email address, telephone number, gender, date of birth/age, and location information. We also collect certain categories of personal information from you in connection with specific interactions you have with us. For example:<br/><br/>• When you make a purchase or use the Services<br/>• When you create an account, download our Apps, or rate/review our products<br/>• When you visit a Chameleon location, use veterinary services, or use pet insurance<br/>• When you interact with us online, over social media, or in public</p>"
+          }
+        },
+        "164984562230330ed6-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Automatically collected information",
+            "description": "<p>Like many businesses, we and our service providers collect certain information about you through automated means when we interact with you.<br/><br/>• Automated data collection technologies we use<br/>• Information these technologies automatically collect<br/>• Location information</p>"
+          }
+        },
+        "164984562230330ed6-2": {
+          "type": "text",
+          "settings": {
+            "heading": "Information collected from other sources",
+            "description": "<p>We also acquire personal information from other sources who have the right to provide such information to us. For example, we may acquire address information from these sources to validate or update your postal address or to prevent fraud; demographic and lifestyle information to help us analyze our business’ performance or improve the Services; and information about your online and offline transactions and purchases to help us analyze or improve the Services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "164984562230330ed6-0",
+        "164984562230330ed6-1",
+        "164984562230330ed6-2"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "Information we collect",
+        "heading_aligment": "text-center",
+        "top_spacing": "medium",
+        "width": "page-width",
+        "disable_accordion": true,
+        "heading_tag": "h4",
+        "description_size": "body2",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1649845674c312ca22": {
+      "type": "accordion",
+      "blocks": {
+        "1649845674f67d928c-0": {
+          "type": "text",
+          "settings": {
+            "heading": "To provide and improve the Services.",
+            "description": "<p>We use your personal information – such as your address and transaction details – to fulfill, validate, manage, deliver, and/or track your orders and transactions; process payments; process and verify returns and refunds; provide and improve our customer service; and to facilitate curbside pick-up and delivery services.</p>"
+          }
+        },
+        "1649845674f67d928c-1": {
+          "type": "text",
+          "settings": {
+            "heading": "To communicate with you",
+            "description": "<p>For example, we use your personal information – such as your email address, telephone number, online usernames, and other contact information – to respond to your inquiries; to provide you with information about your account, purchases, transactions, Services, and the Program; to conduct surveys, sweepstakes, contests, focus groups, and promotions; to facilitate the treatment of your pet or other pet health-related services.</p>"
+          }
+        },
+        "1649845674f67d928c-2": {
+          "type": "text",
+          "settings": {
+            "heading": "To provide you personalized advertising, marketing, advocacy options, and other information we think may be of interest to you.",
+            "description": "<p>For example, we use your personal information – such as your IP address and device identifiers – to help us or our service providers deliver interest-based advertising and content that is tailored to your individual interests. This includes advertising networks and our data analytics service providers who facilitate customized advertising and marketing services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1649845674f67d928c-0",
+        "1649845674f67d928c-1",
+        "1649845674f67d928c-2"
+      ],
+      "settings": {
+        "show_all_text_in_admin": true,
+        "subheading": "",
+        "heading": "How we use your information",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "disable_accordion": true,
+        "heading_tag": "h4",
+        "description_size": "body2",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_heading_accordion": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_lines": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1650983022d4338c71": {
+      "type": "ticker",
+      "settings": {
+        "top_spacing": "normal",
+        "ticker_time": 15,
+        "direction": "ticker-to-left",
+        "text_size": "normal",
+        "url": "",
+        "text": "<p><strong>Coronavirus note</strong>: Veterinary services are provided in accordance with social distancing measures and applicable US government regulations.</p>",
+        "show_icon": "svg",
+        "icon_name": "virus_sm",
+        "color_svg": "#142c73",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "color",
+        "color_background": "#deefff",
+        "gradient": "",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1642517885e89622c3",
+    "1642517981c7899a65",
+    "164251821746f03fa2",
+    "16498456223e194a00",
+    "1649845674c312ca22",
+    "1650983022d4338c71"
+  ]
+}
