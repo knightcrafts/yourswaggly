@@ -1,0 +1,348 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-cats top-spacing-{{ s.top_spacing }}" style="--wg-cta-bg: {{ s.cta_bg }}; --wg-cta-color: {{ s.cta_color }}; --wg-panel-bg: {{ s.panel_bg }};">
+  <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
+    <div class="waggly-cats__panel">
+      {%- if s.show_paws -%}
+        <div class="waggly-cats__paws" aria-hidden="true">
+          <svg class="waggly-cats__paw waggly-cats__paw--1" viewBox="0 0 48 48" fill="currentColor" focusable="false"><ellipse cx="24" cy="34" rx="12" ry="9"/><circle cx="10" cy="20" r="5"/><circle cx="20" cy="12" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="40" cy="20" r="5"/></svg>
+          <svg class="waggly-cats__paw waggly-cats__paw--2" viewBox="0 0 48 48" fill="currentColor" focusable="false"><ellipse cx="24" cy="34" rx="12" ry="9"/><circle cx="10" cy="20" r="5"/><circle cx="20" cy="12" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="40" cy="20" r="5"/></svg>
+          <svg class="waggly-cats__paw waggly-cats__paw--3" viewBox="0 0 48 48" fill="currentColor" focusable="false"><ellipse cx="24" cy="34" rx="12" ry="9"/><circle cx="10" cy="20" r="5"/><circle cx="20" cy="12" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="40" cy="20" r="5"/></svg>
+          <svg class="waggly-cats__paw waggly-cats__paw--4" viewBox="0 0 48 48" fill="currentColor" focusable="false"><ellipse cx="24" cy="34" rx="12" ry="9"/><circle cx="10" cy="20" r="5"/><circle cx="20" cy="12" r="5"/><circle cx="32" cy="12" r="5"/><circle cx="40" cy="20" r="5"/></svg>
+          <svg class="waggly-cats__heart" viewBox="0 0 32 29" fill="none" stroke="currentColor" stroke-width="2.4" focusable="false"><path d="M16 27S3 19 3 10a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 9-13 17-13 17Z"/></svg>
+        </div>
+      {%- endif -%}
+
+      <div class="waggly-cats__content">
+        {%- if s.heading != blank -%}
+          <h2 class="waggly-cats__heading">{{ s.heading | escape }}</h2>
+        {%- endif -%}
+
+        {%- if s.enable_tabs -%}
+          <input class="waggly-cats__input" type="radio" id="wg-dogs-{{ section.id }}" name="wg-tab-{{ section.id }}" value="dogs" checked>
+          <input class="waggly-cats__input" type="radio" id="wg-cats-{{ section.id }}" name="wg-tab-{{ section.id }}" value="cats">
+          <div class="waggly-cats__tabs" role="tablist" aria-label="{{ s.heading | escape }}">
+            <label class="waggly-cats__tab waggly-cats__tab--dogs" for="wg-dogs-{{ section.id }}">{{ s.tab1_label | escape }}</label>
+            <label class="waggly-cats__tab waggly-cats__tab--cats" for="wg-cats-{{ section.id }}">{{ s.tab2_label | escape }}</label>
+          </div>
+        {%- endif -%}
+
+        {%- if section.blocks.size > 0 -%}
+          <waggly-cats-slider class="waggly-cats__viewport">
+            {%- if s.show_arrows -%}
+              <button type="button" class="waggly-cats__arrow waggly-cats__arrow--prev" aria-label="Previous">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            {%- endif -%}
+
+            <div class="waggly-cats__track">
+              {%- for block in section.blocks -%}
+                <article class="wg-card wg-card--{{ block.settings.tab }}" style="--card-bg: {{ block.settings.bg_color }};" {{ block.shopify_attributes }}>
+                  {%- if block.settings.heading != blank -%}
+                    <h3 class="wg-card__title">{{ block.settings.heading | escape }}</h3>
+                  {%- endif -%}
+                  <div class="wg-card__media">
+                    {%- if block.settings.image != blank -%}
+                      {%- assign img = block.settings.image -%}
+                      <img class="wg-card__image"
+                           src="{{ img | image_url: width: 500 }}"
+                           srcset="{{ img | image_url: width: 300 }} 300w, {{ img | image_url: width: 500 }} 500w, {{ img | image_url: width: 700 }} 700w"
+                           sizes="(min-width: 990px) 22vw, (min-width: 577px) 44vw, 78vw"
+                           width="{{ img.width }}" height="{{ img.height }}"
+                           alt="{{ img.alt | escape }}" loading="lazy">
+                    {%- else -%}
+                      <div class="wg-card__image wg-card__image--placeholder">
+                        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                  {%- if block.settings.cta_label != blank -%}
+                    <a class="wg-card__cta"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+                      <span>{{ block.settings.cta_label | escape }}</span>
+                      <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  {%- endif -%}
+                </article>
+              {%- endfor -%}
+            </div>
+
+            {%- if s.show_arrows -%}
+              <button type="button" class="waggly-cats__arrow waggly-cats__arrow--next" aria-label="Next">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            {%- endif -%}
+          </waggly-cats-slider>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% javascript %}
+  class WagglyCatsSlider extends HTMLElement {
+    constructor() {
+      super();
+      this.track = this.querySelector('.waggly-cats__track');
+      this.prev = this.querySelector('.waggly-cats__arrow--prev');
+      this.next = this.querySelector('.waggly-cats__arrow--next');
+      if (!this.track) return;
+      if (this.prev) this.prev.addEventListener('click', () => this.move(-1));
+      if (this.next) this.next.addEventListener('click', () => this.move(1));
+      this.track.addEventListener('scroll', () => this.update());
+      window.addEventListener('resize', () => this.update());
+      const section = this.closest('.waggly-cats');
+      if (section) {
+        section.querySelectorAll('.waggly-cats__input').forEach((radio) => {
+          radio.addEventListener('change', () => {
+            this.track.scrollLeft = 0;
+            this.update();
+          });
+        });
+      }
+      this.update();
+    }
+    step() {
+      const card = this.track.querySelector('.wg-card');
+      return card ? card.offsetWidth + 20 : 300;
+    }
+    move(direction) {
+      this.track.scrollBy({ left: direction * this.step(), behavior: 'smooth' });
+    }
+    update() {
+      const max = this.track.scrollWidth - this.track.clientWidth - 2;
+      if (this.prev) this.prev.disabled = this.track.scrollLeft <= 0;
+      if (this.next) this.next.disabled = this.track.scrollLeft >= max;
+    }
+  }
+  customElements.define('waggly-cats-slider', WagglyCatsSlider);
+{% endjavascript %}
+
+{% stylesheet %}
+.waggly-cats { position: relative; overflow: hidden; }
+.waggly-cats__panel {
+  position: relative;
+  overflow: hidden;
+  background: var(--wg-panel-bg, #ffffff);
+  border-radius: 36px;
+  padding: 40px 40px 44px;
+  box-shadow: 0 12px 44px rgba(84, 67, 64, .05);
+}
+.waggly-cats__paws { position: absolute; inset: 0; z-index: 0; color: var(--color-base); pointer-events: none; }
+.waggly-cats__paw { position: absolute; width: 58px; opacity: .06; }
+.waggly-cats__paw--1 { top: 30px; left: 3%; transform: rotate(-18deg); }
+.waggly-cats__paw--2 { top: 18px; right: 6%; width: 46px; transform: rotate(14deg); }
+.waggly-cats__paw--3 { top: 44%; right: 2%; width: 40px; transform: rotate(26deg); }
+.waggly-cats__paw--4 { bottom: 22px; left: 2%; width: 44px; transform: rotate(8deg); }
+.waggly-cats__heart { position: absolute; width: 30px; top: 12%; left: 6%; opacity: .18; color: var(--color-accent); }
+
+.waggly-cats__content { position: relative; z-index: 1; }
+.waggly-cats__heading {
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-base);
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  letter-spacing: .01em;
+  margin: 0 0 22px;
+}
+
+.waggly-cats__input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.waggly-cats__tabs {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  margin: 0 auto 28px;
+  border-radius: 999px;
+  background: rgba(84, 67, 64, .08);
+  width: max-content;
+  max-width: 100%;
+}
+.waggly-cats__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-base);
+  transition: background var(--duration-short, .2s) ease, color var(--duration-short, .2s) ease;
+}
+.waggly-cats__input[value="dogs"]:checked ~ .waggly-cats__tabs .waggly-cats__tab--dogs,
+.waggly-cats__input[value="cats"]:checked ~ .waggly-cats__tabs .waggly-cats__tab--cats {
+  background: var(--color-base);
+  color: #fff;
+}
+.waggly-cats__input:focus-visible ~ .waggly-cats__tabs .waggly-cats__tab { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+.waggly-cats__viewport { display: block; position: relative; padding: 0 46px; }
+.waggly-cats__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.waggly-cats__track::-webkit-scrollbar { display: none; }
+.waggly-cats__input[value="dogs"]:checked ~ .waggly-cats__viewport .wg-card--cats,
+.waggly-cats__input[value="cats"]:checked ~ .waggly-cats__viewport .wg-card--dogs { display: none; }
+
+.waggly-cats__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--color-base);
+  box-shadow: 0 4px 16px rgba(84, 67, 64, .16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity var(--duration-short, .2s) ease;
+}
+.waggly-cats__arrow svg { width: 16px; height: 16px; }
+.waggly-cats__arrow--prev { left: 0; }
+.waggly-cats__arrow--next { right: 0; }
+.waggly-cats__arrow[disabled] { opacity: .3; cursor: default; box-shadow: none; }
+
+.wg-card {
+  flex: 0 0 calc((100% - 60px) / 4);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg, #d3a5d8);
+  border-radius: 24px;
+  padding: 22px 20px 24px;
+  min-height: 300px;
+}
+.wg-card__title {
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.1;
+  color: #2b2b2b;
+  margin: 0 0 10px;
+}
+.wg-card__media { flex: 1 1 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+.wg-card__image { max-width: 100%; height: auto; display: block; }
+.wg-card__image--placeholder { width: 100%; border-radius: 16px; overflow: hidden; }
+.wg-card__image--placeholder .placeholder-svg { width: 100%; height: auto; display: block; opacity: .5; }
+.wg-card__cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--wg-cta-bg, #ffffff);
+  color: var(--wg-cta-color, #544340);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--duration-short, .2s) ease;
+}
+.wg-card__cta:hover { transform: translateY(-2px); }
+.wg-card__cta[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+
+@media (max-width: 989px) {
+  .waggly-cats__panel { padding: 30px 24px 34px; }
+  .waggly-cats__viewport { padding: 0; }
+  .waggly-cats__arrow { display: none; }
+  .wg-card { flex-basis: calc((100% - 20px) / 2); }
+}
+@media (max-width: 576px) {
+  .waggly-cats__panel { padding: 24px 16px 28px; border-radius: 26px; }
+  .wg-card { flex-basis: 78%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly categories",
+  "tag": "section",
+  "class": "waggly-cats-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Explore The Best For Your Pet" },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-wide", "label": "Full width" },
+        { "value": "page-width", "label": "Boxed" }
+      ],
+      "default": "page-wide"
+    },
+    { "type": "checkbox", "id": "show_paws", "label": "Show background paw prints", "default": true },
+    { "type": "checkbox", "id": "show_arrows", "label": "Show slider arrows", "default": true },
+    { "type": "color", "id": "panel_bg", "label": "Panel background", "default": "#ffffff" },
+    { "type": "header", "content": "Tabs" },
+    { "type": "checkbox", "id": "enable_tabs", "label": "Enable Dogs / Cats tabs", "default": true },
+    { "type": "text", "id": "tab1_label", "label": "Tab 1 label", "default": "Dogs" },
+    { "type": "text", "id": "tab2_label", "label": "Tab 2 label", "default": "Cats" },
+    { "type": "header", "content": "Call to action style" },
+    { "type": "color", "id": "cta_bg", "label": "CTA background", "default": "#FFFFFF" },
+    { "type": "color", "id": "cta_color", "label": "CTA text", "default": "#544340" },
+    { "type": "header", "content": "Spacing" },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "tab",
+          "label": "Show under tab",
+          "options": [
+            { "value": "dogs", "label": "Dogs" },
+            { "value": "cats", "label": "Cats" }
+          ],
+          "default": "dogs"
+        },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Nutrition They Love!" },
+        { "type": "text", "id": "cta_label", "label": "Button label", "default": "Shop Food" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "color", "id": "bg_color", "label": "Card background", "default": "#d3a5d8" }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Waggly categories",
+      "blocks": [
+        { "type": "category", "settings": { "tab": "dogs", "heading": "Nutrition They Love!", "cta_label": "Shop Food", "bg_color": "#d3a5d8" } },
+        { "type": "category", "settings": { "tab": "dogs", "heading": "Fun & Play Everyday!", "cta_label": "Shop Toys", "bg_color": "#89b5ae" } },
+        { "type": "category", "settings": { "tab": "dogs", "heading": "Grooming Made Easy!", "cta_label": "Shop Grooming", "bg_color": "#f9d090" } },
+        { "type": "category", "settings": { "tab": "dogs", "heading": "Essentials For Comfort!", "cta_label": "Shop Essentials", "bg_color": "#f2af88" } },
+        { "type": "category", "settings": { "tab": "cats", "heading": "Nutrition They Love!", "cta_label": "Shop Food", "bg_color": "#d3a5d8" } },
+        { "type": "category", "settings": { "tab": "cats", "heading": "Fun & Play Everyday!", "cta_label": "Shop Toys", "bg_color": "#89b5ae" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

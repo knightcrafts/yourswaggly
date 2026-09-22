@@ -126,8 +126,16 @@ footer .field{
   endcase
 -%}
 
-<footer class="footer top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' %} section-background{% endif %} footer__softali-theme-dev"
+<footer class="footer top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' %} section-background{% endif %} footer__softali-theme-dev waggly-footer{% if section.settings.rounded_top %} waggly-footer--rounded{% endif %}"
         data-role="{{ theme.role }}">
+  {%- if section.settings.decoration_image != blank -%}
+    <div class="waggly-footer__deco" aria-hidden="true">
+      <img src="{{ section.settings.decoration_image | image_url: width: 1400 }}"
+           width="{{ section.settings.decoration_image.width }}"
+           height="{{ section.settings.decoration_image.height }}"
+           alt="" loading="lazy">
+    </div>
+  {%- endif -%}
   <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
     {%- if section.settings.show_top_line -%}
     <div class="grid footer__accordion__no-line">
@@ -456,7 +464,7 @@ footer .field{
         
         {%- unless left_column_with_content -%}
         <div class="footer__copyright body3 mt--first-child-0">
-          <span class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</span>
+          <span class="copyright__content">{% if section.settings.custom_copyright != blank %}{{ section.settings.custom_copyright }}{% else %}&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}{% endif %}</span>
           <span class="powered_by_link">{{ powered_by_link }}</span>
         </div>
         {%- endunless -%}
@@ -478,7 +486,7 @@ footer .field{
         {%- endif -%}
         {%- if left_column_with_content -%}
         <div class="footer__copyright body3 mt--first-child-0">
-          <span class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</span>
+          <span class="copyright__content">{% if section.settings.custom_copyright != blank %}{{ section.settings.custom_copyright }}{% else %}&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}{% endif %}</span>
           <span class="powered_by_link">{{ powered_by_link }}</span>
         </div>
         {%- endif -%}
@@ -541,10 +549,53 @@ footer .field{
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
 
+{% stylesheet %}
+.waggly-footer { position: relative; }
+.waggly-footer--rounded { border-top-left-radius: 42px; border-top-right-radius: 42px; }
+.waggly-footer__deco {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-90%);
+  pointer-events: none;
+}
+.waggly-footer__deco img { max-width: min(760px, 90%); height: auto; display: block; }
+.waggly-footer .footer__menu a { text-decoration: none; }
+@media (max-width: 576px) {
+  .waggly-footer--rounded { border-top-left-radius: 26px; border-top-right-radius: 26px; }
+  .waggly-footer__deco { transform: translateY(-70%); }
+}
+{% endstylesheet %}
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
   "settings": [
+      {
+        "type": "header",
+        "content": "Waggly footer"
+      },
+      {
+        "type": "checkbox",
+        "id": "rounded_top",
+        "label": "Rounded top corners",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "decoration_image",
+        "label": "Top decoration illustration",
+        "info": "Optional. Sits above the footer, e.g. pets peeking over the edge. Use a wide transparent PNG."
+      },
+      {
+        "type": "text",
+        "id": "custom_copyright",
+        "label": "Copyright text",
+        "info": "Overrides the default. Leave empty to show the shop name."
+      },
       {
         "type": "header",
         "content": "t:sections.general.settings.header_layout.content"

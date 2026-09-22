@@ -9,13 +9,14 @@
  */
 {
   "current": {
-    "color_base": "#142c73",
-    "color_accent": "#f46800",
-    "color_background": "#F6F2EF",
-    "color_price": "#f46800",
+    "color_base": "#544340",
+    "color_accent": "#9b643d",
+    "color_background": "#f7f2ef",
+    "color_secondary_background": "#f2ebe3",
+    "color_price": "#9b643d",
     "color_save_price": "#d20404",
     "color_save_badge": "#d20404",
-    "color_addtocart": "#f46800",
+    "color_addtocart": "#9b643d",
     "image_overlay_color": "#142c73",
     "type_header_font": "figtree_n6",
     "heading_scale": 110,

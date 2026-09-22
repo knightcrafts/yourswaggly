@@ -1,0 +1,171 @@
+{%- liquid
+  assign s = section.settings
+  assign products = s.collection.products
+-%}
+
+<section class="waggly-products top-spacing-{{ s.top_spacing }}">
+  <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %}">
+    <div class="waggly-products__head">
+      {%- if s.eyebrow != blank -%}
+        <p class="waggly-products__eyebrow">{{ s.eyebrow | escape }}</p>
+      {%- endif -%}
+      {%- if s.heading != blank -%}
+        <h2 class="waggly-products__heading">{{ s.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if s.subtext != blank -%}
+        <div class="waggly-products__text rte">{{ s.subtext }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="waggly-products__grid">
+      {%- if s.collection != blank and products.size > 0 -%}
+        {%- for product in products limit: s.product_limit -%}
+          {%- render 'product-card',
+            product_card_product: product,
+            section_id: section.id,
+            settings_image_ratio: '1',
+            show_price: true,
+            show_type: s.show_subtitle,
+            show_vendor: false,
+            button_type_product: 'only_icon',
+            show_button_quickview: false,
+            show_badge_on_sale: true,
+            show_badge_sold_out: true,
+            show_badge_feature: true,
+            hide_product_card_swatches: true,
+            product_name_size: 'body2'
+          -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for i in (1..s.product_limit) -%}
+          {%- render 'product-card-placeholder', settings_image_ratio: '1', placeholder_name: 'product-1' -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-products__head { text-align: center; margin-bottom: 34px; }
+.waggly-products__eyebrow {
+  font-family: var(--font-body-family);
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 8px;
+}
+.waggly-products__heading {
+  font-family: var(--font-heading-family);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--color-base);
+  margin: 0 0 12px;
+}
+.waggly-products__text {
+  max-width: 60ch;
+  margin: 0 auto;
+  color: var(--color-base);
+  opacity: .8;
+}
+
+.waggly-products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.waggly-products .product-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 14px 14px 66px;
+  box-shadow: 0 10px 30px rgba(22, 19, 69, .06);
+  height: 100%;
+}
+.waggly-products .product-card__image-holder { margin-bottom: 12px; }
+.waggly-products .product-card__heading { font-family: var(--font-heading-family); }
+.waggly-products .product-card__container > div:has(.product-card__heading) { order: 1; }
+.waggly-products .product-card__container > div:has(.product-card__meta) { order: 2; margin-top: 2px; opacity: .7; }
+.waggly-products .product-card .price { order: 3; margin-top: 8px; }
+
+.waggly-products .quick-add__submit {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 46px;
+  height: 46px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+}
+.waggly-products .quick-add__submit > span,
+.waggly-products .quick-add__submit > svg:not(.spinner) { display: none; }
+.waggly-products .quick-add__submit::before {
+  content: "+";
+  font-size: 1.7rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--auto-text-color-button-light, #fff);
+}
+
+@media (max-width: 989px) {
+  .waggly-products__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .waggly-products__grid {
+    grid-auto-flow: column;
+    grid-auto-columns: 72%;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+  .waggly-products .product-card { scroll-snap-align: start; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly products",
+  "tag": "section",
+  "class": "waggly-products-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Our picks" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Loved By Pets & Chosen By Parents" },
+    { "type": "richtext", "id": "subtext", "label": "Text", "default": "<p>Handpicked favorites for healthy, happy pets — quality you can trust.</p>" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "product_limit", "label": "Products to show", "min": 2, "max": 12, "step": 1, "default": 4 },
+    { "type": "checkbox", "id": "show_subtitle", "label": "Show product type as subtitle", "default": true },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-wide", "label": "Full width" },
+        { "value": "page-width", "label": "Boxed" }
+      ],
+      "default": "page-wide"
+    },
+    { "type": "header", "content": "Spacing" },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "presets": [
+    { "name": "Waggly products" }
+  ]
+}
+{% endschema %}
