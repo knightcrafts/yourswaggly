@@ -10,7 +10,7 @@
             {%- if desktop_menu_type != 'header-layout-classic' -%}
             {%- render 'get-menu-icon-code', icons:icons, forloop_index:forloop.index -%}
             {%- endif -%}
-            <span>{{ link.title | escape }}{%- render "menu-badge" item_name:link.title -%}</span>
+            <span>{{ link.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:link.title -%}</span>
             {%- render 'icon-arrow-right-small' -%}
           </div>
         </summary>
@@ -26,7 +26,7 @@
               </li>
               <li>
                 <a href="{{ link.url }}" class="menu-drawer__menu-item h5{% if link.current or link.child_active %} menu-drawer__menu-item--active{% endif %}">
-                  {{ link.title | escape }}{%- render "menu-badge" item_name:link.title -%}
+                  {{ link.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:link.title -%}
                 </a>
               </li>
 
@@ -36,7 +36,7 @@
                 <details>
                   <summary>
                     <div class="menu-drawer__menu-item body2{% if childlink.current or childlink.child_active %} menu-drawer__menu-item--active{% endif %}">
-                    	<span>{{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span> {%- render 'icon-arrow-right-small' -%}
+                    	<span>{{ childlink.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span> {%- render 'icon-arrow-right-small' -%}
                     </div>
                   </summary>
 
@@ -50,13 +50,13 @@
                         </li>
                         <li>
                           <a href="{{ childlink.url }}" class="menu-drawer__menu-item h5{% if childlink.current or childlink.child_active %} menu-drawer__menu-item--active{% endif %}">
-                            {{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}
+                            {{ childlink.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:childlink.title -%}
                           </a>
                         </li>
                         {%- for grandchildlink in childlink.links -%}
                         <li>
                           <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item body2{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}">
-                            {{ grandchildlink.title | escape }}{%- render "menu-badge" item_name:grandchildlink.title -%}
+                            {{ grandchildlink.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:grandchildlink.title -%}
                           </a>
                         </li>
                         {%- endfor -%}
@@ -69,7 +69,7 @@
               {%- else -%}
               <li>
                 <a href="{{ childlink.url }}" class="menu-drawer__menu-item body2{% if childlink.current %} menu-drawer__menu-item--active{% endif %}">
-                  {{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}
+                  {{ childlink.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:childlink.title -%}
                 </a>
               </li>
               {%- endif -%}
@@ -86,7 +86,7 @@
         {%- if desktop_menu_type != 'header-layout-classic' -%}
         {%- render 'get-menu-icon-code', icons:icons, forloop_index:forloop.index -%}
         {%- endif -%}
-        <span>{{ link.title | escape }}{%- render "menu-badge" item_name:link.title -%}</span>
+        <span>{{ link.title | split: '::' | first | strip | escape }}{%- render "menu-badge" item_name:link.title -%}</span>
       </a>
     </li>
     {%- endif -%}
