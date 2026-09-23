@@ -1,19 +1,43 @@
 <div class="submenu-design__simple">
   <ul class="unstyle-ul">
     {%- for childlink in link.links -%}
+    {%- assign c_parts = childlink.title | split: '::' -%}
+    {%- assign c_label = c_parts[0] | strip -%}
+    {%- assign c_desc = c_parts[1] | default: '' | strip -%}
+    {%- assign c_icon = c_parts[2] | default: '' | strip -%}
     {%- if childlink.links != blank -%}
     <li class="submenu-container">
-      <a href="{{ childlink.url }}" class="submenu__item body2{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
+      <a href="{{ childlink.url }}" class="submenu__item body2{% if c_desc != blank or c_icon != blank %} submenu__item--rich{% endif %}{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
+        {%- if c_desc != blank or c_icon != blank -%}
+        {%- if c_icon != blank -%}<span class="submenu__item-icon">{%- render 'icons-list' icon_name: c_icon -%}</span>{%- endif -%}
+        <span class="submenu__item-text">
+          <span class="submenu__item-label">{{ c_label | escape }}{%- render "menu-badge" item_name:c_label -%}</span>
+          {%- if c_desc != blank -%}<span class="submenu__item-desc">{{ c_desc | escape }}</span>{%- endif -%}
+        </span>
+        {%- else -%}
         <span>{{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span>
+        {%- endif -%}
         {%- render "icon-arrow-right-small" -%}
       </a>
 
       <div class="submenu-design__simple">
         <ul class="unstyle-ul">
           {%- for grandchildlink in childlink.links -%}
+          {%- assign g_parts = grandchildlink.title | split: '::' -%}
+          {%- assign g_label = g_parts[0] | strip -%}
+          {%- assign g_desc = g_parts[1] | default: '' | strip -%}
+          {%- assign g_icon = g_parts[2] | default: '' | strip -%}
           <li>
-            <a href="{{ grandchildlink.url }}" class="submenu__item body2{% if grandchildlink.current %} submenu__item--active{% endif %}">
+            <a href="{{ grandchildlink.url }}" class="submenu__item body2{% if g_desc != blank or g_icon != blank %} submenu__item--rich{% endif %}{% if grandchildlink.current %} submenu__item--active{% endif %}">
+              {%- if g_desc != blank or g_icon != blank -%}
+              {%- if g_icon != blank -%}<span class="submenu__item-icon">{%- render 'icons-list' icon_name: g_icon -%}</span>{%- endif -%}
+              <span class="submenu__item-text">
+                <span class="submenu__item-label">{{ g_label | escape }}{%- render "menu-badge" item_name:g_label -%}</span>
+                {%- if g_desc != blank -%}<span class="submenu__item-desc">{{ g_desc | escape }}</span>{%- endif -%}
+              </span>
+              {%- else -%}
               <span>{{ grandchildlink.title | escape }}{%- render "menu-badge" item_name:grandchildlink.title -%}</span>
+              {%- endif -%}
             </a>
           </li>
           {%- endfor -%}
@@ -22,11 +46,29 @@
     </li>
     {%- else -%}
     <li>
-      <a href="{{ childlink.url }}" class="submenu__item body2{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
+      <a href="{{ childlink.url }}" class="submenu__item body2{% if c_desc != blank or c_icon != blank %} submenu__item--rich{% endif %}{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
+        {%- if c_desc != blank or c_icon != blank -%}
+        {%- if c_icon != blank -%}<span class="submenu__item-icon">{%- render 'icons-list' icon_name: c_icon -%}</span>{%- endif -%}
+        <span class="submenu__item-text">
+          <span class="submenu__item-label">{{ c_label | escape }}{%- render "menu-badge" item_name:c_label -%}</span>
+          {%- if c_desc != blank -%}<span class="submenu__item-desc">{{ c_desc | escape }}</span>{%- endif -%}
+        </span>
+        {%- else -%}
         <span>{{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span>
+        {%- endif -%}
       </a>
     </li>
     {%- endif -%}
     {%- endfor -%}
   </ul>
 </div>
+
+{% stylesheet %}
+.submenu-design__simple:has(.submenu__item--rich) { min-width: 300px; }
+.submenu__item--rich { display: flex; align-items: flex-start; gap: 10px; white-space: normal; }
+.submenu__item-icon { display: inline-flex; flex: 0 0 auto; margin-top: 3px; color: var(--color-accent); }
+.submenu__item-icon svg, .submenu__item-icon img { width: 22px; height: 22px; object-fit: contain; }
+.submenu__item-text { display: flex; flex-direction: column; flex: 1 1 auto; }
+.submenu__item--rich .submenu__item-label { font-weight: 600; }
+.submenu__item-desc { font-size: var(--font-body3-size, 12px); line-height: 1.3; opacity: .65; margin-top: 2px; white-space: normal; }
+{% endstylesheet %}
