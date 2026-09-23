@@ -476,7 +476,7 @@
           case section.settings.header_layout
           when 'header-layout-classic'
           if section.settings.menu != blank
-          render 'header-menu', linklist:section.settings.menu.links, animation:'menu--animation-underline', mega_menu_index:mega_menu_index, menu_font_weight:section.settings.menu_font_weight
+          render 'header-menu', linklist:section.settings.menu.links, animation:'menu--animation-underline', mega_menu_index:mega_menu_index, menu_font_weight:section.settings.menu_font_weight, icons:svg_icons, icons_size:section.settings.icons_size
           else
           echo '<div></div>'
           endif

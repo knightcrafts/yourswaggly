@@ -13,6 +13,8 @@
     
     <li class="list-menu--hover submenu-container{% if megamenu_item != '' %} submenu--megamenu{% endif %} submenu--no-radius-top submenu--to-left">
       <a href="{{ link.url }}" class="{{ menu_font_weight }} list-menu__item{% if link.current %} list-menu__item--active{% endif %}">
+        {%- capture item_icon -%}{%- render 'get-menu-icon-code', icons: icons, forloop_index: forloop.index, icons_size: icons_size -%}{%- endcapture -%}
+        {%- if item_icon != blank -%}<span class="list-menu__icon">{{ item_icon }}</span>{%- endif -%}
         <span>{{ link.title | escape }}{%- render "menu-badge" item_name:link.title -%}{%- render "icon-arrow-down-small" -%}</span>
       </a>
 
@@ -28,11 +30,20 @@
     {%- else -%}
     <li class="list-menu--hover">
       <a href="{{ link.url }}" class="{{ menu_font_weight }} list-menu__item{% if link.current %} list-menu__item--active{% endif %}">
+        {%- capture item_icon -%}{%- render 'get-menu-icon-code', icons: icons, forloop_index: forloop.index, icons_size: icons_size -%}{%- endcapture -%}
+        {%- if item_icon != blank -%}<span class="list-menu__icon">{{ item_icon }}</span>{%- endif -%}
         <span>{{ link.title | escape }}{%- render "menu-badge" item_name:link.title -%}</span>
       </a>
     </li>
     {%- endif -%}
     {%- endfor -%}
-    
+
   </ul>
 </nav>
+
+{% stylesheet %}
+.list-menu--classic .list-menu__item { display: inline-flex; align-items: center; }
+.list-menu--classic .list-menu__icon { display: inline-flex; align-items: center; margin-inline-end: 6px; line-height: 0; }
+.list-menu--classic .list-menu__icon svg,
+.list-menu--classic .list-menu__icon img { width: 20px; height: 20px; object-fit: contain; }
+{% endstylesheet %}
