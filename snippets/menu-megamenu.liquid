@@ -3,16 +3,28 @@
 {%- capture megamenu_content -%}
 <div class="grid">
   {%- for childlink in link.links -%}
+  {%- assign c_parts = childlink.title | split: '::' -%}
+  {%- assign c_label = c_parts[0] | strip -%}
+  {%- assign c_icon = c_parts[2] | default: '' | strip -%}
   {%- if childlink.links != blank -%}
   <div class="{{ megamenu_block.settings.grid }}">
     <a href="{{ childlink.url }}" class="submenu__item megamenu-item h5 text-uppercase{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
-      <span>{{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span>
+      {%- if c_icon != blank -%}<span class="megamenu-item__icon">{%- render 'icons-list' icon_name: c_icon -%}</span>{%- endif -%}
+      <span>{{ c_label | escape }}{%- render "menu-badge" item_name:c_label -%}</span>
     </a>
     <ul class="unstyle-ul megamenu-childs">
       {%- for grandchildlink in childlink.links -%}
+      {%- assign g_parts = grandchildlink.title | split: '::' -%}
+      {%- assign g_label = g_parts[0] | strip -%}
+      {%- assign g_desc = g_parts[1] | default: '' | strip -%}
+      {%- assign g_icon = g_parts[2] | default: '' | strip -%}
       <li>
-        <a href="{{ grandchildlink.url }}" class="submenu__item body2{% if grandchildlink.current %} submenu__item--active{% endif %}">
-          <span>{{ grandchildlink.title | escape }}{%- render "menu-badge" item_name:grandchildlink.title -%}</span>
+        <a href="{{ grandchildlink.url }}" class="submenu__item body2 megamenu-child{% if g_desc != blank or g_icon != blank %} megamenu-child--rich{% endif %}{% if grandchildlink.current %} submenu__item--active{% endif %}">
+          {%- if g_icon != blank -%}<span class="megamenu-child__icon">{%- render 'icons-list' icon_name: g_icon -%}</span>{%- endif -%}
+          <span class="megamenu-child__text">
+            <span class="megamenu-child__label">{{ g_label | escape }}{%- render "menu-badge" item_name:g_label -%}</span>
+            {%- if g_desc != blank -%}<span class="megamenu-child__desc">{{ g_desc | escape }}</span>{%- endif -%}
+          </span>
         </a>
       </li>
       {%- endfor -%}
@@ -21,7 +33,8 @@
   {%- else -%}
   <div class="{{ megamenu_block.settings.grid }}">
     <a href="{{ childlink.url }}" class="submenu__item megamenu-item h5 text-uppercase{% if childlink.current or childlink.child_active %} submenu__item--active{% endif %}">
-      <span>{{ childlink.title | escape }}{%- render "menu-badge" item_name:childlink.title -%}</span>
+      {%- if c_icon != blank -%}<span class="megamenu-item__icon">{%- render 'icons-list' icon_name: c_icon -%}</span>{%- endif -%}
+      <span>{{ c_label | escape }}{%- render "menu-badge" item_name:c_label -%}</span>
     </a>
   </div>
   {%- endif -%}
@@ -123,3 +136,15 @@
   </div>
   {%- endif -%}
 </div>
+
+{% stylesheet %}
+.megamenu-item { display: inline-flex; align-items: center; gap: 8px; }
+.megamenu-item__icon { display: inline-flex; align-items: center; }
+.megamenu-item__icon svg, .megamenu-item__icon img { width: 20px; height: 20px; object-fit: contain; }
+.megamenu-child { display: flex; align-items: flex-start; gap: 10px; }
+.megamenu-child__icon { display: inline-flex; flex: 0 0 auto; margin-top: 3px; color: var(--color-accent); }
+.megamenu-child__icon svg, .megamenu-child__icon img { width: 22px; height: 22px; object-fit: contain; }
+.megamenu-child__text { display: flex; flex-direction: column; }
+.megamenu-child--rich .megamenu-child__label { font-weight: 600; }
+.megamenu-child__desc { font-size: var(--font-body3-size, 12px); line-height: 1.3; opacity: .65; margin-top: 2px; }
+{% endstylesheet %}
