@@ -1,0 +1,128 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="waggly-deco" style="--deco-page-width: {{ settings.page_width }}px; --deco-height: {{ s.canvas_height }}px;">
+  <div class="waggly-deco__inner">
+    {%- for block in section.blocks -%}
+      {%- assign b = block.settings -%}
+      {%- capture inner -%}
+        {%- if b.svg_code != blank -%}
+          {{ b.svg_code }}
+        {%- elsif b.image != blank -%}
+          <img
+            src="{{ b.image | image_url: width: 600 }}"
+            srcset="{{ b.image | image_url: width: 300 }} 300w, {{ b.image | image_url: width: 600 }} 600w, {{ b.image | image_url: width: 900 }} 900w"
+            sizes="{{ b.width }}px"
+            width="{{ b.image.width }}"
+            height="{{ b.image.height }}"
+            alt="{{ b.image.alt | escape }}"
+            loading="lazy">
+        {%- endif -%}
+      {%- endcapture -%}
+
+      {%- if inner != blank -%}
+        <div
+          class="waggly-deco__item{% unless b.show_desktop %} waggly-deco__item--hide-desktop{% endunless %}{% unless b.show_mobile %} waggly-deco__item--hide-mobile{% endunless %}"
+          style="--x: {{ b.x }}; --y: {{ b.y }}px; --w: {{ b.width }}px; --mscale: {{ b.mobile_scale | divided_by: 100.0 }}; --rot: {{ b.rotation }}deg; --op: {{ b.opacity | divided_by: 100.0 }}; --flip: {% if b.flip_x %}-1{% else %}1{% endif %}; z-index: {{ b.z_index }};"
+          {% if b.link == blank %}aria-hidden="true"{% endif %}
+          {{ block.shopify_attributes }}
+        >
+          {%- if b.link != blank -%}
+            <a href="{{ b.link }}" class="waggly-deco__link">{{ inner }}</a>
+          {%- else -%}
+            {{ inner }}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% stylesheet %}
+.waggly-deco { position: relative; width: 100%; }
+.waggly-deco__inner {
+  position: relative;
+  max-width: var(--deco-page-width, 1500px);
+  height: var(--deco-height, 0px);
+  margin: 0 auto;
+}
+.waggly-deco__item {
+  position: absolute;
+  left: calc(var(--x) * 1%);
+  top: var(--y, 0px);
+  width: var(--w, 120px);
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scaleX(var(--flip, 1));
+  opacity: var(--op, 1);
+  pointer-events: none;
+}
+.waggly-deco__item img,
+.waggly-deco__item svg { display: block; width: 100%; height: auto; }
+.waggly-deco__link { display: block; pointer-events: auto; }
+
+@media (max-width: 749px) {
+  .waggly-deco__item { width: calc(var(--w, 120px) * var(--mscale, .7)); }
+  .waggly-deco__item--hide-mobile { display: none; }
+}
+@media (min-width: 750px) {
+  .waggly-deco__item--hide-desktop { display: none; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly decorations",
+  "tag": "section",
+  "class": "waggly-decorations-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Floating decorative layer. Add PNG or SVG elements and position each one. By default this section adds no height and elements can overlap the sections above/below. Elements never block clicks unless you give them a link."
+    },
+    {
+      "type": "range",
+      "id": "canvas_height",
+      "label": "Reserved height",
+      "info": "Leave at 0 to float over neighbouring sections. Increase to make this a standalone decorative band.",
+      "min": 0,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "element",
+      "name": "Element",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image (PNG/JPG)" },
+        { "type": "html", "id": "svg_code", "label": "or paste inline SVG", "info": "Used instead of the image if filled. Best for crisp vector shapes (paws, bones)." },
+        { "type": "header", "content": "Position" },
+        { "type": "range", "id": "x", "label": "Horizontal position", "info": "% across the content width. Values below 0 / above 100 move it into the side margins.", "min": -40, "max": 140, "step": 1, "unit": "%", "default": 50 },
+        { "type": "range", "id": "y", "label": "Vertical offset", "info": "Move up (negative) into the section above, or down into the next.", "min": -600, "max": 600, "step": 5, "unit": "px", "default": 0 },
+        { "type": "range", "id": "z_index", "label": "Layer (stacking)", "info": "Higher = in front. Use a low/negative value to sit behind nearby content.", "min": -1, "max": 10, "step": 1, "default": 3 },
+        { "type": "header", "content": "Appearance" },
+        { "type": "range", "id": "width", "label": "Width", "min": 20, "max": 800, "step": 5, "unit": "px", "default": 140 },
+        { "type": "range", "id": "mobile_scale", "label": "Mobile size", "info": "Percent of the desktop width, used on phones.", "min": 20, "max": 100, "step": 5, "unit": "%", "default": 70 },
+        { "type": "range", "id": "rotation", "label": "Rotation", "min": -180, "max": 180, "step": 1, "unit": "deg", "default": 0 },
+        { "type": "range", "id": "opacity", "label": "Opacity", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 100 },
+        { "type": "checkbox", "id": "flip_x", "label": "Flip horizontally", "default": false },
+        { "type": "header", "content": "Visibility & link" },
+        { "type": "checkbox", "id": "show_desktop", "label": "Show on desktop", "default": true },
+        { "type": "checkbox", "id": "show_mobile", "label": "Show on mobile", "default": true },
+        { "type": "url", "id": "link", "label": "Link (optional)" }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "Waggly decorations",
+      "blocks": [
+        { "type": "element" }
+      ]
+    }
+  ]
+}
+{% endschema %}
