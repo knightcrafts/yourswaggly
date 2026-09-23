@@ -42,6 +42,7 @@ Context for AI/dev sessions on this project. Read this first.
 - `sections/waggly-category-cards.liquid` — "Explore The Best For Your Pet". **White rounded panel** with **slider arrows** (co‑located `waggly-cats-slider` custom element, ~30 lines, no library), **CSS‑only Dogs/Cats tabs** (radio `:checked` siblings), faint **paw prints** on the panel, **Kalam** heading, centered tabs. Blocks = category cards (image, heading, CTA, link, bg color, tab).
 - `sections/waggly-value.liquid` — "Because They Deserve The Best". Rounded card, Kalam heading, side illustration, value blocks (label + optional icon).
 - `sections/waggly-products.liquid` — "Loved By Pets & Chosen By Parents". Pulls from a **Shopify collection** and renders the theme's shared `snippets/product-card.liquid` inside a **scoped** wrapper (`.waggly-products`) restyled to rounded card + circular "+" add button. Reuses cart/quick‑add/badges.
+- `sections/waggly-decorations.liquid` — reusable **floating overlay** layer. Drop it anywhere; each block = a PNG/inline‑SVG element with position (x %, y px), size, mobile size, rotation, opacity, flip, z‑index, desktop/mobile visibility, optional link. Zero‑height by default so elements bleed into neighbouring sections; `pointer-events:none` so overlays never block clicks (links re‑enable it).
 - Homepage order (`templates/index.json`): `hero → intro → categories → value → products`. Header/footer from `sections/header-group.json` / `footer-group.json`.
 
 ## Footer
