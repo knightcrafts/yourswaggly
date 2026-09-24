@@ -1,0 +1,108 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-closing{% if s.rounded_top %} waggly-closing--rounded{% endif %} top-spacing-{{ s.top_spacing }}" style="--wg-closing-bg: {{ s.bg_color }}; --wg-closing-text: {{ s.text_color }};">
+  <div class="page-width waggly-closing__inner">
+    {%- if s.decoration_image != blank -%}
+      <img class="waggly-closing__deco" src="{{ s.decoration_image | image_url: width: 400 }}" width="{{ s.decoration_image.width }}" height="{{ s.decoration_image.height }}" alt="" loading="lazy">
+    {%- endif -%}
+
+    <div class="waggly-closing__cols">
+      <div class="waggly-closing__left">
+        {%- if s.left_text != blank -%}<div class="rte">{{ s.left_text }}</div>{%- endif -%}
+      </div>
+      <div class="waggly-closing__right">
+        {%- if s.quote_intro != blank -%}<p class="waggly-closing__intro">{{ s.quote_intro | escape }}</p>{%- endif -%}
+        {%- if s.quote != blank -%}<blockquote class="waggly-closing__quote">{{ s.quote }}</blockquote>{%- endif -%}
+      </div>
+    </div>
+
+    {%- if s.logo_image != blank or s.logo_text != blank -%}
+      <div class="waggly-closing__logo">
+        {%- if s.logo_image != blank -%}
+          <img src="{{ s.logo_image | image_url: width: 400 }}" width="{{ s.logo_image.width }}" height="{{ s.logo_image.height }}" alt="{{ shop.name | escape }}" loading="lazy" style="max-width: {{ s.logo_width }}px;">
+        {%- else -%}
+          <span class="waggly-closing__wordmark"><span class="waggly-closing__paw" aria-hidden="true">🐾</span>{{ s.logo_text | escape }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-closing {
+  background: var(--wg-closing-bg, #544340);
+  color: var(--wg-closing-text, #f3ece4);
+}
+.waggly-closing--rounded { border-top-left-radius: 48px; border-top-right-radius: 48px; }
+.waggly-closing__inner { position: relative; padding: 56px 0 44px; }
+.waggly-closing__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+.waggly-closing__left {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.3vw, 1.9rem);
+  line-height: 1.35;
+}
+.waggly-closing__left .rte p { margin: 0; }
+.waggly-closing__intro { margin: 0 0 8px; opacity: .85; }
+.waggly-closing__quote {
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  font-size: clamp(1.8rem, 3.1vw, 2.6rem);
+  line-height: 1.25;
+}
+.waggly-closing__quote p { margin: 0; }
+.waggly-closing__logo { text-align: center; margin-top: 40px; }
+.waggly-closing__logo img { display: inline-block; height: auto; }
+.waggly-closing__wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Kalam', cursive;
+  font-size: 1.9rem;
+}
+.waggly-closing__deco { position: absolute; right: 0; bottom: 0; width: 150px; opacity: .5; pointer-events: none; }
+
+@media (max-width: 989px) {
+  .waggly-closing__cols { grid-template-columns: 1fr; gap: 26px; text-align: center; }
+  .waggly-closing--rounded { border-top-left-radius: 30px; border-top-right-radius: 30px; }
+  .waggly-closing__deco { width: 100px; opacity: .35; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly closing banner",
+  "tag": "section",
+  "class": "waggly-closing-section",
+  "settings": [
+    { "type": "richtext", "id": "left_text", "label": "Left text", "default": "<p>Because when we make choices for those who depend on us, we want to make better ones.</p>" },
+    { "type": "text", "id": "quote_intro", "label": "Quote intro", "default": "And when someone trusts you without question," },
+    { "type": "richtext", "id": "quote", "label": "Quote", "default": "<p>you owe them your best.</p>" },
+    { "type": "header", "content": "Logo" },
+    { "type": "text", "id": "logo_text", "label": "Logo text", "default": "Yours Waggly" },
+    { "type": "image_picker", "id": "logo_image", "label": "Logo image (optional)" },
+    { "type": "range", "id": "logo_width", "label": "Logo width", "min": 80, "max": 320, "step": 10, "unit": "px", "default": 180 },
+    { "type": "header", "content": "Style" },
+    { "type": "image_picker", "id": "decoration_image", "label": "Corner decoration (optional)" },
+    { "type": "checkbox", "id": "rounded_top", "label": "Rounded top corners", "default": true },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "#544340" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#f3ece4" },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "presets": [
+    { "name": "Waggly closing banner" }
+  ]
+}
+{% endschema %}

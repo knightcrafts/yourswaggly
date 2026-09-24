@@ -6,11 +6,12 @@
         "image_position": "right",
         "width": "page-wide",
         "heading_tag": "h1",
+        "heading_style": "handwritten",
         "eyebrow": "Our Story",
         "eyebrow_paw": false,
         "heading": "Love Beyond",
         "heading_accent": "the Bowl",
-        "subtext": "<p>Something has been changing around us.</p>",
+        "subtext": "<p>Pets are no longer being brought home only for companionship or security. Increasingly, they are becoming a part of our lives in a much deeper way — a source of happiness, comfort, companionship and emotional well-being.</p>",
         "primary_label": "",
         "secondary_label": "",
         "show_decoration": true,
@@ -19,52 +20,90 @@
         "top_spacing": "none"
       }
     },
-    "story1": {
+    "changing": {
       "type": "waggly-story",
       "settings": {
-        "heading": "A deeper kind of companionship",
-        "image_position": "right",
-        "body": "<p>Pets are no longer being brought home only for companionship or security, or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way — a source of happiness, comfort, companionship and emotional well-being.</p><p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</p>",
-        "top_spacing": "normal"
-      }
-    },
-    "story2": {
-      "type": "waggly-story",
-      "settings": {
-        "heading": "A curiosity that became Yours Waggly",
+        "heading": "Something has been changing around us.",
+        "heading_style": "normal",
+        "heading_size": "large",
         "image_position": "left",
-        "body": "<p>We found this change interesting. And it made us curious.</p><p>What is changing in the way people see pets? What are they looking for? What does this mean for the pet industry? And how will the role of pets evolve in the years ahead?</p><p>That curiosity led us to explore the world of pets more closely — and somewhere along the way, the idea of Yours Waggly took shape. We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p>",
+        "width": "page-wide",
+        "body": "<p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</p>",
         "top_spacing": "normal"
       }
     },
-    "story3": {
-      "type": "waggly-story",
+    "curious": {
+      "type": "waggly-cards",
+      "blocks": {
+        "q1": { "type": "card", "settings": { "text": "What is changing in the way people see pets?" } },
+        "q2": { "type": "card", "settings": { "text": "What are they looking for?" } },
+        "q3": { "type": "card", "settings": { "text": "What does this mean for the pet industry?" } },
+        "q4": { "type": "card", "settings": { "text": "How will the role of pets evolve in the years ahead?" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"],
       "settings": {
-        "heading": "Better questions, better choices",
-        "image_position": "right",
-        "body": "<p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p>Rather than being just another marketplace or store selling products, we wanted Yours Waggly to be a place that shares insights on what is good for our pets, helps identify what is genuinely useful, and brings together things we believe are worth considering.</p><p>Because when we make choices for those who depend on us, we want to make better ones.</p>",
+        "eyebrow": "We found this change interesting.",
+        "heading": "And it made us curious.",
+        "heading_style": "handwritten",
+        "card_bg": "#faf5ef",
+        "icon_color": "#9b643d",
+        "width": "page-wide",
         "top_spacing": "normal"
       }
     },
-    "quote": {
+    "idea": {
       "type": "waggly-story",
       "settings": {
-        "is_quote": true,
-        "body": "<p>When someone trusts you without question, you owe them your best.</p>",
-        "width": "page-width",
+        "heading": "The idea of Yours Waggly took shape.",
+        "heading_style": "handwritten",
+        "image_position": "left",
+        "width": "page-wide",
+        "body": "<p>That curiosity led us to explore the world of pets more closely — and somewhere along the way, it all came together.</p><p>We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p>",
         "top_spacing": "normal"
       }
     },
-    "signoff": {
+    "thinking": {
+      "type": "waggly-steps",
+      "blocks": {
+        "s1": { "type": "step", "settings": { "title": "Research", "description": "Ask questions and look beyond the obvious" } },
+        "s2": { "type": "step", "settings": { "title": "Evaluate", "description": "Research markets and evaluate choices" } },
+        "s3": { "type": "step", "settings": { "title": "Choose", "description": "Make decisions based on what truly creates value" } },
+        "s4": { "type": "step", "settings": { "title": "Create Value", "description": "Invest in what is genuinely useful" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Our Thinking",
+        "body": "<p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p><strong>We wanted to bring that same thinking into the pet industry.</strong></p>",
+        "icon_bg": "#9b643d",
+        "width": "page-wide",
+        "top_spacing": "normal"
+      }
+    },
+    "marketplace": {
       "type": "waggly-story",
       "settings": {
-        "heading": "Yours Waggly",
-        "show_image_placeholder": false,
-        "align": "center",
-        "body": "<p>Love Beyond the Bowl</p>",
+        "heading": "More Than A Marketplace",
+        "heading_style": "normal",
+        "heading_size": "large",
+        "image_position": "left",
+        "width": "page-wide",
+        "body": "<p>Rather than being just another marketplace or store selling products, we wanted Yours Waggly to be a place that shares insights on what is good for our pets, helps identify what is genuinely useful, and brings together things that we believe are worth considering.</p>",
+        "top_spacing": "normal"
+      }
+    },
+    "closing": {
+      "type": "waggly-closing",
+      "settings": {
+        "left_text": "<p>Because when we make choices for those who depend on us, we want to make better ones.</p>",
+        "quote_intro": "And when someone trusts you without question,",
+        "quote": "<p>you owe them your best.</p>",
+        "logo_text": "Yours Waggly",
+        "rounded_top": true,
+        "bg_color": "#544340",
+        "text_color": "#f3ece4",
         "top_spacing": "normal"
       }
     }
   },
-  "order": ["hero", "story1", "story2", "story3", "quote", "signoff"]
+  "order": ["hero", "changing", "curious", "idea", "thinking", "marketplace", "closing"]
 }

@@ -4,7 +4,7 @@
 -%}
 
 <section
-  class="waggly-hero{% if s.image_position == 'left' %} waggly-hero--reverse{% endif %} top-spacing-{{ s.top_spacing }}"
+  class="waggly-hero{% if s.image_position == 'left' %} waggly-hero--reverse{% endif %}{% if s.heading_style == 'handwritten' %} waggly-hero--hand{% endif %} top-spacing-{{ s.top_spacing }}"
   style="--wg-hero-bg: {{ s.bg_color }}; --wg-hero-accent: {{ s.accent_color }};"
 >
   <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %} waggly-hero__inner">
@@ -103,6 +103,7 @@
   margin: 0 0 14px;
 }
 .waggly-hero__paw { margin-inline-start: 6px; }
+.waggly-hero--hand .waggly-hero__heading { font-family: 'Kalam', cursive; line-height: 1.1; }
 .waggly-hero__heading {
   font-family: var(--font-heading-family);
   font-weight: 700;
@@ -214,6 +215,16 @@
         { "value": "h2", "label": "H2" }
       ],
       "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "normal", "label": "Normal (Outfit)" },
+        { "value": "handwritten", "label": "Handwritten (Kalam)" }
+      ],
+      "default": "normal"
     },
     { "type": "header", "content": "Content" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Happy pets, happy hearts" },

@@ -1,0 +1,153 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-cards top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cards--hand{% endif %}" style="--wg-card-bg: {{ s.card_bg }}; --wg-icon-color: {{ s.icon_color }};">
+  <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
+    {%- if s.eyebrow != blank -%}<p class="waggly-cards__eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+    {%- if s.heading != blank -%}<h2 class="waggly-cards__heading">{{ s.heading | escape }}</h2>{%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="waggly-cards__grid">
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          <div class="waggly-cards__card"{% if b.bg_color != blank and b.bg_color != 'rgba(0,0,0,0)' %} style="--card-bg-override: {{ b.bg_color }};"{% endif %} {{ block.shopify_attributes }}>
+            <span class="waggly-cards__icon" aria-hidden="true">
+              {%- if b.svg_code != blank -%}{{ b.svg_code }}
+              {%- elsif b.icon != blank -%}<img src="{{ b.icon | image_url: width: 96 }}" width="40" height="40" alt="" loading="lazy">
+              {%- else -%}
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" focusable="false"><path d="M9 9a3 3 0 1 1 4.5 2.6c-.9.5-1.5 1-1.5 2.1v.3M12 17.5h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.4"/></svg>
+              {%- endif -%}
+            </span>
+            {%- if b.text != blank -%}<p class="waggly-cards__text">{{ b.text | escape }}</p>{%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-cards { text-align: center; }
+.waggly-cards__eyebrow {
+  font-family: var(--font-body-family);
+  font-weight: 600;
+  font-size: .85rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 8px;
+}
+.waggly-cards__heading {
+  font-family: var(--font-heading-family);
+  font-weight: 700;
+  color: var(--color-base);
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+  margin: 0 0 34px;
+}
+.waggly-cards--hand .waggly-cards__heading { font-family: 'Kalam', cursive; }
+.waggly-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+.waggly-cards__card {
+  background: var(--card-bg-override, var(--wg-card-bg, #faf5ef));
+  border-radius: 22px;
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.waggly-cards__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--wg-icon-color, var(--color-accent));
+}
+.waggly-cards__icon img { width: 28px; height: 28px; object-fit: contain; }
+.waggly-cards__text { margin: 0; color: var(--color-base); line-height: 1.4; }
+
+@media (max-width: 989px) {
+  .waggly-cards__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .waggly-cards__grid { grid-template-columns: 1fr; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly cards",
+  "tag": "section",
+  "class": "waggly-cards-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "We found this change interesting." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "And it made us curious." },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "handwritten", "label": "Handwritten (Kalam)" },
+        { "value": "normal", "label": "Normal (Outfit)" }
+      ],
+      "default": "handwritten"
+    },
+    { "type": "header", "content": "Card style" },
+    { "type": "color", "id": "card_bg", "label": "Card background", "default": "#faf5ef" },
+    { "type": "color", "id": "icon_color", "label": "Icon colour", "default": "#9b643d" },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-width", "label": "Boxed" },
+        { "value": "page-wide", "label": "Full width" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "textarea", "id": "text", "label": "Text", "default": "What is changing in the way people see pets?" },
+        { "type": "image_picker", "id": "icon", "label": "Icon image (optional)" },
+        { "type": "html", "id": "svg_code", "label": "or inline SVG (optional)" },
+        { "type": "color", "id": "bg_color", "label": "Background override", "default": "rgba(0,0,0,0)" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Waggly cards",
+      "blocks": [
+        { "type": "card", "settings": { "text": "What is changing in the way people see pets?" } },
+        { "type": "card", "settings": { "text": "What are they looking for?" } },
+        { "type": "card", "settings": { "text": "What does this mean for the pet industry?" } },
+        { "type": "card", "settings": { "text": "How will the role of pets evolve in the years ahead?" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

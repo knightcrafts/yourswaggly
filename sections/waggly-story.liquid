@@ -3,7 +3,7 @@
   assign heading_tag = s.heading_tag | default: 'h2'
 -%}
 
-<section class="waggly-story top-spacing-{{ s.top_spacing }}" style="--wg-story-bg: {{ s.bg_color }};">
+<section class="waggly-story top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-story--hand{% endif %}{% if s.heading_size == 'large' %} waggly-story--large{% endif %}" style="--wg-story-bg: {{ s.bg_color }};">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
     {%- if s.is_quote -%}
       <blockquote class="waggly-story__quote">
@@ -65,6 +65,8 @@
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   margin: 0 0 16px;
 }
+.waggly-story--hand .waggly-story__heading { font-family: 'Kalam', cursive; line-height: 1.15; }
+.waggly-story--large .waggly-story__heading { font-size: clamp(2rem, 4vw, 3rem); }
 .waggly-story__body { color: var(--color-base); max-width: 62ch; }
 .waggly-story__grid--center .waggly-story__body { margin-inline: auto; }
 .waggly-story__body p { margin: 0 0 1em; }
@@ -136,6 +138,26 @@
         { "value": "h3", "label": "H3" }
       ],
       "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "normal", "label": "Normal (Outfit)" },
+        { "value": "handwritten", "label": "Handwritten (Kalam)" }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "large", "label": "Large" }
+      ],
+      "default": "normal"
     },
     { "type": "richtext", "id": "body", "label": "Text", "default": "<p>Share your story here.</p>" },
     { "type": "text", "id": "quote_author", "label": "Quote attribution", "info": "Only used when 'Show as centered quote' is on." },
