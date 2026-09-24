@@ -65,16 +65,20 @@
     "thinking": {
       "type": "waggly-steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Research", "description": "Ask questions and look beyond the obvious" } },
-        "s2": { "type": "step", "settings": { "title": "Evaluate", "description": "Research markets and evaluate choices" } },
-        "s3": { "type": "step", "settings": { "title": "Choose", "description": "Make decisions based on what truly creates value" } },
-        "s4": { "type": "step", "settings": { "title": "Create Value", "description": "Invest in what is genuinely useful" } }
+        "s1": { "type": "step", "settings": { "title": "Research", "description": "Ask questions and look beyond the obvious", "icon_bg": "#f2e6d6", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M7 3h7l4 4v14H7z\" stroke=\"#8a5a34\" stroke-width=\"1.6\"/><path d=\"M9 12h6M9 16h5M9 8h3\" stroke=\"#8a5a34\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>" } },
+        "s2": { "type": "step", "settings": { "title": "Evaluate", "description": "Research markets and evaluate choices", "icon_bg": "#dcebe0", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M5 20V11M12 20V5M19 20v-6\" stroke=\"#5f8f6a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg>" } },
+        "s3": { "type": "step", "settings": { "title": "Choose", "description": "Make decisions based on what truly creates value", "icon_bg": "#f2af88", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>" } },
+        "s4": { "type": "step", "settings": { "title": "Create Value", "description": "Invest in what is genuinely useful", "icon_bg": "#f2e6d6", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M12 20S3 14 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14 12 20 12 20Z\" stroke=\"#8a5a34\" stroke-width=\"1.7\"/></svg>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Our Thinking",
         "body": "<p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p><strong>We wanted to bring that same thinking into the pet industry.</strong></p>",
-        "icon_bg": "#9b643d",
+        "show_divider": true,
+        "divider_color": "#e0d5c8",
+        "icon_shape": "rounded-square",
+        "icon_bg": "#f2e6d6",
+        "icon_color": "#544340",
         "width": "page-wide",
         "top_spacing": "normal"
       }
