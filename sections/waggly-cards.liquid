@@ -2,7 +2,7 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-cards top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cards--hand{% endif %}" style="--wg-card-bg: {{ s.card_bg }}; --wg-icon-color: {{ s.icon_color }};">
+<section class="waggly-cards top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cards--hand{% endif %} waggly-cards--shape-{{ s.card_shape }}{% if s.card_text_align == 'center' %} waggly-cards--center{% endif %}" style="--wg-card-bg: {{ s.card_bg }}; --wg-icon-color: {{ s.icon_color }};">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
     {%- if s.eyebrow != blank -%}<p class="waggly-cards__eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
     {%- if s.heading != blank -%}<h2 class="waggly-cards__heading">{{ s.heading | escape }}</h2>{%- endif -%}
@@ -60,6 +60,21 @@
   flex-direction: column;
   gap: 16px;
 }
+
+/* Text alignment */
+.waggly-cards--center .waggly-cards__card { align-items: center; text-align: center; }
+
+/* Card shapes */
+.waggly-cards--shape-bubble .waggly-cards__card { border-radius: 46% 54% 52% 48% / 52% 46% 54% 48%; padding: 34px 28px; }
+.waggly-cards--shape-oval .waggly-cards__card,
+.waggly-cards--shape-circle .waggly-cards__card {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 36px 28px;
+}
+.waggly-cards--shape-oval .waggly-cards__card { border-radius: 50%; min-height: 240px; }
+.waggly-cards--shape-circle .waggly-cards__card { border-radius: 50%; aspect-ratio: 1 / 1; }
 .waggly-cards__icon {
   display: inline-flex;
   align-items: center;
@@ -100,6 +115,28 @@
       "default": "handwritten"
     },
     { "type": "header", "content": "Card style" },
+    {
+      "type": "select",
+      "id": "card_shape",
+      "label": "Card shape",
+      "options": [
+        { "value": "rounded", "label": "Rounded" },
+        { "value": "bubble", "label": "Bubble" },
+        { "value": "oval", "label": "Oval" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "rounded"
+    },
+    {
+      "type": "select",
+      "id": "card_text_align",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "left"
+    },
     { "type": "color", "id": "card_bg", "label": "Card background", "default": "#faf5ef" },
     { "type": "color", "id": "icon_color", "label": "Icon colour", "default": "#9b643d" },
     { "type": "header", "content": "Layout" },
