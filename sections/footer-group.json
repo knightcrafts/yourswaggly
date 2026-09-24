@@ -14,51 +14,58 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "about": {
-          "type": "text",
+        "contact": {
+          "type": "contact",
           "settings": {
-            "heading": "",
-            "show_image": "hide",
-            "image_ratio": "1.333333",
-            "logo_max_width": 50,
-            "subtext": "<p>Thoughtfully curated essentials for cats and dogs. Because they're family too.</p>",
-            "button_name": "",
-            "url": ""
+            "heading": "Get in Touch",
+            "text": "<p>Thoughtfully curated essentials for cats and dogs. Because they're family too.</p>",
+            "address": "<p>123 Petcare Avenue, Suite 100<br/>Springfield, IL 62704<br/>United States</p>",
+            "phone": "+1 (555) 123-4567",
+            "email": "support@yourswaggly.com",
+            "hours": "<p>Mon–Sat: 9:00 AM – 7:00 PM<br/>Sun: Closed</p>",
+            "show_social": true
           }
         },
         "shop": {
-          "type": "link_list",
-          "settings": { "heading": "Shop", "menu": "footer" }
+          "type": "links",
+          "settings": {
+            "heading": "Shop",
+            "links": "Dogs\nCats\nSmall Pets\nBirds\nFish\nReptiles"
+          }
         },
-        "service": {
-          "type": "link_list",
-          "settings": { "heading": "Our Service", "menu": "footer" }
+        "categories": {
+          "type": "links",
+          "settings": {
+            "heading": "Shop by Category",
+            "links": "Food\nTreats\nToys\nGrooming\nBeds & Furniture\nHealth & Hygiene"
+          }
+        },
+        "services": {
+          "type": "links",
+          "settings": {
+            "heading": "Our Services",
+            "links": "Vet Care\nPharmacy\nGrooming\nPet Boarding\nConsultations"
+          }
         },
         "company": {
-          "type": "link_list",
-          "settings": { "heading": "Company", "menu": "footer" }
+          "type": "links",
+          "settings": {
+            "heading": "Company",
+            "links": "About Us\nOur Story\nBlog\nCareers\nPress"
+          }
         },
         "help": {
-          "type": "link_list",
-          "settings": { "heading": "Help", "menu": "footer" }
-        },
-        "social": {
-          "type": "newsletter",
+          "type": "links",
           "settings": {
-            "show_newsletter": false,
-            "heading": "",
-            "subtext": "",
-            "newsletter_terms": "",
-            "show_social": true,
-            "enable_follow_on_shop": false,
-            "heading_social": ""
+            "heading": "Help",
+            "links": "Contact Us\nFAQs\nShipping & Delivery\nReturns & Refunds\nTerms & Conditions\nPrivacy Policy"
           }
         }
       },
-      "block_order": ["about", "shop", "service", "company", "help", "social"],
+      "block_order": ["contact", "shop", "categories", "services", "company", "help"],
       "settings": {
         "rounded_top": true,
-        "custom_copyright": "© 2025 Pawfect Companions. All rights reserved.",
+        "custom_copyright": "© 2025 Yours Waggly. All rights reserved.",
         "top_spacing": "normal",
         "width": "page-width",
         "show_top_line": false,
@@ -68,7 +75,7 @@
         "enable_accordion": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": false,
+        "payment_enable": true,
         "color_heading": "#FFFFFF",
         "color_text": "#EFE3D8",
         "color_links": "#EFE3D8",

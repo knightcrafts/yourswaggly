@@ -353,6 +353,53 @@ footer .field{
           {%- endif -%}
         </div>
         {%- endif -%}
+
+        {%- when 'links' -%}
+        {%- assign nl = '
+' -%}
+        <ul class="unstyle-ul footer__menu footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %}">
+          {%- assign lines = block.settings.links | split: nl -%}
+          {%- for line in lines -%}
+          {%- assign line = line | strip -%}
+          {%- if line != blank -%}
+          {%- assign parts = line | split: '|' -%}
+          {%- assign lbl = parts[0] | strip -%}
+          {%- assign href = parts[1] | strip -%}
+          <li>
+            <a href="{% if href != blank %}{{ href }}{% else %}#{% endif %}" class="color-base animation-underline animation-underline--thin">{{ lbl | escape }}</a>
+          </li>
+          {%- endif -%}
+          {%- endfor -%}
+        </ul>
+
+        {%- when 'contact' -%}
+        <div class="footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %} footer__contact">
+          {%- if block.settings.text != blank -%}<div class="section__richtext__editor mt--first-child-0 mb15">{{ block.settings.text }}</div>{%- endif -%}
+          <ul class="unstyle-ul footer__contact-list">
+            {%- if block.settings.address != blank -%}<li class="footer__contact-item">{%- render 'icon-order' -%}<span>{{ block.settings.address }}</span></li>{%- endif -%}
+            {%- if block.settings.phone != blank -%}<li class="footer__contact-item">{%- render 'icon-phone' -%}<a href="tel:{{ block.settings.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' }}" class="color-base">{{ block.settings.phone }}</a></li>{%- endif -%}
+            {%- if block.settings.email != blank -%}<li class="footer__contact-item">{%- render 'icon-mail' -%}<a href="mailto:{{ block.settings.email }}" class="color-base">{{ block.settings.email }}</a></li>{%- endif -%}
+            {%- if block.settings.hours != blank -%}<li class="footer__contact-item">{%- render 'icon-calendar' -%}<span>{{ block.settings.hours }}</span></li>{%- endif -%}
+          </ul>
+          {%- if block.settings.show_social -%}
+          {%- capture c_social -%}
+          {%- for i in (1..10) -%}
+          {%- assign surl = 'social_media_' | append: i -%}
+          {%- assign surl = settings[surl] -%}
+          {%- if surl != blank -%}
+          {%- assign stokens = surl | split: '//' | last | replace: 'www.', '' | split: '.' -%}
+          {%- assign sicon = '' -%}
+          {%- for t in stokens -%}
+          {%- capture ic -%}{%- render "icons-list-social" icon_name:t -%}{%- endcapture -%}
+          {%- if ic != blank -%}{%- assign sicon = ic -%}{%- break -%}{%- endif -%}
+          {%- endfor -%}
+          <li><a href="{{ surl }}">{{ sicon }}<span class="visually-hidden">{{ stokens | last }}</span></a></li>
+          {%- endif -%}
+          {%- endfor -%}
+          {%- endcapture -%}
+          {%- if c_social != blank -%}<ul class="unstyle-ul footer-social__icons footer__contact-social">{{ c_social }}</ul>{%- endif -%}
+          {%- endif -%}
+        </div>
         {%- endcase -%}
       </div>
       {%- endfor -%}
@@ -564,6 +611,14 @@ footer .field{
 }
 .waggly-footer__deco img { max-width: min(760px, 90%); height: auto; display: block; }
 .waggly-footer .footer__menu a { text-decoration: none; }
+.footer__contact-list { display: flex; flex-direction: column; gap: 12px; margin: 4px 0 0; }
+.footer__contact-item { display: flex; gap: 10px; align-items: flex-start; line-height: 1.4; }
+.footer__contact-item svg { width: 18px; height: 18px; flex: 0 0 auto; margin-top: 3px; opacity: .85; }
+.footer__contact-item svg path { fill: currentColor; }
+.footer__contact-item a { text-decoration: none; }
+.footer__contact-item p { margin: 0; }
+.footer__contact-social { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
+.footer__contact-social svg { width: 20px; height: 20px; }
 @media (max-width: 576px) {
   .waggly-footer--rounded { border-top-left-radius: 26px; border-top-right-radius: 26px; }
   .waggly-footer__deco { transform: translateY(-70%); }
@@ -975,9 +1030,30 @@ footer .field{
             "label": "t:sections.general.settings.heading.label"
           }
         ]
+      },
+      {
+        "type": "links",
+        "name": "Links column",
+        "settings": [
+          { "type": "text", "id": "heading", "default": "Shop", "label": "Heading" },
+          { "type": "textarea", "id": "links", "label": "Links", "info": "One item per line. Add an optional URL after a | — e.g. Dogs | /collections/dogs", "default": "Dogs\nCats\nSmall Pets\nBirds\nFish" }
+        ]
+      },
+      {
+        "type": "contact",
+        "name": "Contact",
+        "settings": [
+          { "type": "text", "id": "heading", "default": "Get in Touch", "label": "Heading" },
+          { "type": "richtext", "id": "text", "label": "Intro text" },
+          { "type": "richtext", "id": "address", "label": "Address" },
+          { "type": "text", "id": "phone", "label": "Phone" },
+          { "type": "text", "id": "email", "label": "Email" },
+          { "type": "richtext", "id": "hours", "label": "Opening hours" },
+          { "type": "checkbox", "id": "show_social", "label": "Show social icons", "default": true }
+        ]
       }
     ],
-    "max_blocks": 6,
+    "max_blocks": 8,
     "default": {
       "blocks": [
         {
