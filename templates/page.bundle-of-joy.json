@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "hero": {
+      "type": "waggly-hero",
+      "settings": {
+        "image_position": "right",
+        "width": "page-wide",
+        "heading_tag": "h1",
+        "eyebrow": "Puppy & Kitten Starter Kit",
+        "eyebrow_paw": true,
+        "heading": "Bundle of Joy",
+        "heading_accent": "",
+        "subtext": "<p>For the tiny paws about to take over your home.</p>",
+        "primary_label": "Shop for Puppies",
+        "primary_link": "/collections/puppies",
+        "secondary_label": "Shop for Kittens",
+        "secondary_link": "/collections/kittens",
+        "show_decoration": true,
+        "bg_color": "#f7f2ef",
+        "accent_color": "#9b643d",
+        "top_spacing": "none"
+      }
+    },
+    "intro": {
+      "type": "waggly-story",
+      "settings": {
+        "show_image_placeholder": false,
+        "align": "center",
+        "body": "<p>A tiny new paw print in your home changes everything — sleepless nights, endless curiosity, and a love that hits instantly.</p><p>We've put together everything they need to settle in happy and healthy, so you can spend less time figuring it out and more time enjoying the cuddles.</p><p><strong>Welcome home, tiny one.</strong></p>",
+        "top_spacing": "normal"
+      }
+    },
+    "tiles": {
+      "type": "waggly-category-cards",
+      "blocks": {
+        "puppy": { "type": "category", "settings": { "tab": "dogs", "heading": "Puppy Essentials", "cta_label": "Shop for Puppies", "link": "/collections/puppies", "bg_color": "#d3a5d8" } },
+        "kitten": { "type": "category", "settings": { "tab": "cats", "heading": "Kitten Essentials", "cta_label": "Shop for Kittens", "link": "/collections/kittens", "bg_color": "#89b5ae" } }
+      },
+      "block_order": ["puppy", "kitten"],
+      "settings": {
+        "heading": "Start Here",
+        "width": "page-wide",
+        "enable_tabs": false,
+        "show_paws": true,
+        "show_arrows": false,
+        "cta_bg": "#FFFFFF",
+        "cta_color": "#544340",
+        "top_spacing": "normal"
+      }
+    },
+    "products": {
+      "type": "waggly-products",
+      "settings": {
+        "eyebrow": "The Bundle",
+        "heading": "Everything They Need",
+        "subtext": "<p>Handpicked starter essentials for your newest family member.</p>",
+        "collection": "bundle-of-joy",
+        "product_limit": 4,
+        "show_subtitle": true,
+        "width": "page-wide",
+        "top_spacing": "normal"
+      }
+    }
+  },
+  "order": ["hero", "intro", "tiles", "products"]
+}

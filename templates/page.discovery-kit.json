@@ -1,0 +1,47 @@
+{
+  "sections": {
+    "hero": {
+      "type": "waggly-hero",
+      "settings": {
+        "image_position": "right",
+        "width": "page-wide",
+        "heading_tag": "h1",
+        "eyebrow": "Try Before You Commit",
+        "eyebrow_paw": true,
+        "heading": "Discovery Kit",
+        "heading_accent": "",
+        "subtext": "<p>Curious what they'll love? Let them decide.</p>",
+        "primary_label": "Explore the Picks",
+        "primary_link": "/collections/discovery-kit",
+        "secondary_label": "",
+        "show_decoration": true,
+        "bg_color": "#f7f2ef",
+        "accent_color": "#9b643d",
+        "top_spacing": "none"
+      }
+    },
+    "intro": {
+      "type": "waggly-story",
+      "settings": {
+        "show_image_placeholder": false,
+        "align": "center",
+        "body": "<p>Not sure if something new is worth adding to their routine? Now you don't have to guess. Small, trial-friendly picks from some of the best out there — so you (and they) can decide before committing to the full thing.</p><p><strong>Let the discovering begin.</strong></p>",
+        "top_spacing": "normal"
+      }
+    },
+    "products": {
+      "type": "waggly-products",
+      "settings": {
+        "eyebrow": "Discovery Picks",
+        "heading": "Trial-Friendly Favourites",
+        "subtext": "<p>Small sizes, big personalities — find their next favourite.</p>",
+        "collection": "discovery-kit",
+        "product_limit": 8,
+        "show_subtitle": true,
+        "width": "page-wide",
+        "top_spacing": "normal"
+      }
+    }
+  },
+  "order": ["hero", "intro", "products"]
+}
