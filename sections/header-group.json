@@ -11,11 +11,67 @@
   "type": "header",
   "name": "t:sections.header.name",
   "sections": {
+    "announcement_bar_header_EbDBKX": {
+      "type": "announcement-bar-header",
+      "blocks": {
+        "announcement_MkANb7": {
+          "type": "announcement",
+          "settings": {
+            "text": "ANNOUNCE something here",
+            "link_name": "Learn more",
+            "link_url": "",
+            "color_background": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_MkANb7"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "width": "page-fullwidth",
+        "text_size": "announcement-text-5",
+        "slider_mode": true,
+        "bar_time": 3
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
+        "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
+          "type": "main_menu_icons",
+          "settings": {
+            "icon1": "book_sm",
+            "icon2": "",
+            "icon3": "",
+            "icon4": "dog_sm",
+            "icon5": "cat_sm",
+            "icon6": "",
+            "icon7": "",
+            "icon8": "",
+            "icon9": "",
+            "icon10": "",
+            "icon11": ""
+          }
+        },
+        "1901cb37-14a2-4d76-81c5-51750872f161": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "mega_menu_item_name": "Dog",
+            "grid": "col-6",
+            "show_banner": true,
+            "banner_link": "",
+            "heading": "Free shipping",
+            "text": "No code needed, just head for checkout!",
+            "button_label": "Shop now!"
+          }
+        },
         "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01": {
           "type": "mega_menu",
+          "disabled": true,
           "settings": {
             "mega_menu_item_name": "Cat",
             "grid": "col-3",
@@ -25,40 +81,12 @@
             "text": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
             "button_label": "Shop Now!"
           }
-        },
-        "a09f6cc1-7be6-4132-816c-cc67060d5f8e": {
-          "type": "main_menu_icons",
-          "settings": {
-            "icon1": "dog_sm",
-            "icon2": "cat_sm",
-            "icon3": "fish_sm",
-            "icon4": "mouse_sm",
-            "icon5": "snake_sm",
-            "icon6": "bird_sm",
-            "icon7": "pharmacy_sm",
-            "icon8": "brand_sm",
-            "icon9": "sale_sm",
-            "icon10": "grooming_sm",
-            "icon11": "new_sm"
-          }
-        },
-        "1901cb37-14a2-4d76-81c5-51750872f161": {
-          "type": "mega_menu",
-          "settings": {
-            "mega_menu_item_name": "Dog",
-            "grid": "col-3",
-            "show_banner": true,
-            "banner_link": "",
-            "heading": "Free shipping",
-            "text": "No code needed, just head for checkout!",
-            "button_label": "Shop now!"
-          }
         }
       },
       "block_order": [
-        "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01",
         "a09f6cc1-7be6-4132-816c-cc67060d5f8e",
-        "1901cb37-14a2-4d76-81c5-51750872f161"
+        "1901cb37-14a2-4d76-81c5-51750872f161",
+        "f1fa6e5b-aad0-45bb-a90f-3d6c0d491b01"
       ],
       "settings": {
         "header_layout": "header-layout-classic",
@@ -112,6 +140,7 @@
     }
   },
   "order": [
+    "announcement_bar_header_EbDBKX",
     "header",
     "7d523903-fdcf-4c91-be93-04d178b1c8d3"
   ]

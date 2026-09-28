@@ -13,7 +13,7 @@
       "type": "waggly-hero",
       "settings": {
         "image_position": "right",
-        "width": "page-wide",
+        "width": "page-width",
         "heading_tag": "h1",
         "eyebrow": "Happy pets, happy hearts",
         "eyebrow_paw": true,
@@ -21,8 +21,11 @@
         "heading_accent": "Cats & Dogs",
         "subtext": "<p>Premium care, nutritious food, and cozy essentials for your furry family.</p>",
         "primary_label": "Shop Now",
+        "primary_link": "shopify://collections/all",
         "secondary_label": "Explore Services",
-        "show_decoration": true,
+        "secondary_link": "shopify://collections/all",
+        "image": "shopify://shop_images/Asset_2_4x_7344d91a-4847-49d5-8144-b08b8521c91b.png",
+        "show_decoration": false,
         "bg_color": "#f7f2ef",
         "accent_color": "#9b643d",
         "top_spacing": "none"
@@ -32,7 +35,7 @@
       "type": "waggly-hero",
       "settings": {
         "image_position": "left",
-        "width": "page-wide",
+        "width": "page-width",
         "heading_tag": "h2",
         "eyebrow": "Happy pets, happy hearts",
         "eyebrow_paw": true,
@@ -40,33 +43,203 @@
         "heading_accent": "Cats & Dogs",
         "subtext": "<p>Premium care, nutritious food, and cozy essentials for your furry family.</p>",
         "primary_label": "Shop Now",
+        "primary_link": "",
         "secondary_label": "Explore Services",
-        "show_decoration": true,
+        "secondary_link": "",
+        "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
+        "show_decoration": false,
         "bg_color": "#f7f2ef",
         "accent_color": "#9b643d",
-        "top_spacing": "small"
+        "top_spacing": "none"
+      }
+    },
+    "ticker_XcY7HW": {
+      "type": "ticker",
+      "name": "t:sections.ticker.presets.name",
+      "settings": {
+        "top_spacing": "small",
+        "ticker_time": 10,
+        "direction": "ticker-to-right",
+        "text_size": "ticker-text-5",
+        "url": "",
+        "text": "<p><strong>ANNOUNCEMENT </strong>— Use this section to include scrolling announcement text</p>",
+        "show_icon": "svg",
+        "icon_name": "advertising_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "waggly_decorations_yDCmbA": {
+      "type": "waggly-decorations",
+      "blocks": {
+        "element_GeFN66": {
+          "type": "element",
+          "settings": {
+            "image": "shopify://shop_images/Asset_6_4x_70df2af6-c625-4c0e-91f0-f2fd2db042ab.png",
+            "svg_code": "",
+            "x": 14,
+            "y": 90,
+            "z_index": 2,
+            "width": 140,
+            "mobile_scale": 70,
+            "rotation": -20,
+            "opacity": 100,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": false,
+            "link": ""
+          }
+        },
+        "element_qYTMrB": {
+          "type": "element",
+          "settings": {
+            "svg_code": "",
+            "x": 50,
+            "y": 0,
+            "z_index": 3,
+            "width": 140,
+            "mobile_scale": 70,
+            "rotation": 0,
+            "opacity": 100,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": true,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "element_GeFN66",
+        "element_qYTMrB"
+      ],
+      "name": "Waggly decorations",
+      "settings": {
+        "canvas_height": 0
       }
     },
     "categories": {
       "type": "waggly-category-cards",
       "blocks": {
-        "c1": { "type": "category", "settings": { "tab": "dogs", "heading": "Nutrition They Love!", "cta_label": "Shop Food", "bg_color": "#d3a5d8" } },
-        "c2": { "type": "category", "settings": { "tab": "dogs", "heading": "Fun & Play Everyday!", "cta_label": "Shop Toys", "bg_color": "#89b5ae" } },
-        "c3": { "type": "category", "settings": { "tab": "dogs", "heading": "Grooming Made Easy!", "cta_label": "Shop Grooming", "bg_color": "#f9d090" } },
-        "c4": { "type": "category", "settings": { "tab": "dogs", "heading": "Essentials For Comfort!", "cta_label": "Shop Essentials", "bg_color": "#f2af88" } },
-        "c5": { "type": "category", "settings": { "tab": "cats", "heading": "Nutrition They Love!", "cta_label": "Shop Food", "bg_color": "#d3a5d8" } },
-        "c6": { "type": "category", "settings": { "tab": "cats", "heading": "Fun & Play Everyday!", "cta_label": "Shop Toys", "bg_color": "#89b5ae" } },
-        "c7": { "type": "category", "settings": { "tab": "cats", "heading": "Grooming Made Easy!", "cta_label": "Shop Grooming", "bg_color": "#f9d090" } },
-        "c8": { "type": "category", "settings": { "tab": "cats", "heading": "Essentials For Comfort!", "cta_label": "Shop Essentials", "bg_color": "#f2af88" } }
+        "c1": {
+          "type": "category",
+          "settings": {
+            "tab": "dogs",
+            "image": "shopify://shop_images/image_49.png",
+            "heading": "Nutrition They Love!",
+            "cta_label": "Shop Food",
+            "link": "",
+            "bg_color": "#d3a5d8"
+          }
+        },
+        "c2": {
+          "type": "category",
+          "settings": {
+            "tab": "dogs",
+            "image": "shopify://shop_images/image_50.png",
+            "heading": "Fun & Play Everyday!",
+            "cta_label": "Shop Toys",
+            "link": "",
+            "bg_color": "#89b5ae"
+          }
+        },
+        "c3": {
+          "type": "category",
+          "settings": {
+            "tab": "dogs",
+            "image": "shopify://shop_images/image_51.png",
+            "heading": "Grooming Made Easy!",
+            "cta_label": "Shop Grooming",
+            "link": "",
+            "bg_color": "#f9d090"
+          }
+        },
+        "c4": {
+          "type": "category",
+          "settings": {
+            "tab": "dogs",
+            "image": "shopify://shop_images/image_52.png",
+            "heading": "Essentials For Comfort!",
+            "cta_label": "Shop Essentials",
+            "link": "",
+            "bg_color": "#f2af88"
+          }
+        },
+        "c5": {
+          "type": "category",
+          "settings": {
+            "tab": "cats",
+            "image": "shopify://shop_images/image_56.png",
+            "heading": "Nutrition They Love!",
+            "cta_label": "Shop Food",
+            "link": "",
+            "bg_color": "#d3a5d8"
+          }
+        },
+        "c6": {
+          "type": "category",
+          "settings": {
+            "tab": "cats",
+            "image": "shopify://shop_images/image_54.png",
+            "heading": "Fun & Play Everyday!",
+            "cta_label": "Shop Toys",
+            "link": "",
+            "bg_color": "#89b5ae"
+          }
+        },
+        "c7": {
+          "type": "category",
+          "settings": {
+            "tab": "cats",
+            "image": "shopify://shop_images/image_57.png",
+            "heading": "Grooming Made Easy!",
+            "cta_label": "Shop Grooming",
+            "link": "",
+            "bg_color": "#f9d090"
+          }
+        },
+        "c8": {
+          "type": "category",
+          "settings": {
+            "tab": "cats",
+            "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
+            "heading": "Essentials For Comfort!",
+            "cta_label": "Shop Essentials",
+            "link": "",
+            "bg_color": "#f2af88"
+          }
+        }
       },
-      "block_order": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"],
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8"
+      ],
       "settings": {
         "heading": "Explore The Best For Your Pet",
-        "width": "page-wide",
+        "width": "page-width",
+        "show_paws": true,
+        "show_arrows": true,
+        "panel_bg": "#ffffff",
         "enable_tabs": true,
         "tab1_label": "Dogs",
         "tab2_label": "Cats",
-        "cta_bg": "#FFFFFF",
+        "cta_bg": "#ffffff",
         "cta_color": "#544340",
         "top_spacing": "normal"
       }
@@ -74,18 +247,49 @@
     "value": {
       "type": "waggly-value",
       "blocks": {
-        "v1": { "type": "value", "settings": { "label": "Premium Quality Products" } },
-        "v2": { "type": "value", "settings": { "label": "Vet Approved & Safe" } },
-        "v3": { "type": "value", "settings": { "label": "Free Shipping above $49" } },
-        "v4": { "type": "value", "settings": { "label": "7 Day Easy Returns" } },
-        "v5": { "type": "value", "settings": { "label": "24/7 Pet Care Support" } }
+        "v1": {
+          "type": "value",
+          "settings": {
+            "label": "Premium Quality Products"
+          }
+        },
+        "v2": {
+          "type": "value",
+          "settings": {
+            "label": "Vet Approved & Safe"
+          }
+        },
+        "v3": {
+          "type": "value",
+          "settings": {
+            "label": "Free Shipping above $49"
+          }
+        },
+        "v4": {
+          "type": "value",
+          "settings": {
+            "label": "7 Day Easy Returns"
+          }
+        },
+        "v5": {
+          "type": "value",
+          "settings": {
+            "label": "24/7 Pet Care Support"
+          }
+        }
       },
-      "block_order": ["v1", "v2", "v3", "v4", "v5"],
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
       "settings": {
         "heading": "Because They Deserve The Best",
-        "width": "page-wide",
+        "width": "page-width",
         "bg_color": "#f2ebe3",
-        "icon_bg": "#FFFFFF",
+        "icon_bg": "#ffffff",
         "top_spacing": "normal"
       }
     },
@@ -95,13 +299,21 @@
         "eyebrow": "Our picks",
         "heading": "Loved By Pets & Chosen By Parents",
         "subtext": "<p>Handpicked favorites for healthy, happy pets — quality you can trust.</p>",
-        "collection": "top-picks-of-the-week",
+        "collection": "loved-by-pets",
         "product_limit": 4,
         "show_subtitle": true,
-        "width": "page-wide",
+        "width": "page-width",
         "top_spacing": "normal"
       }
     }
   },
-  "order": ["hero", "intro", "categories", "value", "products"]
+  "order": [
+    "hero",
+    "intro",
+    "ticker_XcY7HW",
+    "waggly_decorations_yDCmbA",
+    "categories",
+    "value",
+    "products"
+  ]
 }

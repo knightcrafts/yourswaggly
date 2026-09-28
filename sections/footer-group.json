@@ -23,7 +23,7 @@
             "phone": "+1 (555) 123-4567",
             "email": "support@yourswaggly.com",
             "hours": "<p>Mon–Sat: 9:00 AM – 7:00 PM<br/>Sun: Closed</p>",
-            "show_social": true
+            "show_social": false
           }
         },
         "shop": {
@@ -62,10 +62,17 @@
           }
         }
       },
-      "block_order": ["contact", "shop", "categories", "services", "company", "help"],
+      "block_order": [
+        "contact",
+        "shop",
+        "categories",
+        "services",
+        "company",
+        "help"
+      ],
       "settings": {
         "rounded_top": true,
-        "custom_copyright": "© 2025 Yours Waggly. All rights reserved.",
+        "custom_copyright": "© 2026 Yours Waggly. All rights reserved.",
         "top_spacing": "normal",
         "width": "page-width",
         "show_top_line": false,
@@ -76,9 +83,9 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "color_heading": "#FFFFFF",
-        "color_text": "#EFE3D8",
-        "color_links": "#EFE3D8",
+        "color_heading": "#ffffff",
+        "color_text": "#efe3d8",
+        "color_links": "#efe3d8",
         "color_input_bg": "#ffffff",
         "color_input_bg_active": "rgba(0,0,0,0)",
         "background": "color",
@@ -87,5 +94,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }

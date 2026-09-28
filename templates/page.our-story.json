@@ -1,107 +1,252 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "waggly-hero",
       "settings": {
         "image_position": "right",
-        "width": "page-wide",
+        "width": "page-width",
         "heading_tag": "h1",
         "heading_style": "handwritten",
         "eyebrow": "Our Story",
         "eyebrow_paw": false,
         "heading": "Love Beyond",
         "heading_accent": "the Bowl",
-        "subtext": "<p>Pets are no longer being brought home only for companionship or security. Increasingly, they are becoming a part of our lives in a much deeper way — a source of happiness, comfort, companionship and emotional well-being.</p>",
+        "subtext": "<p><em>Pets are no longer being brought home only for companionship or security or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way, a source of happiness, comfort, companionship and emotional well-being.</em></p><p><em>At a time when stress has become a part of everyday life across ages and generations the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</em></p>",
         "primary_label": "",
+        "primary_link": "",
         "secondary_label": "",
-        "show_decoration": true,
-        "bg_color": "#f7f2ef",
+        "secondary_link": "",
+        "image": "shopify://shop_images/image_50.png",
+        "show_decoration": false,
+        "bg_color": "#f5e3d2",
         "accent_color": "#9b643d",
         "top_spacing": "none"
-      }
-    },
-    "changing": {
-      "type": "waggly-story",
-      "settings": {
-        "heading": "Something has been changing around us.",
-        "heading_style": "normal",
-        "heading_size": "large",
-        "image_position": "left",
-        "width": "page-wide",
-        "body": "<p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</p>",
-        "top_spacing": "normal"
       }
     },
     "curious": {
       "type": "waggly-cards",
       "blocks": {
-        "q1": { "type": "card", "settings": { "text": "What is changing in the way people see pets?" } },
-        "q2": { "type": "card", "settings": { "text": "What are they looking for?" } },
-        "q3": { "type": "card", "settings": { "text": "What does this mean for the pet industry?" } },
-        "q4": { "type": "card", "settings": { "text": "How will the role of pets evolve in the years ahead?" } }
+        "q1": {
+          "type": "card",
+          "settings": {
+            "text": "What is changing in the way people see pets?",
+            "svg_code": "",
+            "bg_color": "#f5e3d2"
+          }
+        },
+        "q2": {
+          "type": "card",
+          "settings": {
+            "text": "What are they looking for?",
+            "svg_code": "",
+            "bg_color": "#e6e7d4"
+          }
+        },
+        "q3": {
+          "type": "card",
+          "settings": {
+            "text": "What does this mean for the pet industry?",
+            "svg_code": "",
+            "bg_color": "#f3e7d9"
+          }
+        },
+        "q4": {
+          "type": "card",
+          "settings": {
+            "text": "How will the role of pets evolve in the years ahead?",
+            "svg_code": "",
+            "bg_color": "#e3e7e7"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
       "settings": {
         "eyebrow": "We found this change interesting.",
         "heading": "And it made us curious.",
         "heading_style": "handwritten",
+        "card_shape": "rounded",
+        "card_text_align": "center",
         "card_bg": "#faf5ef",
         "icon_color": "#9b643d",
+        "width": "page-width",
+        "top_spacing": "small"
+      }
+    },
+    "waggly_hero_etFQbV": {
+      "type": "waggly-hero",
+      "settings": {
+        "image_position": "left",
+        "width": "page-width",
+        "heading_tag": "h1",
+        "heading_style": "handwritten",
+        "eyebrow": "",
+        "eyebrow_paw": false,
+        "heading": "The idea of Yours Waggly took shape.",
+        "heading_accent": "",
+        "subtext": "<p><em>That curiosity led us to explore the world of pets more closely — and somewhere along the way, it all came together.</em></p><p><em>We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</em></p>",
+        "primary_label": "",
+        "primary_link": "",
+        "secondary_label": "",
+        "secondary_link": "",
+        "image": "shopify://shop_images/image_50.png",
+        "show_decoration": false,
+        "bg_color": "#e6e7d4",
+        "accent_color": "#9b643d",
+        "top_spacing": "small"
+      }
+    },
+    "changing": {
+      "type": "waggly-story",
+      "disabled": true,
+      "settings": {
+        "is_quote": false,
+        "eyebrow": "",
+        "heading": "Something has been changing around us.",
+        "heading_tag": "h2",
+        "heading_style": "normal",
+        "heading_size": "large",
+        "body": "<p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</p>",
+        "quote_author": "",
+        "button_label": "",
+        "button_link": "",
+        "show_image_placeholder": true,
+        "image_position": "left",
+        "align": "left",
         "width": "page-wide",
+        "bg_color": "rgba(0,0,0,0)",
         "top_spacing": "normal"
       }
     },
     "idea": {
       "type": "waggly-story",
+      "disabled": true,
       "settings": {
+        "is_quote": false,
+        "eyebrow": "",
         "heading": "The idea of Yours Waggly took shape.",
+        "heading_tag": "h2",
         "heading_style": "handwritten",
-        "image_position": "left",
-        "width": "page-wide",
+        "heading_size": "normal",
         "body": "<p>That curiosity led us to explore the world of pets more closely — and somewhere along the way, it all came together.</p><p>We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p>",
+        "quote_author": "",
+        "button_label": "",
+        "button_link": "",
+        "show_image_placeholder": true,
+        "image_position": "left",
+        "align": "left",
+        "width": "page-wide",
+        "bg_color": "rgba(0,0,0,0)",
         "top_spacing": "normal"
       }
     },
     "thinking": {
       "type": "waggly-steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Research", "description": "Ask questions and look beyond the obvious", "icon_bg": "#f2e6d6", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M7 3h7l4 4v14H7z\" stroke=\"#8a5a34\" stroke-width=\"1.6\"/><path d=\"M9 12h6M9 16h5M9 8h3\" stroke=\"#8a5a34\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>" } },
-        "s2": { "type": "step", "settings": { "title": "Evaluate", "description": "Research markets and evaluate choices", "icon_bg": "#dcebe0", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M5 20V11M12 20V5M19 20v-6\" stroke=\"#5f8f6a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg>" } },
-        "s3": { "type": "step", "settings": { "title": "Choose", "description": "Make decisions based on what truly creates value", "icon_bg": "#f2af88", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>" } },
-        "s4": { "type": "step", "settings": { "title": "Create Value", "description": "Invest in what is genuinely useful", "icon_bg": "#f2e6d6", "svg_code": "<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M12 20S3 14 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14 12 20 12 20Z\" stroke=\"#8a5a34\" stroke-width=\"1.7\"/></svg>" } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Research",
+            "description": "Ask questions and look beyond the obvious",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M7 3h7l4 4v14H7z\" stroke=\"#ffffff\" stroke-width=\"1.6\"></path><path d=\"M9 12h6M9 16h5M9 8h3\" stroke=\"#8a5a34\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg>",
+            "icon_bg": "#885e41"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Evaluate",
+            "description": "Research markets and evaluate choices",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M5 20V11M12 20V5M19 20v-6\" stroke=\"#ffffff\" stroke-width=\"2.2\" stroke-linecap=\"round\"></path></svg>",
+            "icon_bg": "#8c9263"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Choose",
+            "description": "Make decisions based on what truly creates value",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+            "icon_bg": "#e3a67d"
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "title": "Create Value",
+            "description": "Invest in what is genuinely useful",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M12 20S3 14 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14 12 20 12 20Z\" stroke=\"#8a5a34\" stroke-width=\"1.7\"></path></svg>",
+            "icon_bg": "#fddc9c"
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3", "s4"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "custom_css": [
+        ".waggly-steps-section {margin-top: -40px;}"
+      ],
       "settings": {
         "eyebrow": "Our Thinking",
+        "heading": "",
         "body": "<p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p><strong>We wanted to bring that same thinking into the pet industry.</strong></p>",
+        "bg_color": "#c0c886",
         "show_divider": true,
-        "divider_color": "#e0d5c8",
+        "divider_color": "#8c9263",
         "icon_shape": "rounded-square",
         "icon_bg": "#f2e6d6",
         "icon_color": "#544340",
-        "width": "page-wide",
-        "top_spacing": "normal"
+        "width": "page-width",
+        "top_spacing": "none"
       }
     },
     "marketplace": {
       "type": "waggly-story",
+      "disabled": true,
       "settings": {
+        "is_quote": false,
+        "eyebrow": "",
         "heading": "More Than A Marketplace",
+        "heading_tag": "h2",
         "heading_style": "normal",
         "heading_size": "large",
-        "image_position": "left",
-        "width": "page-wide",
         "body": "<p>Rather than being just another marketplace or store selling products, we wanted Yours Waggly to be a place that shares insights on what is good for our pets, helps identify what is genuinely useful, and brings together things that we believe are worth considering.</p>",
+        "quote_author": "",
+        "button_label": "",
+        "button_link": "",
+        "show_image_placeholder": true,
+        "image_position": "left",
+        "align": "left",
+        "width": "page-wide",
+        "bg_color": "rgba(0,0,0,0)",
         "top_spacing": "normal"
       }
     },
     "closing": {
       "type": "waggly-closing",
+      "disabled": true,
       "settings": {
         "left_text": "<p>Because when we make choices for those who depend on us, we want to make better ones.</p>",
         "quote_intro": "And when someone trusts you without question,",
         "quote": "<p>you owe them your best.</p>",
         "logo_text": "Yours Waggly",
+        "logo_width": 180,
         "rounded_top": true,
         "bg_color": "#544340",
         "text_color": "#f3ece4",
@@ -109,5 +254,14 @@
       }
     }
   },
-  "order": ["hero", "changing", "curious", "idea", "thinking", "marketplace", "closing"]
+  "order": [
+    "hero",
+    "curious",
+    "waggly_hero_etFQbV",
+    "changing",
+    "idea",
+    "thinking",
+    "marketplace",
+    "closing"
+  ]
 }
