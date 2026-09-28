@@ -10,7 +10,9 @@ Context for AI/dev sessions on this project. Read this first.
 ## Store & deploy (IMPORTANT)
 - **Store domain:** `cdz1eu-2n.myshopify.com`
 - **Live theme:** `Yours Waggly Custom` — **ID `158488297664`** (role: live).
-- ⚠️ **There is a duplicate unpublished theme also named "Yours Waggly Custom" (`158489870528`).** Always push by **ID** to the live one. (Recommend deleting the duplicate.)
+- ✅ Duplicate/dev themes were deleted (2026‑09‑28) — **only the live `158488297664` remains** (plus vendor themes Horizon/Drive/Domestic). Always push by **ID** to the live one.
+- ⚠️ **Never deploy with `shopify theme push --unpublished`** — it creates a NEW theme from local files (which lack the client's editor‑uploaded images) and looks "reverted". Deploy = `--only <files>` to the live ID.
+- 🗂️ Live content was snapshotted into the repo on 2026‑09‑28 (commit `2728bb6`): `templates/*.json`, `config/settings_data.json`, `sections/header-group.json`/`footer-group.json` now mirror live (image refs, decorations, ticker included). The client keeps editing live, so **re‑pull before trusting these** and still don't push them to live unless intentionally changing content.
 - **Auth:** Shopify CLI with a **Theme Access token** (Admin → Apps → *Theme Access*). Pass via env `SHOPIFY_CLI_THEME_TOKEN` (never commit it to the repo; rotate if leaked).
 - **Push pattern (surgical — code only):**
   ```bash
@@ -83,5 +85,5 @@ Context for AI/dev sessions on this project. Read this first.
 ## Open / next tasks
 - Wire the real illustrations from `local/4x/` into the sections (hero, category cards, value, footer decoration).
 - Optional: white‑panel + slider treatment on the Products section (mockup shows a similar container).
-- Delete the duplicate unpublished "Yours Waggly Custom" theme.
+- ✅ Done (2026‑09‑28): deleted duplicate/dev themes; snapshotted live content into git (`2728bb6`).
 - Rotate the Theme Access token (it was shared in chat during setup).
