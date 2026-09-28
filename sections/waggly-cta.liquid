@@ -1,0 +1,182 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-cta top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cta--hand{% endif %}" style="--wg-cta-bg: {{ s.bg_color }}; --wg-cta-accent: {{ s.accent_color }};">
+  <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %} waggly-cta__inner">
+    {%- if s.image_left != blank -%}
+      <img class="waggly-cta__deco waggly-cta__deco--left" src="{{ s.image_left | image_url: width: 500 }}" width="{{ s.image_left.width }}" height="{{ s.image_left.height }}" alt="" loading="lazy">
+    {%- endif -%}
+    {%- if s.image_right != blank -%}
+      <img class="waggly-cta__deco waggly-cta__deco--right" src="{{ s.image_right | image_url: width: 400 }}" width="{{ s.image_right.width }}" height="{{ s.image_right.height }}" alt="" loading="lazy">
+    {%- endif -%}
+
+    <div class="waggly-cta__content">
+      {%- if s.eyebrow != blank -%}
+        <p class="waggly-cta__eyebrow">{{ s.eyebrow | escape }}</p>
+      {%- endif -%}
+      {%- if s.heading != blank -%}
+        <h2 class="waggly-cta__heading">{{ s.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if s.subtext != blank -%}
+        <div class="waggly-cta__text rte">{{ s.subtext }}</div>
+      {%- endif -%}
+
+      {%- if s.primary_label != blank or s.secondary_label != blank -%}
+        <div class="waggly-cta__actions">
+          {%- if s.primary_label != blank -%}
+            <a class="waggly-cta__btn waggly-cta__btn--primary"{% if s.primary_link != blank %} href="{{ s.primary_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+              {{ s.primary_label | escape }}
+            </a>
+          {%- endif -%}
+          {%- if s.secondary_label != blank -%}
+            <a class="waggly-cta__btn waggly-cta__btn--ghost"{% if s.secondary_link != blank %} href="{{ s.secondary_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+              {{ s.secondary_label | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-cta { background: var(--wg-cta-bg, transparent); }
+.waggly-cta__inner {
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden;
+}
+.waggly-cta__content {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+.waggly-cta__eyebrow {
+  font-family: var(--font-body-family);
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 10px;
+}
+.waggly-cta__heading {
+  font-family: var(--font-heading-family);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  color: var(--color-base);
+  margin: 0 0 14px;
+}
+.waggly-cta--hand .waggly-cta__heading { font-family: 'Kalam', cursive; }
+.waggly-cta__text {
+  color: var(--color-base);
+  opacity: .82;
+  font-size: 1.05rem;
+  margin: 0 auto 26px;
+}
+.waggly-cta__text p { margin: 0; }
+
+.waggly-cta__actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.waggly-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--duration-short, .2s) ease, background var(--duration-short, .2s) ease, color var(--duration-short, .2s) ease;
+}
+.waggly-cta__btn:hover { transform: translateY(-2px); }
+.waggly-cta__btn--primary { background: var(--wg-cta-accent, var(--color-accent)); color: #fff; }
+.waggly-cta__btn--ghost {
+  background: transparent;
+  color: var(--wg-cta-accent, var(--color-accent));
+  border: 2px solid var(--wg-cta-accent, var(--color-accent));
+}
+.waggly-cta__btn--ghost:hover { background: var(--wg-cta-accent, var(--color-accent)); color: #fff; }
+.waggly-cta__btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+
+.waggly-cta__deco {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  height: auto;
+  pointer-events: none;
+  opacity: .95;
+}
+.waggly-cta__deco--left { left: 0; width: clamp(120px, 20vw, 240px); }
+.waggly-cta__deco--right { right: 0; width: clamp(80px, 12vw, 150px); }
+
+@media (max-width: 989px) {
+  .waggly-cta__deco { opacity: .35; }
+  .waggly-cta__deco--left { width: 120px; }
+  .waggly-cta__deco--right { width: 84px; }
+}
+@media (max-width: 576px) {
+  .waggly-cta__btn { flex: 1 1 auto; }
+  .waggly-cta__deco { display: none; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly CTA",
+  "tag": "section",
+  "class": "waggly-cta-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow (optional)" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Still not sure?" },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "normal", "label": "Normal (Outfit)" },
+        { "value": "handwritten", "label": "Handwritten (Kalam)" }
+      ],
+      "default": "normal"
+    },
+    { "type": "richtext", "id": "subtext", "label": "Text", "default": "<p>Explore our full range of pet products or get in touch for personalized recommendations.</p>" },
+    { "type": "text", "id": "primary_label", "label": "Primary button label", "default": "Shop All Products" },
+    { "type": "url", "id": "primary_link", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button label", "default": "Contact Us" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary button link" },
+    { "type": "header", "content": "Decorations" },
+    { "type": "image_picker", "id": "image_left", "label": "Bottom-left image (optional)" },
+    { "type": "image_picker", "id": "image_right", "label": "Bottom-right image (optional)" },
+    { "type": "header", "content": "Colors" },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "#f7f2ef" },
+    { "type": "color", "id": "accent_color", "label": "Button accent", "default": "#9b643d" },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-width", "label": "Boxed" },
+        { "value": "page-wide", "label": "Full width" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "presets": [
+    { "name": "Waggly CTA" }
+  ]
+}
+{% endschema %}

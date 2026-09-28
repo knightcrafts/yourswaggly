@@ -1,0 +1,275 @@
+{%- liquid
+  assign s = section.settings
+  assign products = s.collection.products
+-%}
+
+<section class="waggly-kit top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-kit--hand{% endif %}">
+  <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %}">
+    <div class="waggly-kit__head">
+      {%- if s.eyebrow != blank -%}
+        <p class="waggly-kit__eyebrow">{{ s.eyebrow | escape }}</p>
+      {%- endif -%}
+      {%- if s.heading != blank -%}
+        <h2 class="waggly-kit__heading">{{ s.heading | escape }}</h2>
+      {%- endif -%}
+      {%- if s.subtext != blank -%}
+        <div class="waggly-kit__text rte">{{ s.subtext }}</div>
+      {%- endif -%}
+    </div>
+
+    <waggly-kit-tabs class="waggly-kit__wrap" data-namespace="kit-tab-{{ section.id }}">
+      {%- if section.blocks.size > 0 -%}
+        <div class="waggly-kit__tabs" role="tablist" aria-label="{{ s.heading | escape }}">
+          {%- for block in section.blocks -%}
+            {%- assign tab_id = 'kit-' | append: section.id | append: '-' | append: forloop.index -%}
+            <input
+              class="waggly-kit__input"
+              type="radio"
+              id="{{ tab_id }}"
+              name="kit-tab-{{ section.id }}"
+              value="{{ block.settings.filter_tag | downcase | strip }}"
+              {% if forloop.first %}checked{% endif %}
+              {{ block.shopify_attributes }}
+            >
+            <label class="waggly-kit__tab" for="{{ tab_id }}">{{ block.settings.label | escape }}</label>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <div class="waggly-kit__grid">
+        {%- if s.collection != blank and products.size > 0 -%}
+          {%- for product in products limit: s.product_limit -%}
+            {%- capture product_tags -%}{{ product.tags | join: ',' | downcase }},{{ product.type | downcase }}{%- endcapture -%}
+            <div class="waggly-kit__item" data-tags="{{ product_tags | strip }}">
+              {%- render 'product-card',
+                product_card_product: product,
+                section_id: section.id,
+                settings_image_ratio: '1',
+                show_price: true,
+                show_type: s.show_subtitle,
+                show_vendor: false,
+                button_type_product: 'only_icon',
+                show_button_quickview: false,
+                show_badge_on_sale: true,
+                show_badge_sold_out: true,
+                show_badge_feature: true,
+                hide_product_card_swatches: true,
+                product_name_size: 'body2'
+              -%}
+            </div>
+          {%- endfor -%}
+        {%- else -%}
+          {%- for i in (1..s.product_limit) -%}
+            <div class="waggly-kit__item" data-tags="">
+              {%- render 'product-card-placeholder', settings_image_ratio: '1', placeholder_name: 'product-1' -%}
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+
+      <p class="waggly-kit__empty" hidden>No kits in this category yet — check back soon.</p>
+    </waggly-kit-tabs>
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-kit__head { text-align: center; margin-bottom: 26px; }
+.waggly-kit__eyebrow {
+  font-family: var(--font-body-family);
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 8px;
+}
+.waggly-kit__heading {
+  font-family: var(--font-heading-family);
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  color: var(--color-base);
+  margin: 0 0 12px;
+}
+.waggly-kit--hand .waggly-kit__heading { font-family: 'Kalam', cursive; }
+.waggly-kit__text { max-width: 60ch; margin: 0 auto; color: var(--color-base); opacity: .8; }
+
+/* Tabs */
+.waggly-kit__input { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
+.waggly-kit__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.waggly-kit__tab {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--color-base);
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  border: 1px solid rgba(84, 67, 64, .12);
+  transition: background var(--duration-short, .2s) ease, color var(--duration-short, .2s) ease;
+}
+.waggly-kit__tab:hover { background: #f2ebe3; }
+/* Active tab — the checked radio precedes its label and the next inputs */
+.waggly-kit__input:checked + .waggly-kit__tab {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+/* Grid — mirrors waggly-products card styling */
+.waggly-kit__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.waggly-kit__item { display: block; height: 100%; }
+.waggly-kit__item[hidden] { display: none; }
+
+.waggly-kit .product-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(22, 19, 69, .06);
+  height: 100%;
+}
+.waggly-kit .product-card__image-holder { margin-bottom: 12px; }
+.waggly-kit .product-card__heading { font-family: var(--font-heading-family); }
+.waggly-kit .product-card__container > div:has(.product-card__heading) { order: 1; }
+.waggly-kit .product-card__container > div:has(.product-card__meta) { order: 2; margin-top: 2px; opacity: .7; }
+.waggly-kit .product-card .price { order: 3; margin-top: 8px; }
+
+/* Add to Cart / Buy Now CTAs are provided by the shared product-card component. */
+
+.waggly-kit__empty { text-align: center; color: var(--color-base); opacity: .7; margin: 20px 0 0; }
+
+@media (max-width: 989px) {
+  .waggly-kit__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .waggly-kit__tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+  .waggly-kit__tab { flex: 0 0 auto; }
+  .waggly-kit__grid {
+    grid-auto-flow: column;
+    grid-auto-columns: 72%;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+  .waggly-kit .product-card { scroll-snap-align: start; }
+}
+{% endstylesheet %}
+
+{% javascript %}
+  class WagglyKitTabs extends HTMLElement {
+    connectedCallback() {
+      this.items = Array.from(this.querySelectorAll('.waggly-kit__item'));
+      this.empty = this.querySelector('.waggly-kit__empty');
+      this.addEventListener('change', (event) => {
+        const target = event.target;
+        if (target && target.type === 'radio' && target.name === this.dataset.namespace) {
+          this.filter(target.value);
+        }
+      });
+      const checked = this.querySelector('input[type="radio"]:checked');
+      this.filter(checked ? checked.value : '');
+    }
+
+    filter(tag) {
+      const needle = (tag || '').trim().toLowerCase();
+      let visible = 0;
+      this.items.forEach((item) => {
+        const tags = (item.getAttribute('data-tags') || '').split(',').map((t) => t.trim());
+        const show = !needle || tags.indexOf(needle) !== -1;
+        item.hidden = !show;
+        if (show) visible += 1;
+      });
+      if (this.empty) this.empty.hidden = visible !== 0;
+    }
+  }
+
+  if (!customElements.get('waggly-kit-tabs')) {
+    customElements.define('waggly-kit-tabs', WagglyKitTabs);
+  }
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Waggly products tabs",
+  "tag": "section",
+  "class": "waggly-products-tabs-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Explore Discovery Kits" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find The Right Kit for Your Pet" },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "handwritten", "label": "Handwritten (Kalam)" },
+        { "value": "normal", "label": "Normal (Outfit)" }
+      ],
+      "default": "handwritten"
+    },
+    { "type": "richtext", "id": "subtext", "label": "Text (optional)" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "product_limit", "label": "Products to show", "min": 2, "max": 24, "step": 1, "default": 8 },
+    { "type": "checkbox", "id": "show_subtitle", "label": "Show product type as subtitle", "default": true },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-wide", "label": "Full width" },
+        { "value": "page-width", "label": "Boxed" }
+      ],
+      "default": "page-wide"
+    },
+    { "type": "header", "content": "Spacing" },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Filter tab",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Tab label", "default": "All" },
+        { "type": "text", "id": "filter_tag", "label": "Filter by product tag", "info": "Leave empty to show all products. Otherwise enter a product tag (or product type) to match, e.g. dog, cat, food, treats, grooming, wellness." }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Waggly products tabs",
+      "blocks": [
+        { "type": "tab", "settings": { "label": "All", "filter_tag": "" } },
+        { "type": "tab", "settings": { "label": "Dogs", "filter_tag": "dog" } },
+        { "type": "tab", "settings": { "label": "Cats", "filter_tag": "cat" } },
+        { "type": "tab", "settings": { "label": "Food", "filter_tag": "food" } },
+        { "type": "tab", "settings": { "label": "Treats", "filter_tag": "treats" } },
+        { "type": "tab", "settings": { "label": "Grooming", "filter_tag": "grooming" } },
+        { "type": "tab", "settings": { "label": "Wellness", "filter_tag": "wellness" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
