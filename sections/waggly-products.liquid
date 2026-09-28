@@ -78,7 +78,7 @@
 .waggly-products .product-card {
   background: #ffffff;
   border-radius: 22px;
-  padding: 14px 14px 66px;
+  padding: 12px;
   box-shadow: 0 10px 30px rgba(22, 19, 69, .06);
   height: 100%;
 }
@@ -88,29 +88,7 @@
 .waggly-products .product-card__container > div:has(.product-card__meta) { order: 2; margin-top: 2px; opacity: .7; }
 .waggly-products .product-card .price { order: 3; margin-top: 8px; }
 
-.waggly-products .quick-add__submit {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  width: 46px;
-  height: 46px;
-  min-height: 0;
-  padding: 0;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-accent);
-}
-.waggly-products .quick-add__submit > span,
-.waggly-products .quick-add__submit > svg:not(.spinner) { display: none; }
-.waggly-products .quick-add__submit::before {
-  content: "+";
-  font-size: 1.7rem;
-  line-height: 1;
-  font-weight: 700;
-  color: var(--auto-text-color-button-light, #fff);
-}
+/* Add to Cart / Buy Now CTAs are provided by the shared product-card component. */
 
 @media (max-width: 989px) {
   .waggly-products__grid { grid-template-columns: repeat(2, 1fr); }

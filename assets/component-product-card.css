@@ -14,8 +14,8 @@
   pointer-events: none;
 }
 .btn--add-to-cart{
-  margin-top: 17px;
-  min-height: 50px;
+  margin-top: 10px;
+  min-height: 44px;
   height: auto;
   padding-top: 14px;
   padding-bottom: 15px;
@@ -121,7 +121,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .product-card__image-holder modal-opener{
   position: absolute;
@@ -199,4 +199,95 @@
 }
 .card__price__main{
   font-size:var(--card-price-size);
+}
+
+/* =========================================================
+   Prominent product cards + hover-reveal Add to Cart / Buy Now
+   Applies site-wide via the shared product-card snippet.
+   ========================================================= */
+.product-card{
+  background:#fff;
+  border:1px solid var(--color-lines-borders, rgba(84,67,64,.10));
+  border-radius:16px;
+  padding:10px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.product-card__image-holder{
+  overflow:hidden;
+  border-radius:12px;
+}
+@media (min-width:1025px){
+  .product-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 34px rgba(22,19,69,.12);
+  }
+}
+
+/* CTA group anchored over the bottom of the image */
+.product-card__actions{
+  position:absolute;
+  left:8px;
+  right:8px;
+  bottom:8px;
+  z-index:3;
+  display:flex;
+  flex-direction:row;
+  gap:6px;
+}
+.product-card__actions .product-card__action{
+  flex:1 1 0;
+  min-width:0;
+  margin:0;
+}
+.product-card__btn{
+  width:100%;
+  min-height:34px;
+  margin:0;
+  padding:6px 8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border-radius:8px;
+  font-weight:600;
+  font-size:.78rem;
+  line-height:1.05;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.product-card__btn > span{
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.product-card__btn--add svg:not(.spinner){
+  display:none;
+}
+.product-card__btn--buy{
+  background:#544340;
+  color:#fff;
+  border:0;
+}
+.product-card__btn--buy:hover{
+  background:#3f302e;
+}
+.product-card__btn .loading-overlay__spinner{
+  width:18px;
+  height:18px;
+}
+
+/* Reveal on hover — only on devices with a real hover pointer (mouse/trackpad),
+   regardless of window width. Touch devices (no hover) keep the buttons
+   always visible so they stay usable. */
+@media (hover: hover) and (pointer: fine){
+  .product-card__actions{
+    opacity:0;
+    transform:translateY(8px);
+    pointer-events:none;
+    transition:opacity .25s ease, transform .25s ease;
+  }
+  .product-card:hover .product-card__actions{
+    opacity:1;
+    transform:none;
+    pointer-events:auto;
+  }
 }
