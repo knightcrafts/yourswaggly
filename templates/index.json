@@ -9,12 +9,180 @@
  */
 {
   "sections": {
+    "waggly_banner_8cEpDY": {
+      "type": "waggly-banner",
+      "disabled": true,
+      "name": "Waggly banner",
+      "settings": {
+        "image": "shopify://shop_images/HomeBannerSection.png",
+        "link": "",
+        "link_new_tab": false,
+        "width": "full",
+        "rounded": false,
+        "top_spacing": "none"
+      }
+    },
+    "slideshow_yfPwaT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yQ6F8D": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "shopify://shop_images/Pet_Banners.png",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "none",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": true,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_rJxjf6": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "shopify://shop_images/HomeBannerSection.png",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "none",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": true,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_caPf7j": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "shopify://shop_images/Home_Cat_Banner.png",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "none",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": true,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yQ6F8D",
+        "slide_rJxjf6",
+        "slide_caPf7j"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "top_spacing": "none",
+        "bottom_spacing": "normal",
+        "width": "page-fullwidth",
+        "image_size": "auto",
+        "desktop_image_height": 440,
+        "texts_aligment_mobile": "text-center-mobile",
+        "box_roundness": 3,
+        "design_type": "image-banner__default",
+        "slider_animation": true,
+        "desktop_navigation": "dots_arrows",
+        "mobile_navigation": "dots_arrows",
+        "dots_desktop_position": "center",
+        "autoplay_enabled": true,
+        "autoplay_time": 5,
+        "video_slide_mode": "autoplay_muted",
+        "play_button_enabled": true,
+        "color_media_bg": "rgba(0,0,0,0)",
+        "color_media_bg_hover": "rgba(0,0,0,0)",
+        "color_swatches": "rgba(0,0,0,0)",
+        "color_swatches_m": "rgba(0,0,0,0)"
+      }
+    },
     "hero": {
       "type": "waggly-hero",
+      "disabled": true,
       "settings": {
         "image_position": "right",
         "width": "page-width",
         "heading_tag": "h1",
+        "heading_style": "normal",
         "eyebrow": "Happy pets, happy hearts",
         "eyebrow_paw": true,
         "heading": "Everything For",
@@ -26,58 +194,9 @@
         "secondary_link": "shopify://collections/all",
         "image": "shopify://shop_images/Asset_2_4x_7344d91a-4847-49d5-8144-b08b8521c91b.png",
         "show_decoration": false,
-        "bg_color": "#f7f2ef",
+        "bg_color": "#F3E7D9",
         "accent_color": "#9b643d",
         "top_spacing": "none"
-      }
-    },
-    "intro": {
-      "type": "waggly-hero",
-      "settings": {
-        "image_position": "left",
-        "width": "page-width",
-        "heading_tag": "h2",
-        "eyebrow": "Happy pets, happy hearts",
-        "eyebrow_paw": true,
-        "heading": "Everything For",
-        "heading_accent": "Cats & Dogs",
-        "subtext": "<p>Premium care, nutritious food, and cozy essentials for your furry family.</p>",
-        "primary_label": "Shop Now",
-        "primary_link": "",
-        "secondary_label": "Explore Services",
-        "secondary_link": "",
-        "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
-        "show_decoration": false,
-        "bg_color": "#f7f2ef",
-        "accent_color": "#9b643d",
-        "top_spacing": "none"
-      }
-    },
-    "ticker_XcY7HW": {
-      "type": "ticker",
-      "name": "t:sections.ticker.presets.name",
-      "settings": {
-        "top_spacing": "small",
-        "ticker_time": 10,
-        "direction": "ticker-to-right",
-        "text_size": "ticker-text-5",
-        "url": "",
-        "text": "<p><strong>ANNOUNCEMENT </strong>— Use this section to include scrolling announcement text</p>",
-        "show_icon": "svg",
-        "icon_name": "advertising_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "rgba(0,0,0,0)",
-        "image_overlay_opacity_mobile": 0,
-        "image_overlay_color_mobile": "rgba(0,0,0,0)",
-        "imagealign": "center",
-        "imagesize": "cover",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
       }
     },
     "waggly_decorations_yDCmbA": {
@@ -250,31 +369,41 @@
         "v1": {
           "type": "value",
           "settings": {
-            "label": "Premium Quality Products"
+            "svg_code": "",
+            "label": "Premium Quality Products",
+            "sublabel": ""
           }
         },
         "v2": {
           "type": "value",
           "settings": {
-            "label": "Vet Approved & Safe"
+            "svg_code": "",
+            "label": "Vet Approved & Safe",
+            "sublabel": ""
           }
         },
         "v3": {
           "type": "value",
           "settings": {
-            "label": "Free Shipping above $49"
+            "svg_code": "",
+            "label": "Free Shipping above  ₹500",
+            "sublabel": ""
           }
         },
         "v4": {
           "type": "value",
           "settings": {
-            "label": "7 Day Easy Returns"
+            "svg_code": "",
+            "label": "7 Day Easy Returns",
+            "sublabel": ""
           }
         },
         "v5": {
           "type": "value",
           "settings": {
-            "label": "24/7 Pet Care Support"
+            "svg_code": "",
+            "label": "24/7 Pet Care Support",
+            "sublabel": ""
           }
         }
       },
@@ -286,11 +415,48 @@
         "v5"
       ],
       "settings": {
+        "eyebrow": "",
         "heading": "Because They Deserve The Best",
+        "heading_style": "kalam",
+        "intro": "",
+        "image": "shopify://shop_images/6.png",
+        "image_width": 300,
+        "image_position": "right",
+        "item_style": "compact",
         "width": "page-width",
         "bg_color": "#f2ebe3",
         "icon_bg": "#ffffff",
         "top_spacing": "normal"
+      }
+    },
+    "waggly_decorations_PXUtaX": {
+      "type": "waggly-decorations",
+      "blocks": {
+        "element_dN4ebG": {
+          "type": "element",
+          "settings": {
+            "image": "shopify://shop_images/QWKcg8_4x_35a5bd72-6bd9-4f62-abf8-54854ee73d94.png",
+            "svg_code": "",
+            "x": 82,
+            "y": 470,
+            "z_index": 0,
+            "width": 428,
+            "mobile_scale": 70,
+            "rotation": 0,
+            "opacity": 100,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": true,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "element_dN4ebG"
+      ],
+      "name": "Waggly decorations",
+      "settings": {
+        "canvas_height": 0
       }
     },
     "products": {
@@ -302,18 +468,134 @@
         "collection": "loved-by-pets",
         "product_limit": 4,
         "show_subtitle": true,
+        "head_align": "center",
+        "view_all_label": "",
+        "view_all_link": "",
         "width": "page-width",
         "top_spacing": "normal"
+      }
+    },
+    "waggly_value_RWVwhH": {
+      "type": "waggly-value",
+      "blocks": {
+        "value_7QGGbw": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z\"></path><path d=\"M9 12l2 2 4-4\"></path></svg>",
+            "label": "Nutritious Food",
+            "sublabel": "High quality and balanced meals for every age."
+          }
+        },
+        "value_9pC7gx": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewbox=\"0 0 24 22\" width=\"26\" height=\"26\" fill=\"currentColor\"><path d=\"M12 20S2 14 2 7a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-10 13-10 13Z\"></path></svg>",
+            "label": "Happy, Active",
+            "sublabel": "High quality and balanced meals for every age."
+          }
+        },
+        "value_9m44w4": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewbox=\"0 0 48 48\" width=\"28\" height=\"28\" fill=\"currentColor\"><ellipse cx=\"24\" cy=\"34\" rx=\"12\" ry=\"9\"></ellipse><circle cx=\"10\" cy=\"20\" r=\"5\"></circle><circle cx=\"20\" cy=\"12\" r=\"5\"></circle><circle cx=\"32\" cy=\"12\" r=\"5\"></circle><circle cx=\"40\" cy=\"20\" r=\"5\"></circle></svg>",
+            "label": "Expert Care",
+            "sublabel": "High quality and balanced meals for every age."
+          }
+        },
+        "value_KqLFbJ": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewbox=\"0 0 48 48\" width=\"28\" height=\"28\" fill=\"currentColor\"><ellipse cx=\"24\" cy=\"34\" rx=\"12\" ry=\"9\"></ellipse><circle cx=\"10\" cy=\"20\" r=\"5\"></circle><circle cx=\"20\" cy=\"12\" r=\"5\"></circle><circle cx=\"32\" cy=\"12\" r=\"5\"></circle><circle cx=\"40\" cy=\"20\" r=\"5\"></circle></svg>",
+            "label": "Safe & Natural",
+            "sublabel": "High quality and balanced meals for every age."
+          }
+        }
+      },
+      "block_order": [
+        "value_7QGGbw",
+        "value_9pC7gx",
+        "value_9m44w4",
+        "value_KqLFbJ"
+      ],
+      "settings": {
+        "eyebrow": "A New Chapter Begins",
+        "heading": "We Care Like You Do",
+        "heading_style": "normal",
+        "intro": "<p>Handpicked favorites for your furry friends - quality you can trust.</p>",
+        "image": "shopify://shop_images/6.png",
+        "image_width": 0,
+        "image_position": "left",
+        "item_style": "detailed",
+        "width": "page-width",
+        "bg_color": "rgba(0,0,0,0)",
+        "icon_bg": "#ffffff",
+        "top_spacing": "normal"
+      }
+    },
+    "intro": {
+      "type": "waggly-hero",
+      "disabled": true,
+      "settings": {
+        "image_position": "left",
+        "width": "page-width",
+        "heading_tag": "h2",
+        "heading_style": "normal",
+        "eyebrow": "Happy pets, happy hearts",
+        "eyebrow_paw": true,
+        "heading": "Everything For",
+        "heading_accent": "Cats & Dogs",
+        "subtext": "<p>Premium care, nutritious food, and cozy essentials for your furry family.</p>",
+        "primary_label": "Shop Now",
+        "primary_link": "",
+        "secondary_label": "Explore Services",
+        "secondary_link": "",
+        "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
+        "show_decoration": false,
+        "bg_color": "#F3E7D9",
+        "accent_color": "#9b643d",
+        "top_spacing": "normal"
+      }
+    },
+    "ticker_XcY7HW": {
+      "type": "ticker",
+      "disabled": true,
+      "name": "t:sections.ticker.presets.name",
+      "settings": {
+        "top_spacing": "small",
+        "ticker_time": 10,
+        "direction": "ticker-to-right",
+        "text_size": "ticker-text-5",
+        "url": "",
+        "text": "<p><strong>ANNOUNCEMENT </strong>— Use this section to include scrolling announcement text</p>",
+        "show_icon": "svg",
+        "icon_name": "advertising_sm",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "image_overlay_opacity": 0,
+        "image_overlay_color": "rgba(0,0,0,0)",
+        "image_overlay_opacity_mobile": 0,
+        "image_overlay_color_mobile": "rgba(0,0,0,0)",
+        "imagealign": "center",
+        "imagesize": "cover",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
       }
     }
   },
   "order": [
+    "waggly_banner_8cEpDY",
+    "slideshow_yfPwaT",
     "hero",
-    "intro",
-    "ticker_XcY7HW",
     "waggly_decorations_yDCmbA",
     "categories",
     "value",
-    "products"
+    "waggly_decorations_PXUtaX",
+    "products",
+    "waggly_value_RWVwhH",
+    "intro",
+    "ticker_XcY7HW"
   ]
 }

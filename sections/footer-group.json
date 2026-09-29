@@ -58,7 +58,7 @@
           "type": "links",
           "settings": {
             "heading": "Help",
-            "links": "Contact Us\nFAQs\nShipping & Delivery\nReturns & Refunds\nTerms & Conditions\nPrivacy Policy"
+            "links": "Contact Us\nFAQs\nShipping & Delivery\nReturns & Refunds\nTerms & Conditions\nPrivacy Policy | pages/privacy-policy"
           }
         }
       },
@@ -71,7 +71,7 @@
         "help"
       ],
       "settings": {
-        "rounded_top": true,
+        "rounded_top": false,
         "custom_copyright": "© 2026 Yours Waggly. All rights reserved.",
         "top_spacing": "normal",
         "width": "page-width",
