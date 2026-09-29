@@ -11,7 +11,7 @@
 
 <section class="waggly-value waggly-value--{{ item_style }} waggly-value--img-{{ image_position }}{% if heading_hand %} waggly-value--hand{% endif %}{% if s.bg_color == blank or s.bg_color == 'rgba(0,0,0,0)' %} waggly-value--plain{% endif %} top-spacing-{{ s.top_spacing }}">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
-    <div class="waggly-value__card" style="--wg-value-bg: {{ s.bg_color }}; --wg-icon-bg: {{ s.icon_bg }};">
+    <div class="waggly-value__card" style="--wg-value-bg: {{ s.bg_color }}; --wg-icon-bg: {{ s.icon_bg }};{% if s.image_width > 0 %} --wg-value-img-w: {{ s.image_width }}px;{% endif %}">
       <div class="waggly-value__body">
         {%- if s.eyebrow != blank -%}
           <p class="waggly-value__eyebrow">{{ s.eyebrow | escape }}</p>
@@ -172,9 +172,9 @@
 .waggly-value--detailed .waggly-value__label { font-weight: 700; font-size: 1rem; }
 
 .waggly-value__media { display: flex; justify-content: center; }
-.waggly-value__image { max-width: 100%; height: auto; display: block; }
-.waggly-value--detailed .waggly-value__image { max-width: 460px; width: 100%; }
-.waggly-value__image--placeholder { width: 260px; border-radius: 20px; overflow: hidden; }
+.waggly-value__image { max-width: var(--wg-value-img-w, 100%); height: auto; display: block; }
+.waggly-value--detailed .waggly-value__image { max-width: var(--wg-value-img-w, 460px); width: 100%; }
+.waggly-value__image--placeholder { width: var(--wg-value-img-w, 260px); border-radius: 20px; overflow: hidden; }
 .waggly-value__image--placeholder .placeholder-svg { width: 100%; height: auto; display: block; opacity: .5; }
 
 @media (max-width: 989px) {
@@ -216,6 +216,7 @@
     },
     { "type": "richtext", "id": "intro", "label": "Intro text (optional)" },
     { "type": "image_picker", "id": "image", "label": "Illustration" },
+    { "type": "range", "id": "image_width", "label": "Image width (desktop)", "info": "Set to 0 for automatic size.", "min": 0, "max": 680, "step": 20, "unit": "px", "default": 0 },
     {
       "type": "select",
       "id": "image_position",
