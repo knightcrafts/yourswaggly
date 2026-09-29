@@ -7,15 +7,23 @@
 
 <section class="waggly-products top-spacing-{{ s.top_spacing }}">
   <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %}">
-    <div class="waggly-products__head">
-      {%- if s.eyebrow != blank -%}
-        <p class="waggly-products__eyebrow">{{ s.eyebrow | escape }}</p>
-      {%- endif -%}
-      {%- if s.heading != blank -%}
-        <h2 class="waggly-products__heading">{{ s.heading | escape }}</h2>
-      {%- endif -%}
-      {%- if s.subtext != blank -%}
-        <div class="waggly-products__text rte">{{ s.subtext }}</div>
+    <div class="waggly-products__head waggly-products__head--{{ s.head_align }}">
+      <div class="waggly-products__head-text">
+        {%- if s.eyebrow != blank -%}
+          <p class="waggly-products__eyebrow">{{ s.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if s.heading != blank -%}
+          <h2 class="waggly-products__heading">{{ s.heading | escape }}</h2>
+        {%- endif -%}
+        {%- if s.subtext != blank -%}
+          <div class="waggly-products__text rte">{{ s.subtext }}</div>
+        {%- endif -%}
+      </div>
+      {%- if s.view_all_label != blank -%}
+        <a class="waggly-products__viewall"{% if s.view_all_link != blank %} href="{{ s.view_all_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+          {{ s.view_all_label | escape }}
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       {%- endif -%}
     </div>
 
@@ -49,6 +57,30 @@
 
 {% stylesheet %}
 .waggly-products__head { text-align: center; margin-bottom: 34px; }
+.waggly-products__head--split {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+}
+.waggly-products__head--split .waggly-products__text { margin: 0; }
+.waggly-products__viewall {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.waggly-products__viewall:hover { text-decoration: underline; }
+.waggly-products__viewall[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+.waggly-products__head--center .waggly-products__viewall { margin-top: 10px; }
+@media (max-width: 576px) {
+  .waggly-products__head--split { flex-direction: column; align-items: flex-start; }
+}
 .waggly-products__eyebrow {
   font-family: var(--font-body-family);
   font-weight: 600;
@@ -121,6 +153,18 @@
     { "type": "collection", "id": "collection", "label": "Collection" },
     { "type": "range", "id": "product_limit", "label": "Products to show", "min": 2, "max": 12, "step": 1, "default": 4 },
     { "type": "checkbox", "id": "show_subtitle", "label": "Show product type as subtitle", "default": true },
+    {
+      "type": "select",
+      "id": "head_align",
+      "label": "Header alignment",
+      "options": [
+        { "value": "center", "label": "Centered" },
+        { "value": "split", "label": "Left, with View all on the right" }
+      ],
+      "default": "center"
+    },
+    { "type": "text", "id": "view_all_label", "label": "View all label (optional)" },
+    { "type": "url", "id": "view_all_link", "label": "View all link" },
     {
       "type": "select",
       "id": "width",
