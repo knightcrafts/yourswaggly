@@ -122,6 +122,31 @@
   }
   {%- endif -%}
   {%- endfor -%}
+
+  /* Collapsible search + full-width menu (desktop) */
+  .header-search-toggle { position: relative; display: inline-flex; }
+  .header-search-toggle__popover {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 20;
+    width: min(360px, 80vw);
+    padding: 14px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 16px 44px rgba(84, 67, 64, .18);
+  }
+  .header-search-toggle__popover[hidden] { display: none; }
+  .header-search-toggle__popover .search { width: 100%; }
+  @media (min-width: 1025px) {
+    .header-layout-classic .header.logo-to-left.menu-to-center {
+      grid-template-columns: auto minmax(0, 1fr) auto;
+    }
+    .header-layout-classic .menu-to-center .list-menu--inline {
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+  }
 </style>
 
 <link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -530,7 +555,21 @@
           {%- endfor -%}
     
           {%- if section.settings.header_layout != 'header-layout-vertical' -%}
-          {%- render "header-search" show_search:section.settings.show_search, fullwidth: false -%}
+            {%- if section.settings.show_search and section.settings.desktop_search_icon -%}
+              <header-search-toggle class="header-search-toggle">
+                <button type="button" class="header__button header-search-toggle__button" aria-label="{{ 'general.search.search' | t }}" aria-expanded="false" aria-controls="HeaderSearchPopover-{{ section.id }}">
+                  <div class="header__icons__svg">
+                    <div class="header__icons__svg__main">{% render "icon-search" %}</div>
+                    <div class="header__icons__svg__animated">{% render "icon-search" %}</div>
+                  </div>
+                </button>
+                <div class="header-search-toggle__popover" id="HeaderSearchPopover-{{ section.id }}" hidden>
+                  {%- render "header-search" show_search:section.settings.show_search, fullwidth: true -%}
+                </div>
+              </header-search-toggle>
+            {%- else -%}
+              {%- render "header-search" show_search:section.settings.show_search, fullwidth: false -%}
+            {%- endif -%}
           {%- endif -%}
 
           <div class="header__icons__customer">
@@ -895,6 +934,38 @@
   </script>
 {%- endif -%}
 
+{% javascript %}
+  class HeaderSearchToggle extends HTMLElement {
+    constructor() {
+      super();
+      this.button = this.querySelector('.header-search-toggle__button');
+      this.popover = this.querySelector('.header-search-toggle__popover');
+      if (!this.button || !this.popover) return;
+      this.onDocClick = (event) => { if (!this.contains(event.target)) this.close(); };
+      this.onKey = (event) => { if (event.key === 'Escape') { this.close(); this.button.focus(); } };
+      this.button.addEventListener('click', () => { this.popover.hidden ? this.open() : this.close(); });
+    }
+    open() {
+      this.popover.hidden = false;
+      this.button.setAttribute('aria-expanded', 'true');
+      document.addEventListener('click', this.onDocClick);
+      document.addEventListener('keydown', this.onKey);
+      const input = this.popover.querySelector('input[type="search"]');
+      if (input) input.focus();
+    }
+    close() {
+      if (this.popover.hidden) return;
+      this.popover.hidden = true;
+      this.button.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('click', this.onDocClick);
+      document.removeEventListener('keydown', this.onKey);
+    }
+  }
+  if (!customElements.get('header-search-toggle')) {
+    customElements.define('header-search-toggle', HeaderSearchToggle);
+  }
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -965,6 +1036,13 @@
       "id": "open_search",
       "default": true,
       "label": "t:sections.header.settings.open_search.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop_search_icon",
+      "default": true,
+      "label": "Collapse desktop search to an icon",
+      "info": "Shows a search icon that opens a popover, freeing space so the menu fits on one line."
     },
 	{
       "type": "checkbox",
