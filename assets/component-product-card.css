@@ -275,17 +275,22 @@
   height:18px;
 }
 
-/* Reveal on hover — only on devices with a real hover pointer (mouse/trackpad),
-   regardless of window width. Touch devices (no hover) keep the buttons
-   always visible so they stay usable. */
-@media (hover: hover) and (pointer: fine){
+/* Hidden by default, revealed on card hover — works for any mouse/trackpad user
+   regardless of window width or how the device reports its pointer. */
+.product-card__actions{
+  opacity:0;
+  transform:translateY(8px);
+  pointer-events:none;
+  transition:opacity .25s ease, transform .25s ease;
+}
+.product-card:hover .product-card__actions{
+  opacity:1;
+  transform:none;
+  pointer-events:auto;
+}
+/* Touch devices with no hover: keep the buttons always visible so they stay usable. */
+@media (hover: none){
   .product-card__actions{
-    opacity:0;
-    transform:translateY(8px);
-    pointer-events:none;
-    transition:opacity .25s ease, transform .25s ease;
-  }
-  .product-card:hover .product-card__actions{
     opacity:1;
     transform:none;
     pointer-events:auto;
