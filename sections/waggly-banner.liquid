@@ -1,0 +1,111 @@
+{%- liquid
+  assign s = section.settings
+  assign has_mobile = false
+  if s.image_mobile != blank
+    assign has_mobile = true
+  endif
+-%}
+
+<section class="waggly-banner waggly-banner--{{ s.width }}{% if s.rounded %} waggly-banner--rounded{% endif %} top-spacing-{{ s.top_spacing }}">
+  <div class="{% if s.width == 'boxed' %}page-width{% elsif s.width == 'wide' %}page-wide{% endif %} waggly-banner__inner">
+    {%- capture banner_media -%}
+      {%- if s.image != blank -%}
+        {%- assign img = s.image -%}
+        <img
+          class="waggly-banner__image{% if has_mobile %} waggly-banner__image--desktop{% endif %}"
+          src="{{ img | image_url: width: 1500 }}"
+          srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 1000 }} 1000w, {{ img | image_url: width: 1500 }} 1500w, {{ img | image_url: width: 2000 }} 2000w"
+          sizes="100vw"
+          width="{{ img.width }}"
+          height="{{ img.height }}"
+          alt="{{ img.alt | escape }}"
+          loading="lazy"
+        >
+        {%- if has_mobile -%}
+          {%- assign imgm = s.image_mobile -%}
+          <img
+            class="waggly-banner__image waggly-banner__image--mobile"
+            src="{{ imgm | image_url: width: 800 }}"
+            srcset="{{ imgm | image_url: width: 400 }} 400w, {{ imgm | image_url: width: 800 }} 800w, {{ imgm | image_url: width: 1200 }} 1200w"
+            sizes="100vw"
+            width="{{ imgm.width }}"
+            height="{{ imgm.height }}"
+            alt="{{ imgm.alt | escape }}"
+            loading="lazy"
+          >
+        {%- endif -%}
+      {%- else -%}
+        <div class="waggly-banner__image waggly-banner__image--placeholder">
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+    {%- endcapture -%}
+
+    {%- if s.link != blank -%}
+      <a class="waggly-banner__link" href="{{ s.link }}"{% if s.link_new_tab %} target="_blank" rel="noopener"{% endif %}>{{ banner_media }}</a>
+    {%- else -%}
+      {{ banner_media }}
+    {%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-banner__inner { position: relative; }
+.waggly-banner__link { display: block; text-decoration: none; }
+.waggly-banner__image { display: block; width: 100%; height: auto; }
+.waggly-banner--rounded .waggly-banner__image,
+.waggly-banner--rounded .waggly-banner__link { border-radius: 24px; overflow: hidden; }
+
+.waggly-banner__image--placeholder { width: 100%; background: rgba(84, 67, 64, .06); }
+.waggly-banner__image--placeholder .placeholder-svg { width: 100%; height: auto; display: block; opacity: .4; }
+
+/* Mobile image swap */
+.waggly-banner__image--mobile { display: none; }
+@media (max-width: 749px) {
+  .waggly-banner__image--desktop { display: none; }
+  .waggly-banner__image--mobile { display: block; }
+  .waggly-banner--rounded .waggly-banner__image { border-radius: 16px; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly banner",
+  "tag": "section",
+  "class": "waggly-banner-section",
+  "settings": [
+    { "type": "paragraph", "content": "A simple image banner. Upload an image and (optionally) add a link. Use a wide/landscape image for full-width banners." },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Mobile image (optional)", "info": "Shown on phones instead of the main image." },
+    { "type": "url", "id": "link", "label": "Link (optional)" },
+    { "type": "checkbox", "id": "link_new_tab", "label": "Open link in new tab", "default": false },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "full", "label": "Full width (edge to edge)" },
+        { "value": "wide", "label": "Wide (page container)" },
+        { "value": "boxed", "label": "Boxed" }
+      ],
+      "default": "full"
+    },
+    { "type": "checkbox", "id": "rounded", "label": "Rounded corners", "default": false },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "none"
+    }
+  ],
+  "presets": [
+    { "name": "Waggly banner" }
+  ]
+}
+{% endschema %}
