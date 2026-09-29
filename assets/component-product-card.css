@@ -242,6 +242,7 @@
 .product-card__btn{
   width:100%;
   min-height:34px;
+  height: 40px !important;
   margin:0;
   padding:6px 8px;
   display:inline-flex;
