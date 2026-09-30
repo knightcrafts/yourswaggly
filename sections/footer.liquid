@@ -365,8 +365,16 @@ footer .field{
           {%- assign parts = line | split: '|' -%}
           {%- assign lbl = parts[0] | strip -%}
           {%- assign href = parts[1] | strip -%}
+          {%- if href == blank -%}
+            {%- assign href = '#' -%}
+          {%- else -%}
+            {%- assign href_first = href | slice: 0, 1 -%}
+            {%- unless href contains '://' or href contains 'mailto:' or href contains 'tel:' or href_first == '#' or href_first == '/' -%}
+              {%- assign href = '/' | append: href -%}
+            {%- endunless -%}
+          {%- endif -%}
           <li>
-            <a href="{% if href != blank %}{{ href }}{% else %}#{% endif %}" class="color-base animation-underline animation-underline--thin">{{ lbl | escape }}</a>
+            <a href="{{ href }}" class="color-base animation-underline animation-underline--thin">{{ lbl | escape }}</a>
           </li>
           {%- endif -%}
           {%- endfor -%}
