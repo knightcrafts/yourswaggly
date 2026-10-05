@@ -27,8 +27,8 @@
         "secondary_link": "",
         "image": "shopify://shop_images/image_50.png",
         "show_decoration": false,
-        "bg_color": "#f5e3d2",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "none"
       }
     },
@@ -40,7 +40,7 @@
           "settings": {
             "text": "What is changing in the way people see pets?",
             "svg_code": "",
-            "bg_color": "#f5e3d2"
+            "bg_color": "#F4A9C4"
           }
         },
         "q2": {
@@ -48,7 +48,7 @@
           "settings": {
             "text": "What are they looking for?",
             "svg_code": "",
-            "bg_color": "#e6e7d4"
+            "bg_color": "#AEC6E4"
           }
         },
         "q3": {
@@ -56,7 +56,7 @@
           "settings": {
             "text": "What does this mean for the pet industry?",
             "svg_code": "",
-            "bg_color": "#f3e7d9"
+            "bg_color": "#F9CBD9"
           }
         },
         "q4": {
@@ -64,7 +64,7 @@
           "settings": {
             "text": "How will the role of pets evolve in the years ahead?",
             "svg_code": "",
-            "bg_color": "#e3e7e7"
+            "bg_color": "#7FA3D0"
           }
         }
       },
@@ -80,8 +80,8 @@
         "heading_style": "handwritten",
         "card_shape": "rounded",
         "card_text_align": "center",
-        "card_bg": "#faf5ef",
-        "icon_color": "#9b643d",
+        "card_bg": "#FDE4EA",
+        "icon_color": "#E83D74",
         "width": "page-width",
         "top_spacing": "small"
       }
@@ -104,8 +104,8 @@
         "secondary_link": "",
         "image": "shopify://shop_images/image_50.png",
         "show_decoration": false,
-        "bg_color": "#e6e7d4",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "small"
       }
     },
@@ -161,8 +161,8 @@
           "settings": {
             "title": "Research",
             "description": "Ask questions and look beyond the obvious",
-            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M7 3h7l4 4v14H7z\" stroke=\"#ffffff\" stroke-width=\"1.6\"></path><path d=\"M9 12h6M9 16h5M9 8h3\" stroke=\"#8a5a34\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg>",
-            "icon_bg": "#885e41"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M7 3h7l4 4v14H7z\" stroke=\"#ffffff\" stroke-width=\"1.6\"></path><path d=\"M9 12h6M9 16h5M9 8h3\" stroke=\"#0D386F\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg>",
+            "icon_bg": "#F4A9C4"
           }
         },
         "s2": {
@@ -171,7 +171,7 @@
             "title": "Evaluate",
             "description": "Research markets and evaluate choices",
             "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"26\" height=\"26\" fill=\"none\"><path d=\"M5 20V11M12 20V5M19 20v-6\" stroke=\"#ffffff\" stroke-width=\"2.2\" stroke-linecap=\"round\"></path></svg>",
-            "icon_bg": "#8c9263"
+            "icon_bg": "#AEC6E4"
           }
         },
         "s3": {
@@ -180,7 +180,7 @@
             "title": "Choose",
             "description": "Make decisions based on what truly creates value",
             "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
-            "icon_bg": "#e3a67d"
+            "icon_bg": "#F9CBD9"
           }
         },
         "s4": {
@@ -188,8 +188,8 @@
           "settings": {
             "title": "Create Value",
             "description": "Invest in what is genuinely useful",
-            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M12 20S3 14 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14 12 20 12 20Z\" stroke=\"#8a5a34\" stroke-width=\"1.7\"></path></svg>",
-            "icon_bg": "#fddc9c"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\"><path d=\"M12 20S3 14 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14 12 20 12 20Z\" stroke=\"#0D386F\" stroke-width=\"1.7\"></path></svg>",
+            "icon_bg": "#7FA3D0"
           }
         }
       },
@@ -206,12 +206,12 @@
         "eyebrow": "Our Thinking",
         "heading": "",
         "body": "<p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p><strong>We wanted to bring that same thinking into the pet industry.</strong></p>",
-        "bg_color": "#c0c886",
+        "bg_color": "#FDE4EA",
         "show_divider": true,
-        "divider_color": "#8c9263",
+        "divider_color": "#F6D6DE",
         "icon_shape": "rounded-square",
-        "icon_bg": "#f2e6d6",
-        "icon_color": "#544340",
+        "icon_bg": "#FDE4EA",
+        "icon_color": "#0D386F",
         "width": "page-width",
         "top_spacing": "none"
       }
@@ -248,8 +248,8 @@
         "logo_text": "Yours Waggly",
         "logo_width": 180,
         "rounded_top": true,
-        "bg_color": "#544340",
-        "text_color": "#f3ece4",
+        "bg_color": "#0D386F",
+        "text_color": "#FDE4EA",
         "top_spacing": "normal"
       }
     }

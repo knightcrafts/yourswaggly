@@ -13,7 +13,7 @@
       "type": "waggly-hero",
       "settings": {
         "image_position": "right",
-        "width": "page-wide",
+        "width": "page-width",
         "heading_tag": "h1",
         "heading_style": "handwritten",
         "eyebrow": "Shipping Policy",
@@ -22,51 +22,107 @@
         "heading_accent": "To Your Door",
         "subtext": "<p>We want your order to reach your doorstep quickly and safely. Here's how we process, ship, and deliver your orders.</p>",
         "primary_label": "",
+        "primary_link": "",
         "secondary_label": "",
+        "secondary_link": "",
+        "image": "shopify://shop_images/5.png",
         "show_decoration": true,
-        "bg_color": "#f7f2ef",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "none"
       }
     },
     "policy": {
       "type": "waggly-policy",
       "blocks": {
-        "b1": { "type": "item", "settings": { "heading": "Order Processing", "body": "<p>Orders are processed within [1–2 business days] after payment is confirmed. Orders placed on weekends or public holidays are processed on the next business day. You'll receive a confirmation email once your order is placed, and another once it ships.</p>" } },
-        "b2": { "type": "item", "settings": { "heading": "Shipping Areas", "body": "<p>We currently ship across the United States. If your location isn't serviceable at checkout, please contact us and we'll do our best to help.</p>" } },
-        "b3": { "type": "item", "settings": { "heading": "Delivery Timelines", "body": "<p>Estimated delivery times after dispatch:</p><ul><li>Metro areas: [2–4 business days]</li><li>Other locations: [4–7 business days]</li></ul><p>These are estimates, not guaranteed delivery dates, and may vary due to location and carrier.</p>" } },
-        "b4": { "type": "item", "settings": { "heading": "Shipping Charges", "body": "<p>Free shipping on orders above $[XX]. A flat shipping fee of $[X] applies to orders below that amount. Any applicable charges are shown at checkout before you pay.</p>" } },
-        "b5": { "type": "item", "settings": { "heading": "Order Tracking", "body": "<p>Once your order ships, we'll email you a tracking number and link so you can follow your parcel. Please allow up to [24 hours] for tracking to become active.</p>" } },
-        "b6": { "type": "item", "settings": { "heading": "Delays", "body": "<p>Occasionally, deliveries may be delayed due to weather, carrier issues, high demand, or other circumstances outside our control. We appreciate your patience and will help you track your order if needed.</p>" } },
-        "b7": { "type": "item", "settings": { "heading": "Incorrect Address", "body": "<p>Please ensure your shipping address and contact details are accurate at checkout. We're not responsible for orders delivered to an incorrect address provided by the customer; re-delivery may incur additional charges.</p>" } },
-        "b8": { "type": "item", "settings": { "heading": "Damaged or Lost in Transit", "body": "<p>If your order arrives damaged, or doesn't arrive within a reasonable time, contact us within [48 hours] of the expected delivery date with your order number, and we'll work with our carrier on a resolution.</p>" } },
-        "b9": { "type": "item", "settings": { "heading": "Contact Us", "body": "<p>Questions about shipping or delivery? Reach out to us:</p><ul><li><strong>Yours Waggly</strong></li><li>Email: support@yourswaggly.com</li><li>Phone: +1 (555) 123-4567</li><li>Address: 123 Petcare Avenue, Suite 100, Springfield, IL 62704, United States</li><li>Hours: Mon–Sat, 9:00 AM – 7:00 PM</li></ul>" } }
+        "b1": {
+          "type": "item",
+          "settings": {
+            "heading": "Order Processing",
+            "body": "<p>Orders are processed within [1–2 business days] after payment is confirmed. Orders placed on weekends or public holidays are processed on the next business day. You'll receive a confirmation email once your order is placed, and another once it ships.</p>"
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "heading": "Shipping Areas",
+            "body": "<p>We currently ship across the United States. If your location isn't serviceable at checkout, please contact us and we'll do our best to help.</p>"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "heading": "Delivery Timelines",
+            "body": "<p>Estimated delivery times after dispatch:</p><ul><li>Metro areas: [2–4 business days]</li><li>Other locations: [4–7 business days]</li></ul><p>These are estimates, not guaranteed delivery dates, and may vary due to location and carrier.</p>"
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "heading": "Shipping Charges",
+            "body": "<p>Free shipping on orders above $[XX]. A flat shipping fee of $[X] applies to orders below that amount. Any applicable charges are shown at checkout before you pay.</p>"
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "heading": "Order Tracking",
+            "body": "<p>Once your order ships, we'll email you a tracking number and link so you can follow your parcel. Please allow up to [24 hours] for tracking to become active.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "heading": "Delays",
+            "body": "<p>Occasionally, deliveries may be delayed due to weather, carrier issues, high demand, or other circumstances outside our control. We appreciate your patience and will help you track your order if needed.</p>"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "heading": "Incorrect Address",
+            "body": "<p>Please ensure your shipping address and contact details are accurate at checkout. We're not responsible for orders delivered to an incorrect address provided by the customer; re-delivery may incur additional charges.</p>"
+          }
+        },
+        "b8": {
+          "type": "item",
+          "settings": {
+            "heading": "Damaged or Lost in Transit",
+            "body": "<p>If your order arrives damaged, or doesn't arrive within a reasonable time, contact us within [48 hours] of the expected delivery date with your order number, and we'll work with our carrier on a resolution.</p>"
+          }
+        },
+        "b9": {
+          "type": "item",
+          "settings": {
+            "heading": "Contact Us",
+            "body": "<p>Questions about shipping or delivery? Reach out to us:</p><ul><li><strong>Yours Waggly</strong></li><li>Email: support@yourswaggly.com</li><li>Phone: +1 (555) 123-4567</li><li>Address: 123 Petcare Avenue, Suite 100, Springfield, IL 62704, United States</li><li>Hours: Mon–Sat, 9:00 AM – 7:00 PM</li></ul>"
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9"
+      ],
       "settings": {
         "last_updated": "September 2026",
         "intro": "",
         "width": "page-width",
-        "card_bg": "#faf5ef",
-        "badge_bg": "#9b643d",
+        "card_bg": "#FDE4EA",
+        "badge_bg": "#E83D74",
         "badge_color": "#ffffff",
-        "top_spacing": "normal"
-      }
-    },
-    "closing": {
-      "type": "waggly-closing",
-      "settings": {
-        "left_text": "",
-        "quote_intro": "",
-        "quote": "<p>On Its Way To You.</p>",
-        "logo_text": "Yours Waggly",
-        "logo_width": 180,
-        "rounded_top": true,
-        "bg_color": "#544340",
-        "text_color": "#f3ece4",
-        "top_spacing": "normal"
+        "top_spacing": "none"
       }
     }
   },
-  "order": ["hero", "policy", "closing"]
+  "order": [
+    "hero",
+    "policy"
+  ]
 }

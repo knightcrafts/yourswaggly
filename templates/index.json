@@ -194,8 +194,8 @@
         "secondary_link": "shopify://collections/all",
         "image": "shopify://shop_images/Asset_2_4x_7344d91a-4847-49d5-8144-b08b8521c91b.png",
         "show_decoration": false,
-        "bg_color": "#F3E7D9",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "none"
       }
     },
@@ -258,7 +258,7 @@
             "heading": "Nutrition They Love!",
             "cta_label": "Shop Food",
             "link": "",
-            "bg_color": "#d3a5d8"
+            "bg_color": "#F4A9C4"
           }
         },
         "c2": {
@@ -269,7 +269,7 @@
             "heading": "Fun & Play Everyday!",
             "cta_label": "Shop Toys",
             "link": "",
-            "bg_color": "#89b5ae"
+            "bg_color": "#AEC6E4"
           }
         },
         "c3": {
@@ -280,7 +280,7 @@
             "heading": "Grooming Made Easy!",
             "cta_label": "Shop Grooming",
             "link": "",
-            "bg_color": "#f9d090"
+            "bg_color": "#F9CBD9"
           }
         },
         "c4": {
@@ -291,7 +291,7 @@
             "heading": "Essentials For Comfort!",
             "cta_label": "Shop Essentials",
             "link": "",
-            "bg_color": "#f2af88"
+            "bg_color": "#7FA3D0"
           }
         },
         "c5": {
@@ -302,7 +302,7 @@
             "heading": "Nutrition They Love!",
             "cta_label": "Shop Food",
             "link": "",
-            "bg_color": "#d3a5d8"
+            "bg_color": "#F4A9C4"
           }
         },
         "c6": {
@@ -313,7 +313,7 @@
             "heading": "Fun & Play Everyday!",
             "cta_label": "Shop Toys",
             "link": "",
-            "bg_color": "#89b5ae"
+            "bg_color": "#AEC6E4"
           }
         },
         "c7": {
@@ -324,7 +324,7 @@
             "heading": "Grooming Made Easy!",
             "cta_label": "Shop Grooming",
             "link": "",
-            "bg_color": "#f9d090"
+            "bg_color": "#F9CBD9"
           }
         },
         "c8": {
@@ -335,7 +335,7 @@
             "heading": "Essentials For Comfort!",
             "cta_label": "Shop Essentials",
             "link": "",
-            "bg_color": "#f2af88"
+            "bg_color": "#7FA3D0"
           }
         }
       },
@@ -359,7 +359,7 @@
         "tab1_label": "Dogs",
         "tab2_label": "Cats",
         "cta_bg": "#ffffff",
-        "cta_color": "#544340",
+        "cta_color": "#0D386F",
         "top_spacing": "normal"
       }
     },
@@ -420,11 +420,11 @@
         "heading_style": "kalam",
         "intro": "",
         "image": "shopify://shop_images/6.png",
-        "image_width": 300,
+        "image_width": 520,
         "image_position": "right",
         "item_style": "compact",
         "width": "page-width",
-        "bg_color": "#f2ebe3",
+        "bg_color": "#FDE4EA",
         "icon_bg": "#ffffff",
         "top_spacing": "normal"
       }
@@ -472,6 +472,18 @@
         "view_all_label": "",
         "view_all_link": "",
         "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "waggly_banner_kz48Ci": {
+      "type": "waggly-banner",
+      "name": "Waggly banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_ead55748-d2e2-4126-acad-da98a3c70907.png",
+        "link": "",
+        "link_new_tab": false,
+        "width": "wide",
+        "rounded": true,
         "top_spacing": "normal"
       }
     },
@@ -551,8 +563,8 @@
         "secondary_link": "",
         "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
         "show_decoration": false,
-        "bg_color": "#F3E7D9",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "normal"
       }
     },
@@ -594,6 +606,7 @@
     "value",
     "waggly_decorations_PXUtaX",
     "products",
+    "waggly_banner_kz48Ci",
     "waggly_value_RWVwhH",
     "intro",
     "ticker_XcY7HW"

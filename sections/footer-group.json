@@ -22,7 +22,7 @@
             "address": "<p>123 Petcare Avenue, Suite 100<br/>Springfield, IL 62704<br/>United States</p>",
             "phone": "+1 (555) 123-4567",
             "email": "support@yourswaggly.com",
-            "hours": "<p>Mon–Sat: 9:00 AM – 7:00 PM<br/>Sun: Closed</p>",
+            "hours": "",
             "show_social": false
           }
         },
@@ -58,7 +58,7 @@
           "type": "links",
           "settings": {
             "heading": "Help",
-            "links": "Contact Us\nFAQs\nShipping & Delivery\nReturns & Refunds\nTerms & Conditions\nPrivacy Policy | pages/privacy-policy"
+            "links": "Contact Us\nFAQs\nShipping & Delivery\nReturns & Refunds | pages/refund-policy\nTerms & Conditions | pages/shipping-policy\nPrivacy Policy | pages/privacy-policy"
           }
         }
       },
@@ -84,12 +84,12 @@
         "enable_language_selector": false,
         "payment_enable": true,
         "color_heading": "#ffffff",
-        "color_text": "#efe3d8",
-        "color_links": "#efe3d8",
+        "color_text": "#E7EDF6",
+        "color_links": "#E7EDF6",
         "color_input_bg": "#ffffff",
         "color_input_bg_active": "rgba(0,0,0,0)",
         "background": "color",
-        "color_background": "#544340",
+        "color_background": "#0D386F",
         "gradient": ""
       }
     }

@@ -13,7 +13,7 @@
       "type": "waggly-hero",
       "settings": {
         "image_position": "right",
-        "width": "page-wide",
+        "width": "page-width",
         "heading_tag": "h1",
         "heading_style": "handwritten",
         "eyebrow": "Refund Policy",
@@ -22,52 +22,115 @@
         "heading_accent": "Simple & Fair",
         "subtext": "<p>At Yours Waggly, we want you and your pet to love every purchase. Here's how cancellations, returns, replacements, and refunds work.</p>",
         "primary_label": "",
+        "primary_link": "",
         "secondary_label": "",
+        "secondary_link": "",
+        "image": "shopify://shop_images/5.png",
         "show_decoration": true,
-        "bg_color": "#f7f2ef",
-        "accent_color": "#9b643d",
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
         "top_spacing": "none"
       }
     },
     "policy": {
       "type": "waggly-policy",
       "blocks": {
-        "b1": { "type": "item", "settings": { "heading": "Cancellations", "body": "<p>You may request to cancel an order before it has been dispatched. Once shipped, an order can't be cancelled, but you may be able to return eligible items after delivery. To cancel, contact us as soon as possible with your order number.</p>" } },
-        "b2": { "type": "item", "settings": { "heading": "Return Window", "body": "<p>You may request a return within [7] days of delivery, provided the item meets the eligibility conditions below.</p>" } },
-        "b3": { "type": "item", "settings": { "heading": "Eligibility for Returns", "body": "<p>To be eligible, an item must be:</p><ul><li>Unused, unworn, and in the same condition you received it.</li><li>In its original packaging with all tags and seals intact.</li><li>Accompanied by proof of purchase (order number or receipt).</li></ul>" } },
-        "b4": { "type": "item", "settings": { "heading": "Non-Returnable Items", "body": "<p>For the safety and hygiene of pets, some items can't be returned once opened or used, including:</p><ul><li>Food, treats, and other perishable or consumable products.</li><li>Opened grooming, health, or hygiene products.</li><li>Personalised or custom-made items.</li><li>Clearance or final-sale items (where marked).</li></ul>" } },
-        "b5": { "type": "item", "settings": { "heading": "Damaged, Defective, or Wrong Items", "body": "<p>If your order arrives damaged, defective, or incorrect, contact us within [48 hours] of delivery with your order number and photos of the item and packaging. We'll arrange a replacement or refund at no extra cost to you.</p>" } },
-        "b6": { "type": "item", "settings": { "heading": "How to Start a Return or Replacement", "body": "<p>Contact us with your order number and reason for return. Our team will confirm eligibility and share return instructions. Please don't send items back before receiving confirmation from us.</p>" } },
-        "b7": { "type": "item", "settings": { "heading": "Refunds", "body": "<p>Once we receive and inspect your returned item, we'll notify you of the outcome. Approved refunds are processed to your original payment method within [7–10 business days]. Depending on your bank or provider, it may take additional time to reflect. Shipping charges are non-refundable unless the return is due to our error.</p>" } },
-        "b8": { "type": "item", "settings": { "heading": "Return Shipping Costs", "body": "<p>Unless the return is due to our error, return shipping costs are the responsibility of the customer. We recommend a trackable shipping method, as we can't be responsible for items lost in transit.</p>" } },
-        "b9": { "type": "item", "settings": { "heading": "Late or Missing Refunds", "body": "<p>If you haven't received an approved refund within the stated timeline, please check with your bank or payment provider first, then contact us and we'll help.</p>" } },
-        "b10": { "type": "item", "settings": { "heading": "Contact Us", "body": "<p>Questions about a return or refund? Reach out to us:</p><ul><li><strong>Yours Waggly</strong></li><li>Email: support@yourswaggly.com</li><li>Phone: +1 (555) 123-4567</li><li>Address: 123 Petcare Avenue, Suite 100, Springfield, IL 62704, United States</li><li>Hours: Mon–Sat, 9:00 AM – 7:00 PM</li></ul>" } }
+        "b1": {
+          "type": "item",
+          "settings": {
+            "heading": "Cancellations",
+            "body": "<p>You may request to cancel an order before it has been dispatched. Once shipped, an order can't be cancelled, but you may be able to return eligible items after delivery. To cancel, contact us as soon as possible with your order number.</p>"
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "heading": "Return Window",
+            "body": "<p>You may request a return within [7] days of delivery, provided the item meets the eligibility conditions below.</p>"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "heading": "Eligibility for Returns",
+            "body": "<p>To be eligible, an item must be:</p><ul><li>Unused, unworn, and in the same condition you received it.</li><li>In its original packaging with all tags and seals intact.</li><li>Accompanied by proof of purchase (order number or receipt).</li></ul>"
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "heading": "Non-Returnable Items",
+            "body": "<p>For the safety and hygiene of pets, some items can't be returned once opened or used, including:</p><ul><li>Food, treats, and other perishable or consumable products.</li><li>Opened grooming, health, or hygiene products.</li><li>Personalised or custom-made items.</li><li>Clearance or final-sale items (where marked).</li></ul>"
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "heading": "Damaged, Defective, or Wrong Items",
+            "body": "<p>If your order arrives damaged, defective, or incorrect, contact us within [48 hours] of delivery with your order number and photos of the item and packaging. We'll arrange a replacement or refund at no extra cost to you.</p>"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "heading": "How to Start a Return or Replacement",
+            "body": "<p>Contact us with your order number and reason for return. Our team will confirm eligibility and share return instructions. Please don't send items back before receiving confirmation from us.</p>"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "heading": "Refunds",
+            "body": "<p>Once we receive and inspect your returned item, we'll notify you of the outcome. Approved refunds are processed to your original payment method within [7–10 business days]. Depending on your bank or provider, it may take additional time to reflect. Shipping charges are non-refundable unless the return is due to our error.</p>"
+          }
+        },
+        "b8": {
+          "type": "item",
+          "settings": {
+            "heading": "Return Shipping Costs",
+            "body": "<p>Unless the return is due to our error, return shipping costs are the responsibility of the customer. We recommend a trackable shipping method, as we can't be responsible for items lost in transit.</p>"
+          }
+        },
+        "b9": {
+          "type": "item",
+          "settings": {
+            "heading": "Late or Missing Refunds",
+            "body": "<p>If you haven't received an approved refund within the stated timeline, please check with your bank or payment provider first, then contact us and we'll help.</p>"
+          }
+        },
+        "b10": {
+          "type": "item",
+          "settings": {
+            "heading": "Contact Us",
+            "body": "<p>Questions about a return or refund? Reach out to us:</p><ul><li><strong>Yours Waggly</strong></li><li>Email: support@yourswaggly.com</li><li>Phone: +1 (555) 123-4567</li><li>Address: 123 Petcare Avenue, Suite 100, Springfield, IL 62704, United States</li><li>Hours: Mon–Sat, 9:00 AM – 7:00 PM</li></ul>"
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9", "b10"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ],
       "settings": {
         "last_updated": "September 2026",
         "intro": "",
         "width": "page-width",
-        "card_bg": "#faf5ef",
-        "badge_bg": "#9b643d",
+        "card_bg": "#FDE4EA",
+        "badge_bg": "#E83D74",
         "badge_color": "#ffffff",
-        "top_spacing": "normal"
-      }
-    },
-    "closing": {
-      "type": "waggly-closing",
-      "settings": {
-        "left_text": "",
-        "quote_intro": "",
-        "quote": "<p>Shop Happy, Return Easy.</p>",
-        "logo_text": "Yours Waggly",
-        "logo_width": 180,
-        "rounded_top": true,
-        "bg_color": "#544340",
-        "text_color": "#f3ece4",
-        "top_spacing": "normal"
+        "top_spacing": "none"
       }
     }
   },
-  "order": ["hero", "policy", "closing"]
+  "order": [
+    "hero",
+    "policy"
+  ]
 }
