@@ -207,7 +207,7 @@
    ========================================================= */
 .product-card{
   background:#fff;
-  border:1px solid var(--color-lines-borders, rgba(84,67,64,.10));
+  border:1px solid var(--color-lines-borders, rgba(13,56,111,.10));
   border-radius:16px;
   padding:10px;
   transition:transform .25s ease, box-shadow .25s ease;
@@ -264,12 +264,12 @@
   display:none;
 }
 .product-card__btn--buy{
-  background:#544340;
+  background:#0D386F;
   color:#fff;
   border:0;
 }
 .product-card__btn--buy:hover{
-  background:#3f302e;
+  background:#0A2B57;
 }
 .product-card__btn .loading-overlay__spinner{
   width:18px;
