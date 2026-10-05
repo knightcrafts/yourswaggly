@@ -30,12 +30,13 @@ Context for AI/dev sessions on this project. Read this first.
 - Pre‑existing vendor warnings that are **NOT ours** (leave them): in `layout/theme.liquid` the `sections.slideshow.pause_slideshow` / `play_slideshow` missing‑locale ERRORS and font `preload_tag` warnings; `img_url` deprecation warnings in `footer.liquid` and `menu-megamenu.liquid` banner code.
 
 ## Design system
-- **Palette** (exact, from the designer PDF):
-  - Background `#f7f2ef`, Secondary bg `#f2ebe3`
-  - Text/base `#544340` (warm brown), Button/accent `#9b643d` (brown — **no orange**)
-  - Footer `#544340`
-  - Category cards: lavender `#d3a5d8`, teal `#89b5ae`, yellow `#f9d090`, peach `#f2af88`
-  - Stored globally in `config/settings_data.json → current` (`color_base`, `color_accent`, `color_background`, `color_secondary_background`, `color_price`, `color_addtocart`).
+- **Palette** — **pink + blue** (switched 2026‑10‑05 from the original warm‑brown scheme; client palette per `Client Docs/yourswaggly-insurance-page.html` & `yourswaggly-discovery-kit-v2 (1).html`):
+  - **Pink `#E83D74`** = primary buttons / CTAs / add‑to‑cart / `+`, eyebrows, heading accent words, active tabs, pink number badges, icon accents. Pink‑dark `#C72A5E` for hover.
+  - **Navy `#0D386F`** = body text, headings, prices, icon strokes, links, secondary/outline buttons, **and** the dark footer + closing bands. Navy‑dark `#0A2B57` for button hover; muted navy `#4A5D80` for secondary text.
+  - Backgrounds: page **blush `#FFF4F5`**, secondary/panel **pink‑soft `#FDE4EA`**, hero/section **peach `#FCE1E7`**; borders **`#F6D6DE`**; cards white.
+  - Category‑card pastels (4, varied, pink/blue family): `#F4A9C4`, `#AEC6E4`, `#F9CBD9`, `#7FA3D0` (blue‑soft `#D7E1EF` for some icon tints).
+  - **Sale badge/price kept red `#d20404`** (convention).
+  - Stored globally in `config/settings_data.json → current` (`color_base`→navy, `color_accent`/`color_addtocart`→pink, `color_price`→navy, `color_background`→blush, `color_secondary_background`→pink‑soft). Per‑section colors live in `templates/*.json` + section `{% stylesheet %}` fallbacks/schema defaults.
 - **Fonts:** **Outfit** (all headings + body) and **Kalam** (handwritten — category card titles, value heading). Self‑hosted woff2 in `assets/` (`outfit-400/500/600/700.woff2`, `kalam-400/700.woff2`), declared via `@font-face` in `layout/theme.liquid` which also overrides `--font-heading-family`/`--font-body-family` to Outfit and defines `--font-hand: 'Kalam'`.
   - Source TTFs: `local/Outfit/`, `local/kalam/`. Convert with `fonttools` (`f.flavor='woff2'`).
 
