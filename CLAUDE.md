@@ -85,6 +85,7 @@ Context for AI/dev sessions on this project. Read this first.
 ## Conventions / preferences
 - Reuse Minion components where practical; keep all content editable via Theme Editor; avoid unnecessary JS.
 - New‑section CSS goes in the section's `{% stylesheet %}` (scoped), not in `base.css`.
+- **Spacing controls:** `top_spacing` (the shared `top-spacing-*` class) only adds **margin above** a section ("Gap above section"). Banded sections (`waggly-hero/cta/closing/story/agebars`) also have a **`vertical_padding`** range ("Top & bottom padding") that sets symmetric padding *inside* the coloured band — defaults preserve prior look (hero/cta 40, closing/agebars 56, story 48 and only when a bg is set).
 - Commit messages end with the Co‑Authored‑By trailer. Work is committed to `master`.
 
 ## Open / next tasks
