@@ -5,7 +5,7 @@
 
 <section
   class="waggly-hero{% if s.image_position == 'left' %} waggly-hero--reverse{% endif %}{% if s.heading_style == 'handwritten' %} waggly-hero--hand{% endif %} top-spacing-{{ s.top_spacing }}"
-  style="--wg-hero-bg: {{ s.bg_color }}; --wg-hero-accent: {{ s.accent_color }};"
+  style="--wg-hero-bg: {{ s.bg_color }}; --wg-hero-accent: {{ s.accent_color }}; --wg-hero-pad: {{ s.vertical_padding | default: 40 }}px;"
 >
   <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %} waggly-hero__inner">
     <div class="waggly-hero__content">
@@ -85,8 +85,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: var(--wg-hero-pad, 40px);
+  padding-bottom: var(--wg-hero-pad, 40px);
 }
 .waggly-hero--reverse .waggly-hero__content { order: 2; }
 .waggly-hero--reverse .waggly-hero__media { order: 1; }
@@ -242,10 +242,11 @@
     { "type": "color", "id": "bg_color", "label": "Background", "default": "#FFF4F5" },
     { "type": "color", "id": "accent_color", "label": "Accent (heading line 2)", "default": "#E83D74" },
     { "type": "header", "content": "Spacing" },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "info": "Space inside the section, above and below the content.", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 40 },
     {
       "type": "select",
       "id": "top_spacing",
-      "label": "Top spacing",
+      "label": "Gap above section",
       "options": [
         { "value": "none", "label": "None" },
         { "value": "small", "label": "Small" },

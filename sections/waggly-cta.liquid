@@ -2,7 +2,7 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-cta top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cta--hand{% endif %}" style="--wg-cta-bg: {{ s.bg_color }}; --wg-cta-accent: {{ s.accent_color }};">
+<section class="waggly-cta top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-cta--hand{% endif %}" style="--wg-cta-bg: {{ s.bg_color }}; --wg-cta-accent: {{ s.accent_color }}; --wg-cta-pad: {{ s.vertical_padding | default: 40 }}px;">
   <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %} waggly-cta__inner">
     {%- if s.image_left != blank -%}
       <img class="waggly-cta__deco waggly-cta__deco--left" src="{{ s.image_left | image_url: width: 500 }}" width="{{ s.image_left.width }}" height="{{ s.image_left.height }}" alt="" loading="lazy">
@@ -44,7 +44,7 @@
 .waggly-cta { background: var(--wg-cta-bg, transparent); }
 .waggly-cta__inner {
   position: relative;
-  padding: 40px 0;
+  padding: var(--wg-cta-pad, 40px) 0;
   overflow: hidden;
 }
 .waggly-cta__content {
@@ -163,10 +163,11 @@
       ],
       "default": "page-width"
     },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "info": "Space inside the band, above and below the content.", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 40 },
     {
       "type": "select",
       "id": "top_spacing",
-      "label": "Top spacing",
+      "label": "Gap above section",
       "options": [
         { "value": "none", "label": "None" },
         { "value": "small", "label": "Small" },

@@ -2,7 +2,7 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-closing{% if s.rounded_top %} waggly-closing--rounded{% endif %} top-spacing-{{ s.top_spacing }}" style="--wg-closing-bg: {{ s.bg_color }}; --wg-closing-text: {{ s.text_color }};">
+<section class="waggly-closing{% if s.rounded_top %} waggly-closing--rounded{% endif %} top-spacing-{{ s.top_spacing }}" style="--wg-closing-bg: {{ s.bg_color }}; --wg-closing-text: {{ s.text_color }}; --wg-closing-pad: {{ s.vertical_padding | default: 56 }}px;">
   <div class="page-width waggly-closing__inner">
     {%- if s.decoration_image != blank -%}
       <img class="waggly-closing__deco" src="{{ s.decoration_image | image_url: width: 400 }}" width="{{ s.decoration_image.width }}" height="{{ s.decoration_image.height }}" alt="" loading="lazy">
@@ -36,7 +36,7 @@
   color: var(--wg-closing-text, #FDE4EA);
 }
 .waggly-closing--rounded { border-top-left-radius: 48px; border-top-right-radius: 48px; }
-.waggly-closing__inner { position: relative; padding: 56px 0 44px; }
+.waggly-closing__inner { position: relative; padding: var(--wg-closing-pad, 56px) 0; }
 .waggly-closing__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
 .waggly-closing__left {
   font-family: var(--font-heading-family);
@@ -89,10 +89,11 @@
     { "type": "checkbox", "id": "rounded_top", "label": "Rounded top corners", "default": true },
     { "type": "color", "id": "bg_color", "label": "Background", "default": "#0D386F" },
     { "type": "color", "id": "text_color", "label": "Text", "default": "#FDE4EA" },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "info": "Space inside the band, above and below the content.", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 56 },
     {
       "type": "select",
       "id": "top_spacing",
-      "label": "Top spacing",
+      "label": "Gap above section",
       "options": [
         { "value": "none", "label": "None" },
         { "value": "small", "label": "Small" },

@@ -3,7 +3,7 @@
   assign heading_tag = s.heading_tag | default: 'h2'
 -%}
 
-<section class="waggly-story top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-story--hand{% endif %}{% if s.heading_size == 'large' %} waggly-story--large{% endif %}" style="--wg-story-bg: {{ s.bg_color }};">
+<section class="waggly-story top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-story--hand{% endif %}{% if s.heading_size == 'large' %} waggly-story--large{% endif %}" style="--wg-story-bg: {{ s.bg_color }}; --wg-story-pad: {% if s.bg_color != blank and s.bg_color != 'rgba(0,0,0,0)' %}{{ s.vertical_padding | default: 48 }}{% else %}0{% endif %}px;">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
     {%- if s.is_quote -%}
       <blockquote class="waggly-story__quote">
@@ -45,7 +45,11 @@
 </section>
 
 {% stylesheet %}
-.waggly-story { background: var(--wg-story-bg, transparent); }
+.waggly-story {
+  background: var(--wg-story-bg, transparent);
+  padding-top: var(--wg-story-pad, 0);
+  padding-bottom: var(--wg-story-pad, 0);
+}
 .waggly-story__grid { display: grid; grid-template-columns: 1fr; gap: 30px; align-items: center; }
 .waggly-story__grid--split { grid-template-columns: 1fr 1fr; }
 .waggly-story__grid--center { text-align: center; justify-items: center; }
@@ -198,10 +202,11 @@
       "default": "page-width"
     },
     { "type": "color", "id": "bg_color", "label": "Background", "default": "rgba(0,0,0,0)" },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "info": "Space above & below the content. Applies when a background colour is set.", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 48 },
     {
       "type": "select",
       "id": "top_spacing",
-      "label": "Top spacing",
+      "label": "Gap above section",
       "options": [
         { "value": "none", "label": "None" },
         { "value": "small", "label": "Small" },
