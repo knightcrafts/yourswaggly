@@ -12,7 +12,7 @@
   assign tick_count = axis_max | divided_by: axis_step
 -%}
 
-<section class="waggly-agebars top-spacing-{{ s.top_spacing }}" style="--wg-agebars-bg: {{ s.bg_color }};">
+<section class="waggly-agebars top-spacing-{{ s.top_spacing }}" style="--wg-agebars-bg: {{ s.bg_color }}; --wg-agebars-pad: {{ s.vertical_padding | default: 56 }}px;">
   <div class="{% if s.width == 'page-wide' %}page-wide{% else %}page-width{% endif %}">
     {%- if s.eyebrow != blank or s.heading != blank or s.intro != blank -%}
       <header class="waggly-agebars__head">
@@ -69,7 +69,11 @@
 </section>
 
 {% stylesheet %}
-.waggly-agebars { background: var(--wg-agebars-bg, transparent); }
+.waggly-agebars {
+  background: var(--wg-agebars-bg, transparent);
+  padding-top: var(--wg-agebars-pad, 56px);
+  padding-bottom: var(--wg-agebars-pad, 56px);
+}
 .waggly-agebars__head { margin-bottom: 30px; }
 .waggly-agebars__eyebrow {
   font-family: var(--font-body-family);
@@ -188,6 +192,7 @@
 }
 
 @media (max-width: 749px) {
+  .waggly-agebars { padding-top: calc(var(--wg-agebars-pad, 56px) * .7); padding-bottom: calc(var(--wg-agebars-pad, 56px) * .7); }
   .waggly-agebars__card { padding: 22px 18px 18px; }
   .waggly-agebars__row,
   .waggly-agebars__axis { grid-template-columns: 96px 1fr; gap: 10px; }
@@ -235,10 +240,11 @@
       "default": "page-width"
     },
     { "type": "color", "id": "bg_color", "label": "Section background", "default": "#FCE1E7" },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "info": "Space inside the coloured band, above and below the content.", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 56 },
     {
       "type": "select",
       "id": "top_spacing",
-      "label": "Top spacing",
+      "label": "Gap above section",
       "options": [
         { "value": "none", "label": "None" },
         { "value": "small", "label": "Small" },
