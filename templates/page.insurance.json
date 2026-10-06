@@ -279,19 +279,28 @@
       }
     },
     "timing": {
-      "type": "waggly-story",
+      "type": "waggly-agebars",
+      "blocks": {
+        "a1": { "type": "bar", "settings": { "label": "Generali Central", "range_text": "3 months – 10 years", "start_months": 3, "end_months": 120 } },
+        "a2": { "type": "bar", "settings": { "label": "New India Assurance", "range_text": "8 weeks – 8 years", "start_months": 2, "end_months": 96 } },
+        "a3": { "type": "bar", "settings": { "label": "Bajaj General", "range_text": "3 months – 7 years", "start_months": 3, "end_months": 84 } },
+        "a4": { "type": "bar", "settings": { "label": "ICICI Lombard", "range_text": "3 months – 7 years", "start_months": 3, "end_months": 84 } },
+        "a5": { "type": "bar", "settings": { "label": "Universal Sompo", "range_text": "3 months – 7 years", "start_months": 3, "end_months": 84 } },
+        "a6": { "type": "bar", "settings": { "label": "HDFC ERGO", "range_text": "6 months – 5 years", "start_months": 6, "end_months": 60 } }
+      },
+      "block_order": ["a1", "a2", "a3", "a4", "a5", "a6"],
       "settings": {
-        "is_quote": false,
         "eyebrow": "Timing matters",
         "heading": "The window to join closes early",
-        "heading_tag": "h2",
         "heading_style": "normal",
-        "heading_size": "large",
-        "body": "<p>Most insurers only accept new pets until about <strong>5–8 years</strong> of age — and as early as <strong>4</strong> for giant breeds like Great Danes and St. Bernards.</p><p>Buying young means lower premiums and fewer exclusions. Small and medium breeds usually enjoy the widest joining window; giant breeds the narrowest.</p>",
-        "show_image_placeholder": true,
-        "image_position": "left",
-        "align": "left",
-        "width": "page-wide",
+        "intro": "<p>Most insurers only accept new pets until about <strong>5–8 years</strong> of age — and as early as <strong>4</strong> for giant breeds like Great Danes and St. Bernards. Buying young means lower premiums and fewer exclusions.</p>",
+        "card_title": "When a new dog can join",
+        "card_note": "(small, medium & large breeds)",
+        "axis_max": 12,
+        "axis_step": 2,
+        "axis_unit": "yrs",
+        "legend": "Age at which a new policy can be bought. Once insured, renewing on time keeps your pet covered beyond these ages.",
+        "width": "page-width",
         "bg_color": "#FCE1E7",
         "top_spacing": "normal"
       }
