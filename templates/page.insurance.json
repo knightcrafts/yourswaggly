@@ -1,0 +1,628 @@
+{
+  "sections": {
+    "hero": {
+      "type": "waggly-hero",
+      "settings": {
+        "image_position": "right",
+        "width": "page-width",
+        "heading_tag": "h1",
+        "heading_style": "normal",
+        "eyebrow": "Pet Insurance",
+        "eyebrow_paw": true,
+        "heading": "Because Family",
+        "heading_accent": "Deserves Protection.",
+        "subtext": "<p>Many say pets are family. At Yours Waggly, we wanted to go beyond saying it — so we're bringing pet insurance into your shopping journey, the same care we plan for our loved ones.</p><p><em>Love beyond the bowl. Protection beyond the everyday.</em></p>",
+        "primary_label": "Get a quote",
+        "primary_link": "/pages/contact",
+        "secondary_label": "",
+        "secondary_link": "",
+        "show_decoration": true,
+        "bg_color": "#FCE1E7",
+        "accent_color": "#E83D74",
+        "top_spacing": "none"
+      }
+    },
+    "basics": {
+      "type": "waggly-value",
+      "blocks": {
+        "b1": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='currentColor'><ellipse cx='12' cy='17' rx='5' ry='3.5'/><circle cx='5.5' cy='11' r='2'/><circle cx='9.5' cy='7.5' r='2'/><circle cx='14.5' cy='7.5' r='2'/><circle cx='18.5' cy='11' r='2'/></svg>",
+            "label": "Made for dogs & cats",
+            "sublabel": "Indies, cross-breeds and pedigrees are all accepted. Birds and other pets aren't covered yet in India."
+          }
+        },
+        "b2": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12a9 9 0 0 1 15-6.7L21 7'/><path d='M21 3v4h-4'/><path d='M21 12a9 9 0 0 1-15 6.7L3 17'/><path d='M3 21v-4h4'/></svg>",
+            "label": "You pay, then get paid back",
+            "sublabel": "Most plans reimburse: pay your vet, submit the bills, and the insurer transfers the eligible amount."
+          }
+        },
+        "b3": {
+          "type": "value",
+          "settings": {
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round'><path d='M4 6h8M16 6h4M4 12h4M12 12h8M4 18h10M18 18h2'/><circle cx='14' cy='6' r='2'/><circle cx='10' cy='12' r='2'/><circle cx='16' cy='18' r='2'/></svg>",
+            "label": "Build your own cover",
+            "sublabel": "Choose the protections you need — surgery, hospital stays, vet visits, liability — and the amount for each."
+          }
+        }
+      },
+      "block_order": ["b1", "b2", "b3"],
+      "settings": {
+        "eyebrow": "The basics",
+        "heading": "What is pet insurance?",
+        "heading_style": "normal",
+        "intro": "<p>A health cover for your dog or cat. You pay a yearly premium, and when your pet falls ill or gets hurt, the insurer pays back eligible vet bills — up to the cover amount you chose.</p>",
+        "image_width": 0,
+        "image_position": "right",
+        "item_style": "detailed",
+        "width": "page-width",
+        "bg_color": "#FFFFFF",
+        "icon_bg": "#FDE4EA",
+        "top_spacing": "normal"
+      }
+    },
+    "steps": {
+      "type": "waggly-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Visit your vet",
+            "description": "Get your pet treated and pay the bill. Inform the insurer within 24 hours for emergencies."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Collect papers",
+            "description": "Bills, prescriptions, test reports, vaccination record and photos of your pet."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Submit the claim",
+            "description": "Upload on the insurer's app or website, or send by email with the claim form."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "title": "Get reimbursed",
+            "description": "Money reaches your bank account, usually within 7–15 working days."
+          }
+        }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "How a claim works",
+        "heading": "Four simple steps",
+        "body": "<p>Go to any licensed vet you trust — most claims can now be filed from your phone.</p><p><strong>Good to know:</strong> illness cover usually starts after a 15–30 day waiting period. Accidents are covered from day one.</p>",
+        "bg_color": "#FDE4EA",
+        "show_divider": true,
+        "divider_color": "#F6D6DE",
+        "icon_shape": "circle",
+        "icon_bg": "#FFFFFF",
+        "icon_color": "#0D386F",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "covered": {
+      "type": "waggly-cards",
+      "blocks": {
+        "c1": {
+          "type": "card",
+          "settings": {
+            "title": "Surgery",
+            "text": "Operations after an accident or illness, including costs a week before and two weeks after.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M12 7v10M7 12h10'/></svg>"
+          }
+        },
+        "c2": {
+          "type": "card",
+          "settings": {
+            "title": "Hospitalisation",
+            "text": "In-patient stays of 24 hours or more, including ICU care.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M3 20V7M3 14h18v6M21 14v-3a3 3 0 0 0-3-3h-7v6'/><circle cx='7' cy='11' r='1.6'/></svg>"
+          }
+        },
+        "c3": {
+          "type": "card",
+          "settings": {
+            "title": "Vet visits (OPD)",
+            "text": "Consultations, diagnostics and medicines for listed illnesses — often ₹10,000–₹30,000.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5M9 13h6M9 17h4'/></svg>"
+          }
+        },
+        "c4": {
+          "type": "card",
+          "settings": {
+            "title": "Long-term care",
+            "text": "A lump sum when your pet is diagnosed with chronic conditions like diabetes or epilepsy.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M12 20S4 15 4 9a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 1.6-.6 3-1.6 4.4'/><path d='M12.5 13h3l1.5 3'/></svg>"
+          }
+        },
+        "c5": {
+          "type": "card",
+          "settings": {
+            "title": "Serious illness",
+            "text": "A lump sum for cancer, kidney failure, heart disease, distemper and similar diagnoses.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M9 10a3 3 0 1 1 6 0c0 2-3 3.2-3 3.2S9 12 9 10z'/><path d='M10 13l-3 8 5-3 5 3-3-8'/></svg>"
+          }
+        },
+        "c6": {
+          "type": "card",
+          "settings": {
+            "title": "Third-party liability",
+            "text": "If your pet bites someone or damages property — legal and medical costs, often up to lakhs.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z'/><path d='M9 12l2 2 4-4'/></svg>"
+          }
+        },
+        "c7": {
+          "type": "card",
+          "settings": {
+            "title": "Lost or stolen",
+            "text": "Pays your pet's value if not found, plus the costs of advertising and a reward.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><path d='M21 21l-4.5-4.5'/></svg>"
+          }
+        },
+        "c8": {
+          "type": "card",
+          "settings": {
+            "title": "Thoughtful extras",
+            "text": "Tele-vet calls, home visits, pet-sitting if you're hospitalised, ambulance, trip cancellation.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='26' height='26' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='8' width='18' height='13' rx='2'/><path d='M3 12h18M12 8v13M12 8S10 3 7.5 4.5 9 8 12 8zM12 8s2-5 4.5-3.5S15 8 12 8z'/></svg>"
+          }
+        }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8"],
+      "settings": {
+        "eyebrow": "What's covered",
+        "heading": "The protections you can choose",
+        "intro": "<p>Most Indian plans are built from these building blocks. You pick the ones that matter for your pet.</p>",
+        "heading_style": "normal",
+        "card_shape": "rounded",
+        "card_text_align": "left",
+        "card_orientation": "vertical",
+        "card_bg": "#FFFFFF",
+        "icon_color": "#E83D74",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "excluded": {
+      "type": "waggly-cards",
+      "blocks": {
+        "e1": {
+          "type": "card",
+          "settings": {
+            "title": "Pre-existing conditions",
+            "text": "Anything diagnosed or treated before the policy started.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e2": {
+          "type": "card",
+          "settings": {
+            "title": "Hereditary & congenital issues",
+            "text": "Often excluded or covered only as an add-on — e.g. hip dysplasia in large breeds.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e3": {
+          "type": "card",
+          "settings": {
+            "title": "Cosmetic & elective procedures",
+            "text": "Tail docking, ear cropping, grooming, cosmetic dental work.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e4": {
+          "type": "card",
+          "settings": {
+            "title": "Routine care",
+            "text": "Vaccines, deworming and microchipping themselves (some premium plans add wellness cover).",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e5": {
+          "type": "card",
+          "settings": {
+            "title": "Breeding & pregnancy",
+            "text": "Whelping and spaying/neutering, unless due to complications.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e6": {
+          "type": "card",
+          "settings": {
+            "title": "Missed vaccinations",
+            "text": "Illness from a disease your pet should have been vaccinated against.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e7": {
+          "type": "card",
+          "settings": {
+            "title": "Neglect or commercial use",
+            "text": "Injury from cruelty, racing, guarding or fighting.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        },
+        "e8": {
+          "type": "card",
+          "settings": {
+            "title": "Alternative treatments",
+            "text": "Herbal or experimental therapies, unless a specific add-on is bought.",
+            "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'><path d='M6 6l12 12M18 6L6 18'/></svg>"
+          }
+        }
+      },
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8"],
+      "settings": {
+        "eyebrow": "Read the fine print",
+        "heading": "What's usually not covered",
+        "intro": "<p>Knowing these upfront avoids heartbreak at claim time. Pre-existing conditions are the #1 reason claims are rejected.</p>",
+        "heading_style": "normal",
+        "card_shape": "rounded",
+        "card_text_align": "left",
+        "card_orientation": "horizontal",
+        "card_bg": "#FDE4EA",
+        "icon_color": "#C72A5E",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "timing": {
+      "type": "waggly-story",
+      "settings": {
+        "is_quote": false,
+        "eyebrow": "Timing matters",
+        "heading": "The window to join closes early",
+        "heading_tag": "h2",
+        "heading_style": "normal",
+        "heading_size": "large",
+        "body": "<p>Most insurers only accept new pets until about <strong>5–8 years</strong> of age — and as early as <strong>4</strong> for giant breeds like Great Danes and St. Bernards.</p><p>Buying young means lower premiums and fewer exclusions. Small and medium breeds usually enjoy the widest joining window; giant breeds the narrowest.</p>",
+        "show_image_placeholder": true,
+        "image_position": "left",
+        "align": "left",
+        "width": "page-wide",
+        "bg_color": "#FCE1E7",
+        "top_spacing": "normal"
+      }
+    },
+    "insurers": {
+      "type": "waggly-faq",
+      "blocks": {
+        "i1": {
+          "type": "faq",
+          "settings": {
+            "question": "Bajaj General — pick any cover",
+            "answer": "<ul><li>Dogs join 3 months–7 years (giant breeds to 4); cats 3 months–7 years.</li><li>Choose any mix: surgery (₹10,000–₹3 lakh), hospitalisation, OPD (up to ₹30,000), serious illness, long-term care, death benefit, liability, lost/stolen.</li><li>Policy terms from a few months to 3 years.</li><li>5% off for RFID tagging; up to 50% bonus for claim-free years; multi-pet discounts.</li><li>Unusual extras: vaccination-failure cover and reward money for finding a lost pet.</li></ul>",
+            "open": true
+          }
+        },
+        "i2": {
+          "type": "faq",
+          "settings": {
+            "question": "HDFC ERGO — comprehensive or custom",
+            "answer": "<ul><li>Comprehensive, liability-only, or a custom plan. Covers up to 5 pets per owner.</li><li>Illness, injury, surgery, diagnostics, OPD and emergency care, funeral costs, and trip cancellation if your pet's emergency cancels a domestic trip.</li><li>4 vet-on-call and 2 video consultations per policy. No health check-up needed to buy.</li><li>Claims settled within 7 working days of the last document.</li></ul>",
+            "open": false
+          }
+        },
+        "i3": {
+          "type": "faq",
+          "settings": {
+            "question": "ICICI Lombard — big illness & surgery list",
+            "answer": "<ul><li>Pets join 3 months–7 years (giant dogs to 4).</li><li>Base plan covers a long list of illnesses incl. tick fever, skin and dental infections, and 40+ surgeries.</li><li>Add-ons: OPD, dental, physiotherapy & hydrotherapy, pregnancy complications, tele-vet, liability, pet-minding, ambulance, trip cancellation.</li><li>Every claim carries a 10% deductible (minimum ₹1,000). 30-day waiting period.</li></ul>",
+            "open": false
+          }
+        },
+        "i4": {
+          "type": "faq",
+          "settings": {
+            "question": "Generali Central — surgery & hospital focus",
+            "answer": "<ul><li>Dogs join 3 months–10 years (giant breeds up to 7).</li><li>Base plan: surgery and hospitalisation with ICU, 15-day pre/post costs, ambulance and sum-insured restoration, plus OPD (20% of cover, max ₹10,000).</li><li>Add-ons: serious illness, vet home visits, lost & stolen, pet-minding, long-term care, liability, funeral costs.</li><li>Skin treatments and dental complications are excluded.</li></ul>",
+            "open": false
+          }
+        },
+        "i5": {
+          "type": "faq",
+          "settings": {
+            "question": "Universal Sompo — the widest menu of add-ons",
+            "answer": "<ul><li>Cover ₹10,000–₹2 lakh with 17 optional covers; 30-day waiting period.</li><li>Pets join 3 months–7 years (giant breeds to 4); policy terms 1–3 years.</li><li>Options include tick-borne diseases, pregnancy, dental, recovery therapy, wellness (vaccines, grooming, daycare), health check-ups and GPS-tag cover.</li><li>Joint and orthopaedic conditions, cataract and behavioural issues have longer waiting periods.</li></ul>",
+            "open": false
+          }
+        },
+        "i6": {
+          "type": "faq",
+          "settings": {
+            "question": "Digit Insurance — app-first",
+            "answer": "<ul><li>Among the first private insurers to offer pet cover in India; promotes simple, app-based claims.</li><li>Plan details are shared through a quote on the Digit app.</li></ul>",
+            "open": false
+          }
+        },
+        "i7": {
+          "type": "faq",
+          "settings": {
+            "question": "Public-sector insurers — basic dog cover",
+            "answer": "<ul><li>New India, Oriental, United India & National mainly cover death of the dog due to accident or illness, rather than vet bills.</li><li>New India Assurance: dogs 8 weeks–8 years, cover ₹25,000, vet fitness certificate needed. Theft and liability available as extensions.</li><li>Usually bought at a branch rather than online.</li></ul>",
+            "open": false
+          }
+        }
+      },
+      "block_order": ["i1", "i2", "i3", "i4", "i5", "i6", "i7"],
+      "settings": {
+        "eyebrow": "Who offers it",
+        "heading": "Pet insurers in India",
+        "heading_style": "normal",
+        "show_paw": true,
+        "subtext": "<p>Tap an insurer to see its key features. Terms vary by plan and pet, so always read the policy wording before buying.</p>",
+        "row_bg": "#FDE4EA",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "table": {
+      "type": "waggly-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "cell_1": "Bajaj General",
+            "cell_2": "Dog, cat",
+            "cell_3": "3 mo – 7 yr",
+            "cell_4": "4 yr",
+            "cell_5": "Up to ₹30,000",
+            "cell_6": "Up to ₹15 lakh",
+            "cell_7": "20 days",
+            "cell_8": "~₹315 + GST"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "cell_1": "HDFC ERGO",
+            "cell_2": "Dog, cat",
+            "cell_3": "6 mo – 5 yr",
+            "cell_4": "5 yr",
+            "cell_5": "Yes, flexible",
+            "cell_6": "Yes",
+            "cell_7": "30 days",
+            "cell_8": "₹200/yr"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "cell_1": "ICICI Lombard",
+            "cell_2": "Dog, cat",
+            "cell_3": "3 mo – 7 yr",
+            "cell_4": "4 yr",
+            "cell_5": "Add-on",
+            "cell_6": "Add-on",
+            "cell_7": "30 days",
+            "cell_8": "₹1,907/yr"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "cell_1": "Generali Central",
+            "cell_2": "Dog",
+            "cell_3": "3 mo – 10 yr",
+            "cell_4": "7 yr",
+            "cell_5": "Included, max ₹10,000",
+            "cell_6": "Add-on",
+            "cell_7": "Per policy",
+            "cell_8": "On quote"
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "cell_1": "Universal Sompo",
+            "cell_2": "Dog, cat",
+            "cell_3": "3 mo – 7 yr",
+            "cell_4": "4 yr",
+            "cell_5": "Add-on",
+            "cell_6": "Add-on",
+            "cell_7": "30 days",
+            "cell_8": "On quote"
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "cell_1": "New India Assurance",
+            "cell_2": "Dog",
+            "cell_3": "8 wk – 8 yr",
+            "cell_4": "8 yr",
+            "cell_5": "No",
+            "cell_6": "Small extension",
+            "cell_7": "15 days",
+            "cell_8": "~3–5% of cover"
+          }
+        }
+      },
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "eyebrow": "At a glance",
+        "heading": "Side-by-side comparison",
+        "heading_style": "normal",
+        "subtext": "<p>Terms vary by plan and pet — always read the policy wording before buying.</p>",
+        "scroll_hint": "Scroll sideways to see every column →",
+        "sticky_first": true,
+        "emphasize_last": true,
+        "header_1": "Insurer",
+        "header_2": "Pets",
+        "header_3": "Joining age (dogs)",
+        "header_4": "Giant breeds up to",
+        "header_5": "Vet visits (OPD)",
+        "header_6": "Liability cover",
+        "header_7": "Waiting period",
+        "header_8": "Starts from",
+        "width": "page-wide",
+        "top_spacing": "normal"
+      }
+    },
+    "pricing": {
+      "type": "waggly-pricing",
+      "blocks": {
+        "t1": {
+          "type": "tier",
+          "settings": {
+            "name": "Basic",
+            "tagline": "Surgery or accident only",
+            "price": "₹315 – ₹2,000",
+            "note": "per year · minimal cover",
+            "highlight": false,
+            "highlight_label": ""
+          }
+        },
+        "t2": {
+          "type": "tier",
+          "settings": {
+            "name": "Comprehensive",
+            "tagline": "Illness + accident + surgery",
+            "price": "₹2,000 – ₹10,000",
+            "note": "per year · right for most pets",
+            "highlight": true,
+            "highlight_label": "Right for most pets"
+          }
+        },
+        "t3": {
+          "type": "tier",
+          "settings": {
+            "name": "Premium",
+            "tagline": "Adds vet visits + liability",
+            "price": "₹5,000 – ₹15,000+",
+            "note": "per year · extensive cover",
+            "highlight": false,
+            "highlight_label": ""
+          }
+        },
+        "l1": { "type": "line", "settings": { "label": "Base: surgery, hospital, OPD", "value": "Included", "is_total": false } },
+        "l2": { "type": "line", "settings": { "label": "Serious illness", "value": "₹3,850", "is_total": false } },
+        "l3": { "type": "line", "settings": { "label": "Long-term care", "value": "₹2,750", "is_total": false } },
+        "l4": { "type": "line", "settings": { "label": "Liability (₹10 lakh)", "value": "₹1,500", "is_total": false } },
+        "l5": { "type": "line", "settings": { "label": "Lost & stolen", "value": "₹585", "is_total": false } },
+        "l6": { "type": "line", "settings": { "label": "Vet home visits", "value": "₹429", "is_total": false } },
+        "l7": { "type": "line", "settings": { "label": "Funeral cost", "value": "₹208", "is_total": false } },
+        "l8": { "type": "line", "settings": { "label": "Total incl. GST", "value": "₹14,375 / year", "is_total": true } }
+      },
+      "block_order": ["t1", "t2", "t3", "l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8"],
+      "settings": {
+        "eyebrow": "What it costs",
+        "heading": "Protection for every budget",
+        "heading_style": "normal",
+        "subtext": "<p>Premiums depend on your pet's breed, age, size and city, and on the covers you choose. Cats and Indie dogs usually cost less to insure than flat-faced or large purebreds.</p>",
+        "example_eyebrow": "Example",
+        "example_heading": "A 2-year-old Labrador, ₹1 lakh cover, every add-on",
+        "example_intro": "Surgery, hospitalisation and vet visits form the base. Each extra protection adds to the premium — you can drop the ones you don't need.",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "checklist": {
+      "type": "waggly-cards",
+      "blocks": {
+        "k1": { "type": "card", "settings": { "title": "Start while they're young", "text": "Joining windows close at 5–8 years, and earlier illnesses are never covered.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k2": { "type": "card", "settings": { "title": "Cover the big bills first", "text": "Surgery and hospital stays run into lakhs; vet-visit cover is a bonus.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k3": { "type": "card", "settings": { "title": "Know your breed's risks", "text": "Labradors, German Shepherds, Pugs and Persians have known joint, eye or breathing issues — check how they're treated.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k4": { "type": "card", "settings": { "title": "Add liability in apartments", "text": "One bite incident can cost more than years of premium.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k5": { "type": "card", "settings": { "title": "Read the illness list", "text": "Check that tick fever, parvo and skin problems are included if they matter to you.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k6": { "type": "card", "settings": { "title": "Understand co-pay", "text": "A 10–30% share lowers the premium but reduces every payout.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k7": { "type": "card", "settings": { "title": "Keep vaccinations up to date", "text": "Missed vaccines are a common reason for claim rejection.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k8": { "type": "card", "settings": { "title": "Microchip your pet", "text": "Makes identification easy and can earn a discount.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k9": { "type": "card", "settings": { "title": "Keep some cash ready", "text": "You pay the vet first and get reimbursed later.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } },
+        "k10": { "type": "card", "settings": { "title": "Renew on time, every time", "text": "A break means fresh waiting periods and may close age-based covers.", "svg_code": "<svg viewBox='0 0 24 24' width='22' height='22' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12.5l5 5L20 6.5'/></svg>" } }
+      },
+      "block_order": ["k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8", "k9", "k10"],
+      "settings": {
+        "eyebrow": "Before you buy",
+        "heading": "Your pet insurance checklist",
+        "intro": "<p>A few minutes now saves a lot of stress later.</p>",
+        "heading_style": "normal",
+        "card_shape": "rounded",
+        "card_text_align": "left",
+        "card_orientation": "horizontal",
+        "card_bg": "#FFFFFF",
+        "icon_color": "#0D386F",
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    },
+    "vet": {
+      "type": "waggly-story",
+      "settings": {
+        "is_quote": false,
+        "eyebrow": "A good first step",
+        "heading": "Talk to your vet first",
+        "heading_tag": "h2",
+        "heading_style": "normal",
+        "heading_size": "large",
+        "body": "<p>Your vet knows your pet's breed, history and the conditions common in your area. A short conversation helps you choose the covers that truly matter — and makes the claim paperwork smoother when you need it.</p>",
+        "button_label": "Get a quote",
+        "button_link": "/pages/contact",
+        "show_image_placeholder": true,
+        "image_position": "right",
+        "align": "left",
+        "width": "page-wide",
+        "bg_color": "#FDE4EA",
+        "top_spacing": "normal"
+      }
+    },
+    "closing": {
+      "type": "waggly-closing",
+      "settings": {
+        "left_text": "<p>Because they'd do anything for you — and you'd do anything for them.</p>",
+        "quote_intro": "Love beyond the bowl.",
+        "quote": "<p>Protection beyond the everyday.</p>",
+        "logo_text": "Yours Waggly",
+        "logo_width": 180,
+        "rounded_top": true,
+        "bg_color": "#0D386F",
+        "text_color": "#FDE4EA",
+        "top_spacing": "normal"
+      }
+    },
+    "disclaimer": {
+      "type": "waggly-story",
+      "settings": {
+        "is_quote": false,
+        "eyebrow": "Please note",
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_style": "normal",
+        "heading_size": "normal",
+        "body": "<p>This page is for general information to help pet parents understand pet insurance. Yours Waggly is not an insurer and this is not insurance advice. Features, limits and prices are indicative, based on insurers' published information as of October 2026, and vary by plan, pet and city. Insurance is the subject matter of solicitation — please read the sales brochure and policy wording carefully before buying.</p><p><em>Sources: insurer product pages and brochures of Bajaj General, HDFC ERGO, ICICI Lombard, Generali Central, Universal Sompo, Digit and New India Assurance.</em></p>",
+        "show_image_placeholder": false,
+        "align": "center",
+        "width": "page-width",
+        "bg_color": "rgba(0,0,0,0)",
+        "top_spacing": "small"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "basics",
+    "steps",
+    "covered",
+    "excluded",
+    "timing",
+    "insurers",
+    "table",
+    "pricing",
+    "checklist",
+    "vet",
+    "closing",
+    "disclaimer"
+  ]
+}

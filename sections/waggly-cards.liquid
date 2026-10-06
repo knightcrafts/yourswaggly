@@ -6,6 +6,7 @@
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
     {%- if s.eyebrow != blank -%}<p class="waggly-cards__eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
     {%- if s.heading != blank -%}<h2 class="waggly-cards__heading">{{ s.heading | escape }}</h2>{%- endif -%}
+    {%- if s.intro != blank -%}<div class="waggly-cards__intro rte">{{ s.intro }}</div>{%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
       <div class="waggly-cards__grid">
@@ -55,6 +56,15 @@
   margin: 0 0 34px;
 }
 .waggly-cards--hand .waggly-cards__heading { font-family: 'Kalam', cursive; }
+.waggly-cards__intro {
+  max-width: 62ch;
+  margin: -18px auto 34px;
+  color: var(--color-base);
+  opacity: .82;
+  line-height: 1.55;
+}
+.waggly-cards__intro p { margin: 0 0 10px; }
+.waggly-cards__intro p:last-child { margin-bottom: 0; }
 .waggly-cards__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -125,6 +135,7 @@
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "We found this change interesting." },
     { "type": "text", "id": "heading", "label": "Heading", "default": "And it made us curious." },
+    { "type": "richtext", "id": "intro", "label": "Intro text (optional)" },
     {
       "type": "select",
       "id": "heading_style",
