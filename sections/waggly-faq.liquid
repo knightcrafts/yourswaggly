@@ -2,7 +2,7 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-faq top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-faq--hand{% endif %}" style="--wg-faq-row-bg: {{ s.row_bg }};">
+<section class="waggly-faq top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'handwritten' %} waggly-faq--hand{% endif %}" style="--wg-faq-row-bg: {{ s.row_bg }}; --wg-faq-img-radius: {{ s.image_radius | default: 24 }}px;{% if s.image_width > 0 %} --wg-faq-img-w: {{ s.image_width }}px;{% endif %}">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %} waggly-faq__inner">
     <div class="waggly-faq__aside">
       {%- if s.eyebrow != blank -%}
@@ -18,6 +18,20 @@
       {%- endif -%}
       {%- if s.subtext != blank -%}
         <div class="waggly-faq__text rte">{{ s.subtext }}</div>
+      {%- endif -%}
+      {%- if s.image != blank -%}
+        <div class="waggly-faq__media">
+          {%- assign img = s.image -%}
+          <img
+            class="waggly-faq__image"
+            src="{{ img | image_url: width: 700 }}"
+            srcset="{{ img | image_url: width: 350 }} 350w, {{ img | image_url: width: 700 }} 700w, {{ img | image_url: width: 1000 }} 1000w"
+            sizes="(min-width: 990px) 38vw, 90vw"
+            width="{{ img.width }}"
+            height="{{ img.height }}"
+            alt="{{ img.alt | escape }}"
+            loading="lazy">
+        </div>
       {%- endif -%}
     </div>
 
@@ -69,6 +83,8 @@
 .waggly-faq--hand .waggly-faq__heading { font-family: 'Kalam', cursive; }
 .waggly-faq__paw { width: 34px; height: 34px; color: var(--color-accent); opacity: .55; flex: 0 0 auto; align-self: center; }
 .waggly-faq__text { margin-top: 16px; color: var(--color-base); opacity: .8; }
+.waggly-faq__media { margin-top: 28px; }
+.waggly-faq__image { width: 100%; max-width: var(--wg-faq-img-w, 100%); height: auto; display: block; border-radius: var(--wg-faq-img-radius, 24px); }
 
 .waggly-faq__list { display: flex; flex-direction: column; gap: 14px; }
 .waggly-faq__item {
@@ -133,6 +149,10 @@
     },
     { "type": "checkbox", "id": "show_paw", "label": "Show paw next to heading", "default": true },
     { "type": "richtext", "id": "subtext", "label": "Text under heading (optional)" },
+    { "type": "header", "content": "Side image (under the left text)" },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "range", "id": "image_width", "label": "Max image width", "info": "0 = fill the column.", "min": 0, "max": 600, "step": 20, "unit": "px", "default": 0 },
+    { "type": "range", "id": "image_radius", "label": "Corner radius", "min": 0, "max": 48, "step": 2, "unit": "px", "default": 24 },
     { "type": "color", "id": "row_bg", "label": "Question row background", "default": "#FDE4EA" },
     {
       "type": "select",
