@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "story": {
+      "type": "waggly-prose",
+      "blocks": {
+        "d1": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-paws.png",
+            "x": 10,
+            "y": 9,
+            "width": 240,
+            "mobile_scale": 70,
+            "rotation": -10,
+            "opacity": 14,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": false
+          }
+        },
+        "d2": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-pair.png",
+            "x": 90,
+            "y": 7,
+            "width": 160,
+            "mobile_scale": 60,
+            "rotation": 0,
+            "opacity": 24,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": true
+          }
+        },
+        "d3": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-brush.png",
+            "x": 7,
+            "y": 42,
+            "width": 150,
+            "mobile_scale": 60,
+            "rotation": -5,
+            "opacity": 12,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": false
+          }
+        },
+        "d4": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-bath.png",
+            "x": 93,
+            "y": 60,
+            "width": 180,
+            "mobile_scale": 60,
+            "rotation": 5,
+            "opacity": 12,
+            "flip_x": true,
+            "show_desktop": true,
+            "show_mobile": false
+          }
+        },
+        "d5": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-paws.png",
+            "x": 17,
+            "y": 80,
+            "width": 200,
+            "mobile_scale": 70,
+            "rotation": 150,
+            "opacity": 10,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": false
+          }
+        },
+        "d6": {
+          "type": "decoration",
+          "settings": {
+            "asset": "ourstory-petrow.png",
+            "x": 50,
+            "y": 97,
+            "width": 460,
+            "mobile_scale": 85,
+            "rotation": 0,
+            "opacity": 20,
+            "flip_x": false,
+            "show_desktop": true,
+            "show_mobile": true
+          }
+        }
+      },
+      "block_order": ["d1", "d2", "d3", "d4", "d5", "d6"],
+      "settings": {
+        "eyebrow": "Our Story",
+        "heading": "Love Beyond the Bowl",
+        "heading_tag": "h1",
+        "heading_style": "normal",
+        "body": "<p>Something has been changing around us.</p><p>Pets are no longer being brought home only for companionship or security, or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way — a source of happiness, comfort, companionship and emotional well-being.</p><p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day. Having them around has, in many ways, become a little dose of happiness we look forward to.</p><p>We found this change interesting. And it made us curious.</p><p>What is changing in the way people see pets? What are they looking for? What does this mean for the pet industry? And how will the role of pets evolve in the years ahead?</p><p>That curiosity led us to explore the world of pets more closely — and somewhere along the way, the idea of Yours Waggly took shape. We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p><p>Our approach comes from where we have spent much of our professional lives — business consulting and financial advisory. Our work has taught us to ask questions, look beyond the obvious, research markets, evaluate choices and make decisions based on what truly creates value.</p><p>We wanted to bring that same thinking into the pet industry.</p><p>Rather than being just another marketplace or store selling products, we wanted Yours Waggly to be a place that shares insights on what is good for our pets, helps identify what is genuinely useful, and brings together things that we believe are worth considering.</p><p>Because when we make choices for those who depend on us, we want to make better ones.</p><p><em>And when someone trusts you without question, you owe them your best.</em></p>",
+        "body_align": "left",
+        "signature": "Yours Waggly",
+        "signature_sub": "Love Beyond the Bowl",
+        "bg_color": "#FFFFFF",
+        "text_color": "#0D386F",
+        "accent_color": "#E83D74",
+        "max_width": 720,
+        "radius": 32,
+        "vertical_padding": 72,
+        "width": "page-width",
+        "top_spacing": "normal"
+      }
+    }
+  },
+  "order": ["story"]
+}
