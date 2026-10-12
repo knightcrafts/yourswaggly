@@ -1,0 +1,125 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-os-promise top-spacing-{{ s.top_spacing }}" style="--os-bg: {{ s.bg_color }}; --os-pink: {{ s.accent_color }}; --os-pad: {{ s.vertical_padding }}px;">
+  <div class="waggly-os-promise__wrap">
+    {%- if s.lead != blank -%}<p class="waggly-os-promise__lead">{{ s.lead | escape }}</p>{%- endif -%}
+    {%- if s.quote != blank -%}<p class="waggly-os-promise__quote">{{ s.quote }}</p>{%- endif -%}
+    {%- if s.signature != blank or s.signature_sub != blank -%}
+      <div class="waggly-os-promise__sign">
+        {%- if s.signature != blank -%}<b>{{ s.signature | escape }}</b>{%- endif -%}
+        {%- if s.signature_sub != blank -%}<small>{{ s.signature_sub | escape }}</small>{%- endif -%}
+      </div>
+    {%- endif -%}
+    {%- if s.primary_label != blank or s.secondary_label != blank -%}
+      <div class="waggly-os-promise__btns">
+        {%- if s.primary_label != blank -%}
+          <a class="waggly-os-promise__btn waggly-os-promise__btn--pink" href="{{ s.primary_link | default: '#' }}">{{ s.primary_label | escape }}</a>
+        {%- endif -%}
+        {%- if s.secondary_label != blank -%}
+          <a class="waggly-os-promise__btn waggly-os-promise__btn--line" href="{{ s.secondary_link | default: '#' }}">{{ s.secondary_label | escape }}</a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.waggly-os-promise {
+  --os-navy: #0D386F;
+  --os-navy2: #4A5D80;
+  background: var(--os-bg, #FFF4F5);
+  padding: var(--os-pad, 92px) 0;
+  text-align: center;
+  color: var(--os-navy);
+}
+.waggly-os-promise__wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.waggly-os-promise__lead {
+  font-size: clamp(19px, 2.2vw, 23px);
+  color: var(--os-navy2);
+  line-height: 1.65;
+  margin: 0 auto 28px;
+  max-width: 760px;
+}
+.waggly-os-promise__quote {
+  font-family: var(--font-heading-family);
+  font-size: clamp(30px, 4.6vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--os-navy);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.waggly-os-promise__quote em { font-style: normal; color: var(--os-pink, #E83D74); }
+.waggly-os-promise__sign {
+  margin-top: 44px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.waggly-os-promise__sign b { font-family: var(--font-heading-family); font-size: 22px; color: var(--os-navy); }
+.waggly-os-promise__sign small { color: var(--os-pink, #E83D74); font-weight: 600; font-size: 16px; letter-spacing: .02em; }
+.waggly-os-promise__btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.waggly-os-promise__btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
+.waggly-os-promise__btn--pink {
+  background: var(--os-pink, #E83D74);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(232, 61, 116, .25);
+}
+.waggly-os-promise__btn--line {
+  background: #fff;
+  color: var(--os-navy);
+  border: 1.5px solid var(--os-navy);
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly OS promise",
+  "tag": "section",
+  "class": "waggly-os-promise-section",
+  "settings": [
+    { "type": "text", "id": "lead", "label": "Lead line", "default": "Because when we make choices for those who depend on us, we want to make better ones." },
+    { "type": "inline_richtext", "id": "quote", "label": "Quote", "default": "And when someone trusts you without question, <em>you owe them your best.</em>" },
+    { "type": "header", "content": "Signature" },
+    { "type": "text", "id": "signature", "label": "Name", "default": "Yours Waggly" },
+    { "type": "text", "id": "signature_sub", "label": "Tagline", "default": "Love Beyond the Bowl" },
+    { "type": "header", "content": "Buttons" },
+    { "type": "text", "id": "primary_label", "label": "Primary button label", "default": "Shop for your pet" },
+    { "type": "url", "id": "primary_link", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_label", "label": "Secondary button label", "default": "Visit the Academy" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary button link" },
+    { "type": "header", "content": "Colours & spacing" },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "#FFF4F5" },
+    { "type": "color", "id": "accent_color", "label": "Accent (pink)", "default": "#E83D74" },
+    { "type": "range", "id": "vertical_padding", "label": "Top & bottom padding", "min": 40, "max": 140, "step": 4, "unit": "px", "default": 92 },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Gap above section",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "none"
+    }
+  ],
+  "presets": [{ "name": "Waggly OS promise" }]
+}
+{% endschema %}
