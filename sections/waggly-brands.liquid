@@ -2,7 +2,7 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-brands top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'kalam' %} waggly-brands--hand{% endif %}{% if s.grayscale %} waggly-brands--gray{% endif %} waggly-brands--{{ s.item_shape }}" style="--wg-brands-bg: {{ s.bg_color }}; --wg-brand-size: {{ s.item_size }}px; --wg-ring: {{ s.ring_color }};">
+<section class="waggly-brands top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'kalam' %} waggly-brands--hand{% endif %}{% if s.grayscale %} waggly-brands--gray{% endif %} waggly-brands--{{ s.item_shape }}" style="--wg-brands-bg: {{ s.bg_color }}; --wg-brand-size: {{ s.item_size }}px; --wg-ring: {{ s.ring_color }}; --wg-logo-pad: {{ s.logo_padding }}%;">
   <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
     {%- if s.eyebrow != blank -%}<p class="waggly-brands__eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
     {%- if s.heading != blank -%}<h2 class="waggly-brands__heading">{{ s.heading | escape }}</h2>{%- endif -%}
@@ -110,6 +110,7 @@
 .waggly-brands__track {
   display: flex;
   gap: 28px;
+  justify-content: safe center;
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
@@ -148,7 +149,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 18%;
+  padding: var(--wg-logo-pad, 8%);
 }
 .waggly-brands__placeholder { width: 60%; height: 60%; opacity: .35; }
 .waggly-brands--gray .waggly-brands__logo img { filter: grayscale(1); opacity: .75; transition: filter var(--duration-short, .2s) ease, opacity var(--duration-short, .2s) ease; }
@@ -224,6 +225,7 @@
       "default": "circle"
     },
     { "type": "range", "id": "item_size", "label": "Logo size", "min": 80, "max": 180, "step": 10, "unit": "px", "default": 120 },
+    { "type": "range", "id": "logo_padding", "label": "Space around logo", "min": 0, "max": 30, "step": 2, "unit": "%", "default": 8 },
     { "type": "checkbox", "id": "grayscale", "label": "Greyscale logos (colour on hover)", "default": false },
     { "type": "color", "id": "ring_color", "label": "Ring colour", "default": "#F6D6DE" },
     { "type": "header", "content": "Layout" },
