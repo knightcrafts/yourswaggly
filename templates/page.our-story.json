@@ -16,6 +16,8 @@
         "heading": "Love Beyond",
         "heading_accent": "the Bowl",
         "lead": "Something has been changing around us.",
+        "image_asset": "os-hero-pets.png",
+        "hero_layout": "split",
         "show_paws": true,
         "show_divider": true,
         "bg_start": "#FFF4F5",

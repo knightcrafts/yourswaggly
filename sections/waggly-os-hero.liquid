@@ -1,7 +1,13 @@
 {%- liquid
   assign s = section.settings
+  assign hero_img = ''
+  if s.image != blank
+    assign hero_img = s.image | image_url: width: 1400
+  elsif s.image_asset != blank
+    assign hero_img = s.image_asset | asset_url
+  endif
   assign is_split = false
-  if s.hero_layout == 'split' and s.image != blank
+  if s.hero_layout == 'split' and hero_img != blank
     assign is_split = true
   endif
 -%}
@@ -42,9 +48,9 @@
       {%- endif -%}
     </div>
 
-    {%- if s.image != blank -%}
+    {%- if hero_img != blank -%}
       <div class="waggly-os-hero__media">
-        <img src="{{ s.image | image_url: width: 1400 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="eager">
+        <img src="{{ hero_img }}" alt="{{ s.image.alt | default: 'Yours Waggly pets' | escape }}" loading="eager">
       </div>
     {%- endif -%}
   </div>
@@ -188,6 +194,7 @@
     { "type": "text", "id": "heading_accent", "label": "Heading accent (pink)", "default": "the Bowl" },
     { "type": "text", "id": "lead", "label": "Lead line", "default": "Something has been changing around us." },
     { "type": "image_picker", "id": "image", "label": "Hero image (transparent cutout)", "info": "Pets on a transparent background work best." },
+    { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback used when no image is picked, e.g. os-hero-pets.png in assets/." },
     {
       "type": "select",
       "id": "hero_layout",
