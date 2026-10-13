@@ -16,13 +16,16 @@
         "heading": "Love Beyond",
         "heading_accent": "the Bowl",
         "lead": "Something has been changing around us.",
+        "image": "shopify://shop_images/Cheerful_Pets_with_Pink_Hearts.png",
         "image_asset": "os-hero-pets.png",
         "hero_layout": "split",
-        "show_paws": true,
+        "show_paws": false,
         "show_divider": true,
-        "bg_start": "#FFF4F5",
-        "bg_end": "#FFFFFF",
-        "accent_color": "#E83D74",
+        "show_doodles": true,
+        "doodle_color": "#e83d74",
+        "bg_start": "#fff4f5",
+        "bg_end": "#ffffff",
+        "accent_color": "#e83d74",
         "top_spacing": "none"
       }
     },
@@ -35,7 +38,7 @@
             "muted": true,
             "title": "Then",
             "subtitle": "Companionship and security",
-            "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#4A5D80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z\"/></svg>"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#4A5D80\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z\"></path></svg>"
           }
         },
         "r2": {
@@ -44,7 +47,7 @@
             "muted": false,
             "title": "Happiness",
             "subtitle": "A smile at the end of the day",
-            "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01\"/></svg>"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01\"></path></svg>"
           }
         },
         "r3": {
@@ -53,7 +56,7 @@
             "muted": false,
             "title": "Comfort & companionship",
             "subtitle": "Someone who is always there",
-            "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z\"/></svg>"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z\"></path></svg>"
           }
         },
         "r4": {
@@ -62,40 +65,80 @@
             "muted": false,
             "title": "Emotional well-being",
             "subtitle": "A lighter mood, a calmer mind",
-            "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3c4 3 6 6 6 9a6 6 0 0 1-12 0c0-3 2-6 6-9z\"/><path d=\"M12 12v5\"/></svg>"
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3c4 3 6 6 6 9a6 6 0 0 1-12 0c0-3 2-6 6-9z\"></path><path d=\"M12 12v5\"></path></svg>"
           }
         }
       },
-      "block_order": ["r1", "r2", "r3", "r4"],
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
       "settings": {
         "eyebrow": "What we noticed",
-        "image_asset": "os-shift-pets.png",
         "heading": "Pets are becoming part of our lives in a much deeper way",
         "body": "<p>Pets are no longer being brought home only for companionship or security, or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way: a source of happiness, comfort, companionship and emotional well-being.</p><p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day.</p>",
         "pull": "Having them around has, in many ways, become a little dose of happiness we look forward to.",
+        "image": "shopify://shop_images/Dog_Food.png",
+        "image_asset": "os-shift-pets.png",
         "strip_label": "How the role of pets is changing",
         "arrow_label": "Now →",
         "arrow_after": 2,
+        "show_doodles": true,
+        "doodle_color": "#e83d74",
         "top_spacing": "none"
       }
     },
     "os_questions": {
       "type": "waggly-os-questions",
       "blocks": {
-        "q1": { "type": "question", "settings": { "mark": "?", "text": "What is changing in the way people see pets?" } },
-        "q2": { "type": "question", "settings": { "mark": "?", "text": "What are pet parents looking for?" } },
-        "q3": { "type": "question", "settings": { "mark": "?", "text": "What does this mean for the pet industry?" } },
-        "q4": { "type": "question", "settings": { "mark": "?", "text": "How will the role of pets evolve in the years ahead?" } }
+        "q1": {
+          "type": "question",
+          "settings": {
+            "mark": "?",
+            "text": "What is changing in the way people see pets?"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "mark": "?",
+            "text": "What are pet parents looking for?"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "mark": "?",
+            "text": "What does this mean for the pet industry?"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "mark": "?",
+            "text": "How will the role of pets evolve in the years ahead?"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
       "settings": {
-        "eyebrow": "It made us curious",
+        "image": "shopify://shop_images/7.png",
         "image_asset": "os-questions-kitten.png",
+        "banner_image": "shopify://shop_images/Playful_Cat_Flight_Path_Sticker.png",
         "banner_asset": "os-questions-banner.png",
+        "eyebrow": "It made us curious",
         "heading": "We found this change interesting.",
         "subtext": "So we started asking questions.",
-        "bg_color": "#FFF4F5",
-        "mark_color": "#E83D74",
+        "show_doodles": true,
+        "bg_color": "#FFFFFF",
+        "mark_color": "#e83d74",
         "vertical_padding": 76,
         "top_spacing": "none"
       }
@@ -103,41 +146,109 @@
     "os_shape": {
       "type": "waggly-os-shape",
       "blocks": {
-        "m1": { "type": "milestone", "settings": { "label": "How we care for them", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z\"/></svg>" } },
-        "m2": { "type": "milestone", "settings": { "label": "How we feed them", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 11h16a8 8 0 0 1-16 0z\"/><path d=\"M9 7c0-1 1-2 3-2s3 1 3 2\"/></svg>" } },
-        "m3": { "type": "milestone", "settings": { "label": "How we keep them healthy", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z\"/></svg>" } },
-        "m4": { "type": "milestone", "settings": { "label": "How we choose products for them", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 2l-3 4v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"/><path d=\"M3 6h18M16 10a4 4 0 0 1-8 0\"/></svg>" } }
+        "m1": {
+          "type": "milestone",
+          "settings": {
+            "label": "How we care for them",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z\"></path></svg>"
+          }
+        },
+        "m2": {
+          "type": "milestone",
+          "settings": {
+            "label": "How we feed them",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 11h16a8 8 0 0 1-16 0z\"></path><path d=\"M9 7c0-1 1-2 3-2s3 1 3 2\"></path></svg>"
+          }
+        },
+        "m3": {
+          "type": "milestone",
+          "settings": {
+            "label": "How we keep them healthy",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z\"></path></svg>"
+          }
+        },
+        "m4": {
+          "type": "milestone",
+          "settings": {
+            "label": "How we choose products for them",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 2l-3 4v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"></path><path d=\"M3 6h18M16 10a4 4 0 0 1-8 0\"></path></svg>"
+          }
+        }
       },
-      "block_order": ["m1", "m2", "m3", "m4"],
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
       "settings": {
         "eyebrow": "How Yours Waggly took shape",
-        "image_asset": "os-shape-corgi.png",
         "heading": "A closer look at the world of pets",
         "body": "<p>That curiosity led us to explore the world of pets more closely, and somewhere along the way, the idea of Yours Waggly took shape.</p><p>We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p>",
         "evolve_label": "What will evolve",
-        "dot_color": "#0D386F",
-        "line_color": "#E83D74",
-        "accent_color": "#E83D74",
+        "image": "shopify://shop_images/QWKcg8_4x_35a5bd72-6bd9-4f62-abf8-54854ee73d94.png",
+        "image_asset": "os-shape-corgi.png",
+        "show_doodles": true,
+        "dot_color": "#0d386f",
+        "line_color": "#e83d74",
+        "accent_color": "#e83d74",
         "top_spacing": "none"
       }
     },
     "os_approach": {
       "type": "waggly-os-approach",
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Ask questions", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.5V14M12 17h.01\"/></svg>" } },
-        "s2": { "type": "step", "settings": { "title": "Look beyond the obvious", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>" } },
-        "s3": { "type": "step", "settings": { "title": "Research markets", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M21 21l-4.5-4.5\"/></svg>" } },
-        "s4": { "type": "step", "settings": { "title": "Evaluate choices", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z\"/></svg>" } },
-        "s5": { "type": "step", "settings": { "title": "Decide on what truly creates value", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6L9 17l-5-5\"/></svg>" } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Ask questions",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.5V14M12 17h.01\"></path></svg>"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Look beyond the obvious",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Research markets",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"M21 21l-4.5-4.5\"></path></svg>"
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "title": "Evaluate choices",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z\"></path></svg>"
+          }
+        },
+        "s5": {
+          "type": "step",
+          "settings": {
+            "title": "Decide on what truly creates value",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6L9 17l-5-5\"></path></svg>"
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3", "s4", "s5"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
       "settings": {
         "eyebrow": "Our approach",
         "heading": "Rooted in business consulting and financial advisory",
         "subtext": "Our approach comes from where we have spent much of our professional lives. Our work has taught us to:",
         "bridge": "We wanted to bring that same thinking <em>into the pet industry.</em>",
-        "bg_color": "#0D386F",
-        "accent_color": "#FF8FB1",
+        "show_paws": true,
+        "bg_color": "#0d386f",
+        "accent_color": "#ff8fb1",
         "vertical_padding": 76,
         "top_spacing": "none"
       }
@@ -145,19 +256,59 @@
     "os_marketplace": {
       "type": "waggly-os-marketplace",
       "blocks": {
-        "p1": { "type": "pill", "settings": { "text": "Just another store" } },
-        "p2": { "type": "pill", "settings": { "text": "Just another marketplace" } },
-        "c1": { "type": "pillar", "settings": { "title": "Shares insights", "text": "On what is good for our pets, through guides and the Yours Waggly Academy.", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z\"/></svg>" } },
-        "c2": { "type": "pillar", "settings": { "title": "Identifies what’s genuinely useful", "text": "Cutting through the noise so you can choose with confidence.", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 11l3 3 8-8\"/><path d=\"M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9\"/></svg>" } },
-        "c3": { "type": "pillar", "settings": { "title": "Brings together what’s worth considering", "text": "A thoughtful selection for every wag and purr.", "svg_code": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z\"/></svg>" } }
+        "p1": {
+          "type": "pill",
+          "settings": {
+            "text": "Just another store"
+          }
+        },
+        "p2": {
+          "type": "pill",
+          "settings": {
+            "text": "Just another marketplace"
+          }
+        },
+        "c1": {
+          "type": "pillar",
+          "settings": {
+            "title": "Shares insights",
+            "text": "On what is good for our pets, through guides and the Yours Waggly Academy.",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z\"></path></svg>"
+          }
+        },
+        "c2": {
+          "type": "pillar",
+          "settings": {
+            "title": "Identifies what’s genuinely useful",
+            "text": "Cutting through the noise so you can choose with confidence.",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 11l3 3 8-8\"></path><path d=\"M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9\"></path></svg>"
+          }
+        },
+        "c3": {
+          "type": "pillar",
+          "settings": {
+            "title": "Brings together what’s worth considering",
+            "text": "A thoughtful selection for every wag and purr.",
+            "svg_code": "<svg viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"#E83D74\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z\"></path></svg>"
+          }
+        }
       },
-      "block_order": ["p1", "p2", "c1", "c2", "c3"],
+      "block_order": [
+        "p1",
+        "p2",
+        "c1",
+        "c2",
+        "c3"
+      ],
       "settings": {
         "eyebrow": "What we want to be",
-        "image_left_asset": "os-market-cat.png",
-        "image_right_asset": "os-market-dog.png",
         "heading": "More than a marketplace",
         "subtext": "Rather than simply selling products, we wanted Yours Waggly to be a place that:",
+        "image_left": "shopify://shop_images/Banner_-_2.png",
+        "image_left_asset": "os-market-cat.png",
+        "image_right": "shopify://shop_images/8.png",
+        "image_right_asset": "os-market-dog.png",
+        "show_doodles": true,
         "accent_color": "#E83D74",
         "top_spacing": "none"
       }
@@ -166,16 +317,19 @@
       "type": "waggly-os-promise",
       "settings": {
         "lead": "Because when we make choices for those who depend on us, we want to make better ones.",
-        "image_asset": "os-promise-pair.png",
         "quote": "And when someone trusts you without question, <em>you owe them your best.</em>",
+        "image_asset": "os-promise-pair.png",
+        "promise_layout": "centered",
         "signature": "Yours Waggly",
         "signature_sub": "Love Beyond the Bowl",
         "primary_label": "Shop for your pet",
         "primary_link": "/collections/all",
         "secondary_label": "Visit the Academy",
         "secondary_link": "/blogs/yours-waggly-academy",
-        "bg_color": "#FFF4F5",
-        "accent_color": "#E83D74",
+        "show_doodles": true,
+        "doodle_color": "#e83d74",
+        "bg_color": "#fff4f5",
+        "accent_color": "#e83d74",
         "vertical_padding": 92,
         "top_spacing": "none"
       }
