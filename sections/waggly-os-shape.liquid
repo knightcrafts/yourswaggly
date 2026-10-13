@@ -1,11 +1,17 @@
 {%- liquid
   assign s = section.settings
+  assign shape_img = ''
+  if s.image != blank
+    assign shape_img = s.image | image_url: width: 700
+  elsif s.image_asset != blank
+    assign shape_img = s.image_asset | asset_url
+  endif
 -%}
 
 <section class="waggly-os-shape top-spacing-{{ s.top_spacing }}" style="--os-dot: {{ s.dot_color }}; --os-line: {{ s.line_color }}; --os-pink: {{ s.accent_color }}; --os-doodle: {{ s.accent_color }};">
-  {%- if s.image != blank -%}
+  {%- if shape_img != blank -%}
     <div class="waggly-os-shape__photo" aria-hidden="true">
-      <img src="{{ s.image | image_url: width: 700 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="lazy">
+      <img src="{{ shape_img }}" alt="" loading="lazy">
     </div>
   {%- endif -%}
   {%- if s.show_doodles -%}
@@ -146,6 +152,7 @@
     { "type": "text", "id": "evolve_label", "label": "Timeline accessible label", "default": "What will evolve" },
     { "type": "header", "content": "Decoration" },
     { "type": "image_picker", "id": "image", "label": "Side photo (transparent cutout)", "info": "Bleeds in from the right; hidden on mobile." },
+    { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback when no image is picked, e.g. os-shape-corgi.png." },
     { "type": "checkbox", "id": "show_doodles", "label": "Show hand-drawn doodles", "default": true },
     { "type": "header", "content": "Colours" },
     { "type": "color", "id": "dot_color", "label": "Dot background", "default": "#0D386F" },

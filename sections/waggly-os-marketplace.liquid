@@ -2,17 +2,29 @@
   assign s = section.settings
   assign pills = section.blocks | where: 'type', 'pill'
   assign pillars = section.blocks | where: 'type', 'pillar'
+  assign left_img = ''
+  if s.image_left != blank
+    assign left_img = s.image_left | image_url: width: 600
+  elsif s.image_left_asset != blank
+    assign left_img = s.image_left_asset | asset_url
+  endif
+  assign right_img = ''
+  if s.image_right != blank
+    assign right_img = s.image_right | image_url: width: 600
+  elsif s.image_right_asset != blank
+    assign right_img = s.image_right_asset | asset_url
+  endif
 -%}
 
 <section class="waggly-os-marketplace top-spacing-{{ s.top_spacing }}" style="--os-pink: {{ s.accent_color }}; --os-doodle: {{ s.accent_color }};">
-  {%- if s.image_left != blank -%}
+  {%- if left_img != blank -%}
     <div class="waggly-os-marketplace__photo waggly-os-marketplace__photo--left" aria-hidden="true">
-      <img src="{{ s.image_left | image_url: width: 600 }}" width="{{ s.image_left.width }}" height="{{ s.image_left.height }}" alt="" loading="lazy">
+      <img src="{{ left_img }}" alt="" loading="lazy">
     </div>
   {%- endif -%}
-  {%- if s.image_right != blank -%}
+  {%- if right_img != blank -%}
     <div class="waggly-os-marketplace__photo waggly-os-marketplace__photo--right" aria-hidden="true">
-      <img src="{{ s.image_right | image_url: width: 600 }}" width="{{ s.image_right.width }}" height="{{ s.image_right.height }}" alt="" loading="lazy">
+      <img src="{{ right_img }}" alt="" loading="lazy">
     </div>
   {%- endif -%}
   {%- if s.show_doodles -%}
@@ -176,7 +188,9 @@
     { "type": "text", "id": "subtext", "label": "Subtext", "default": "Rather than simply selling products, we wanted Yours Waggly to be a place that:" },
     { "type": "header", "content": "Decoration" },
     { "type": "image_picker", "id": "image_left", "label": "Left photo (transparent cutout)", "info": "Bleeds in from the left; hidden on mobile." },
+    { "type": "text", "id": "image_left_asset", "label": "or theme-asset filename (left)", "info": "e.g. os-market-cat.png." },
     { "type": "image_picker", "id": "image_right", "label": "Right photo (transparent cutout)", "info": "Bleeds in from the right; hidden on mobile." },
+    { "type": "text", "id": "image_right_asset", "label": "or theme-asset filename (right)", "info": "e.g. os-market-dog.png." },
     { "type": "checkbox", "id": "show_doodles", "label": "Show hand-drawn doodles", "default": true },
     { "type": "color", "id": "accent_color", "label": "Accent (pink)", "default": "#E83D74" },
     {

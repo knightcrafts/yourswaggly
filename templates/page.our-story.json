@@ -69,6 +69,7 @@
       "block_order": ["r1", "r2", "r3", "r4"],
       "settings": {
         "eyebrow": "What we noticed",
+        "image_asset": "os-shift-pets.png",
         "heading": "Pets are becoming part of our lives in a much deeper way",
         "body": "<p>Pets are no longer being brought home only for companionship or security, or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way: a source of happiness, comfort, companionship and emotional well-being.</p><p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day.</p>",
         "pull": "Having them around has, in many ways, become a little dose of happiness we look forward to.",
@@ -89,6 +90,7 @@
       "block_order": ["q1", "q2", "q3", "q4"],
       "settings": {
         "eyebrow": "It made us curious",
+        "image_asset": "os-questions-kitten.png",
         "heading": "We found this change interesting.",
         "subtext": "So we started asking questions.",
         "bg_color": "#FFF4F5",
@@ -108,6 +110,7 @@
       "block_order": ["m1", "m2", "m3", "m4"],
       "settings": {
         "eyebrow": "How Yours Waggly took shape",
+        "image_asset": "os-shape-corgi.png",
         "heading": "A closer look at the world of pets",
         "body": "<p>That curiosity led us to explore the world of pets more closely, and somewhere along the way, the idea of Yours Waggly took shape.</p><p>We believe pets will play an even more meaningful role in the lives of the coming generation. As that relationship evolves, so will the way we care for them, feed them, keep them healthy and choose products for them.</p>",
         "evolve_label": "What will evolve",
@@ -150,6 +153,8 @@
       "block_order": ["p1", "p2", "c1", "c2", "c3"],
       "settings": {
         "eyebrow": "What we want to be",
+        "image_left_asset": "os-market-cat.png",
+        "image_right_asset": "os-market-dog.png",
         "heading": "More than a marketplace",
         "subtext": "Rather than simply selling products, we wanted Yours Waggly to be a place that:",
         "accent_color": "#E83D74",
@@ -160,6 +165,7 @@
       "type": "waggly-os-promise",
       "settings": {
         "lead": "Because when we make choices for those who depend on us, we want to make better ones.",
+        "image_asset": "os-promise-pair.png",
         "quote": "And when someone trusts you without question, <em>you owe them your best.</em>",
         "signature": "Yours Waggly",
         "signature_sub": "Love Beyond the Bowl",

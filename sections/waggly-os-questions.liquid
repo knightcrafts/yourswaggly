@@ -1,5 +1,11 @@
 {%- liquid
   assign s = section.settings
+  assign q_img = ''
+  if s.image != blank
+    assign q_img = s.image | image_url: width: 400
+  elsif s.image_asset != blank
+    assign q_img = s.image_asset | asset_url
+  endif
 -%}
 
 <section class="waggly-os-questions top-spacing-{{ s.top_spacing }}" style="--os-bg: {{ s.bg_color }}; --os-mark: {{ s.mark_color }}; --os-pad: {{ s.vertical_padding }}px; --os-doodle: {{ s.mark_color }};">
@@ -12,9 +18,9 @@
   {%- endif -%}
   <div class="waggly-os-questions__wrap">
     <div class="waggly-os-questions__intro">
-      {%- if s.image != blank -%}
+      {%- if q_img != blank -%}
         <div class="waggly-os-questions__kitten">
-          <img src="{{ s.image | image_url: width: 400 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="lazy">
+          <img src="{{ q_img }}" alt="{{ s.image.alt | default: 'Yours Waggly kitten' | escape }}" loading="lazy">
         </div>
       {%- endif -%}
       {%- if s.eyebrow != blank -%}<span class="waggly-os-questions__kicker">{{ s.eyebrow | escape }}</span>{%- endif -%}
@@ -130,6 +136,7 @@
   "class": "waggly-os-questions-section",
   "settings": [
     { "type": "image_picker", "id": "image", "label": "Circle image (optional)" },
+    { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback when no image is picked, e.g. os-questions-kitten.png." },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "It made us curious" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "We found this change interesting." },
     { "type": "text", "id": "subtext", "label": "Subtext", "default": "So we started asking questions." },

@@ -1,8 +1,14 @@
 {%- liquid
   assign s = section.settings
+  assign shift_img = ''
+  if s.image != blank
+    assign shift_img = s.image | image_url: width: 1200
+  elsif s.image_asset != blank
+    assign shift_img = s.image_asset | asset_url
+  endif
 -%}
 
-<section class="waggly-os-shift top-spacing-{{ s.top_spacing }}{% if s.image == blank %} waggly-os-shift--no-image{% endif %}" style="--os-doodle: {{ s.doodle_color }};">
+<section class="waggly-os-shift top-spacing-{{ s.top_spacing }}{% if shift_img == blank %} waggly-os-shift--no-image{% endif %}" style="--os-doodle: {{ s.doodle_color }};">
   {%- if s.show_doodles -%}
     <div class="waggly-os-shift__doodles" aria-hidden="true">
       <svg class="waggly-os-shift__doodle waggly-os-shift__doodle--1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
@@ -16,9 +22,9 @@
       {%- if s.body != blank -%}<div class="waggly-os-shift__body rte">{{ s.body }}</div>{%- endif -%}
       {%- if s.pull != blank -%}<p class="waggly-os-shift__pull">{{ s.pull | escape }}</p>{%- endif -%}
     </div>
-    {%- if s.image != blank -%}
+    {%- if shift_img != blank -%}
       <div class="waggly-os-shift__photo">
-        <img src="{{ s.image | image_url: width: 1200 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="lazy">
+        <img src="{{ shift_img }}" alt="{{ s.image.alt | default: 'Yours Waggly pets' | escape }}" loading="lazy">
       </div>
     {%- endif -%}
   </div>
@@ -183,6 +189,7 @@
     { "type": "richtext", "id": "body", "label": "Body", "default": "<p>Pets are no longer being brought home only for companionship or security, or looked at as simply another species. Increasingly, they are becoming a part of our lives in a much deeper way: a source of happiness, comfort, companionship and emotional well-being.</p><p>At a time when stress has become a part of everyday life across ages and generations, the simple presence of a pet can bring a smile, lift our mood and add a sense of joy to our day.</p>" },
     { "type": "text", "id": "pull", "label": "Pull quote", "default": "Having them around has, in many ways, become a little dose of happiness we look forward to." },
     { "type": "image_picker", "id": "image", "label": "Side photo (optional)" },
+    { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback when no image is picked, e.g. os-shift-pets.png." },
     { "type": "header", "content": "Then → Now strip" },
     { "type": "text", "id": "strip_label", "label": "Strip accessible label", "default": "How the role of pets is changing" },
     { "type": "text", "id": "arrow_label", "label": "Arrow label", "default": "Now →" },

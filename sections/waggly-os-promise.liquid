@@ -1,7 +1,13 @@
 {%- liquid
   assign s = section.settings
+  assign promise_img = ''
+  if s.image != blank
+    assign promise_img = s.image | image_url: width: 1000
+  elsif s.image_asset != blank
+    assign promise_img = s.image_asset | asset_url
+  endif
   assign is_split = false
-  if s.promise_layout == 'split' and s.image != blank
+  if s.promise_layout == 'split' and promise_img != blank
     assign is_split = true
   endif
 -%}
@@ -37,7 +43,7 @@
 
     {%- if is_split -%}
       <div class="waggly-os-promise__media">
-        <img src="{{ s.image | image_url: width: 1000 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="lazy">
+        <img src="{{ promise_img }}" alt="{{ s.image.alt | default: 'Yours Waggly pets' | escape }}" loading="lazy">
       </div>
     {%- endif -%}
   </div>
@@ -161,6 +167,7 @@
     { "type": "text", "id": "lead", "label": "Lead line", "default": "Because when we make choices for those who depend on us, we want to make better ones." },
     { "type": "inline_richtext", "id": "quote", "label": "Quote", "default": "And when someone trusts you without question, <em>you owe them your best.</em>" },
     { "type": "image_picker", "id": "image", "label": "Photo (transparent cutout)" },
+    { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback when no image is picked, e.g. os-promise-pair.png." },
     {
       "type": "select",
       "id": "promise_layout",
