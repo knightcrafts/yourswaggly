@@ -91,6 +91,7 @@
       "settings": {
         "eyebrow": "It made us curious",
         "image_asset": "os-questions-kitten.png",
+        "banner_asset": "os-questions-banner.png",
         "heading": "We found this change interesting.",
         "subtext": "So we started asking questions.",
         "bg_color": "#FFF4F5",
