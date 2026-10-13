@@ -1,25 +1,43 @@
 {%- liquid
   assign s = section.settings
+  assign is_split = false
+  if s.promise_layout == 'split' and s.image != blank
+    assign is_split = true
+  endif
 -%}
 
-<section class="waggly-os-promise top-spacing-{{ s.top_spacing }}" style="--os-bg: {{ s.bg_color }}; --os-pink: {{ s.accent_color }}; --os-pad: {{ s.vertical_padding }}px;">
+<section class="waggly-os-promise top-spacing-{{ s.top_spacing }}{% if is_split %} waggly-os-promise--split{% endif %}" style="--os-bg: {{ s.bg_color }}; --os-pink: {{ s.accent_color }}; --os-pad: {{ s.vertical_padding }}px; --os-doodle: {{ s.doodle_color }};">
+  {%- if s.show_doodles -%}
+    <div class="waggly-os-promise__doodles" aria-hidden="true">
+      <svg class="waggly-os-promise__doodle waggly-os-promise__doodle--1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+      <svg class="waggly-os-promise__doodle waggly-os-promise__doodle--2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+    </div>
+  {%- endif -%}
   <div class="waggly-os-promise__wrap">
-    {%- if s.lead != blank -%}<p class="waggly-os-promise__lead">{{ s.lead | escape }}</p>{%- endif -%}
-    {%- if s.quote != blank -%}<p class="waggly-os-promise__quote">{{ s.quote }}</p>{%- endif -%}
-    {%- if s.signature != blank or s.signature_sub != blank -%}
-      <div class="waggly-os-promise__sign">
-        {%- if s.signature != blank -%}<b>{{ s.signature | escape }}</b>{%- endif -%}
-        {%- if s.signature_sub != blank -%}<small>{{ s.signature_sub | escape }}</small>{%- endif -%}
-      </div>
-    {%- endif -%}
-    {%- if s.primary_label != blank or s.secondary_label != blank -%}
-      <div class="waggly-os-promise__btns">
-        {%- if s.primary_label != blank -%}
-          <a class="waggly-os-promise__btn waggly-os-promise__btn--pink" href="{{ s.primary_link | default: '#' }}">{{ s.primary_label | escape }}</a>
-        {%- endif -%}
-        {%- if s.secondary_label != blank -%}
-          <a class="waggly-os-promise__btn waggly-os-promise__btn--line" href="{{ s.secondary_link | default: '#' }}">{{ s.secondary_label | escape }}</a>
-        {%- endif -%}
+    <div class="waggly-os-promise__text">
+      {%- if s.lead != blank -%}<p class="waggly-os-promise__lead">{{ s.lead | escape }}</p>{%- endif -%}
+      {%- if s.quote != blank -%}<p class="waggly-os-promise__quote">{{ s.quote }}</p>{%- endif -%}
+      {%- if s.signature != blank or s.signature_sub != blank -%}
+        <div class="waggly-os-promise__sign">
+          {%- if s.signature != blank -%}<b>{{ s.signature | escape }}</b>{%- endif -%}
+          {%- if s.signature_sub != blank -%}<small>{{ s.signature_sub | escape }}</small>{%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if s.primary_label != blank or s.secondary_label != blank -%}
+        <div class="waggly-os-promise__btns">
+          {%- if s.primary_label != blank -%}
+            <a class="waggly-os-promise__btn waggly-os-promise__btn--pink" href="{{ s.primary_link | default: '#' }}">{{ s.primary_label | escape }}</a>
+          {%- endif -%}
+          {%- if s.secondary_label != blank -%}
+            <a class="waggly-os-promise__btn waggly-os-promise__btn--line" href="{{ s.secondary_link | default: '#' }}">{{ s.secondary_label | escape }}</a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if is_split -%}
+      <div class="waggly-os-promise__media">
+        <img src="{{ s.image | image_url: width: 1000 }}" width="{{ s.image.width }}" height="{{ s.image.height }}" alt="{{ s.image.alt | escape }}" loading="lazy">
       </div>
     {%- endif -%}
   </div>
@@ -33,8 +51,14 @@
   padding: var(--os-pad, 92px) 0;
   text-align: center;
   color: var(--os-navy);
+  position: relative;
+  overflow: hidden;
 }
-.waggly-os-promise__wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.waggly-os-promise__doodles { position: absolute; inset: 0; pointer-events: none; color: var(--os-doodle, #E83D74); }
+.waggly-os-promise__doodle { position: absolute; opacity: .5; }
+.waggly-os-promise__doodle--1 { width: 22px; height: 22px; top: 18%; left: 8%; transform: rotate(-12deg); }
+.waggly-os-promise__doodle--2 { width: 18px; height: 18px; bottom: 20%; left: 20%; transform: rotate(10deg); }
+.waggly-os-promise__wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 .waggly-os-promise__lead {
   font-size: clamp(19px, 2.2vw, 23px);
   color: var(--os-navy2);
@@ -86,6 +110,46 @@
   color: var(--os-navy);
   border: 1.5px solid var(--os-navy);
 }
+
+/* Split layout: text left, cutout photo right */
+.waggly-os-promise--split { text-align: left; }
+.waggly-os-promise--split .waggly-os-promise__wrap {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 32px;
+  align-items: center;
+}
+.waggly-os-promise--split .waggly-os-promise__lead { margin: 0 0 28px; }
+.waggly-os-promise--split .waggly-os-promise__quote { margin: 0; }
+.waggly-os-promise--split .waggly-os-promise__btns { justify-content: flex-start; }
+.waggly-os-promise--split .waggly-os-promise__media { position: relative; }
+.waggly-os-promise--split .waggly-os-promise__media::before {
+  content: "";
+  position: absolute;
+  inset: 6% -6% 6% 6%;
+  background: radial-gradient(58% 58% at 52% 48%, rgba(249, 203, 217, .75), rgba(249, 203, 217, 0) 70%);
+  z-index: 0;
+}
+.waggly-os-promise--split .waggly-os-promise__media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 28px rgba(13, 56, 111, .14));
+}
+
+@media (max-width: 900px) {
+  .waggly-os-promise--split { text-align: center; }
+  .waggly-os-promise--split .waggly-os-promise__wrap { grid-template-columns: 1fr; gap: 24px; }
+  .waggly-os-promise--split .waggly-os-promise__lead { margin: 0 auto 28px; }
+  .waggly-os-promise--split .waggly-os-promise__btns { justify-content: center; }
+  .waggly-os-promise--split .waggly-os-promise__media { max-width: 420px; margin: 0 auto; }
+}
+@media (max-width: 520px) {
+  .waggly-os-promise__doodles { display: none; }
+}
 {% endstylesheet %}
 
 {% schema %}
@@ -96,6 +160,18 @@
   "settings": [
     { "type": "text", "id": "lead", "label": "Lead line", "default": "Because when we make choices for those who depend on us, we want to make better ones." },
     { "type": "inline_richtext", "id": "quote", "label": "Quote", "default": "And when someone trusts you without question, <em>you owe them your best.</em>" },
+    { "type": "image_picker", "id": "image", "label": "Photo (transparent cutout)" },
+    {
+      "type": "select",
+      "id": "promise_layout",
+      "label": "Layout",
+      "info": "Split (text left, photo right) needs a photo; falls back to Centered when empty.",
+      "options": [
+        { "value": "centered", "label": "Centered" },
+        { "value": "split", "label": "Split (photo right)" }
+      ],
+      "default": "split"
+    },
     { "type": "header", "content": "Signature" },
     { "type": "text", "id": "signature", "label": "Name", "default": "Yours Waggly" },
     { "type": "text", "id": "signature_sub", "label": "Tagline", "default": "Love Beyond the Bowl" },
@@ -104,6 +180,9 @@
     { "type": "url", "id": "primary_link", "label": "Primary button link" },
     { "type": "text", "id": "secondary_label", "label": "Secondary button label", "default": "Visit the Academy" },
     { "type": "url", "id": "secondary_link", "label": "Secondary button link" },
+    { "type": "header", "content": "Decoration" },
+    { "type": "checkbox", "id": "show_doodles", "label": "Show hand-drawn doodles", "default": true },
+    { "type": "color", "id": "doodle_color", "label": "Doodle colour", "default": "#E83D74" },
     { "type": "header", "content": "Colours & spacing" },
     { "type": "color", "id": "bg_color", "label": "Background", "default": "#FFF4F5" },
     { "type": "color", "id": "accent_color", "label": "Accent (pink)", "default": "#E83D74" },

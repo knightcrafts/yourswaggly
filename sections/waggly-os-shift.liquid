@@ -2,7 +2,13 @@
   assign s = section.settings
 -%}
 
-<section class="waggly-os-shift top-spacing-{{ s.top_spacing }}{% if s.image == blank %} waggly-os-shift--no-image{% endif %}">
+<section class="waggly-os-shift top-spacing-{{ s.top_spacing }}{% if s.image == blank %} waggly-os-shift--no-image{% endif %}" style="--os-doodle: {{ s.doodle_color }};">
+  {%- if s.show_doodles -%}
+    <div class="waggly-os-shift__doodles" aria-hidden="true">
+      <svg class="waggly-os-shift__doodle waggly-os-shift__doodle--1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+      <svg class="waggly-os-shift__doodle waggly-os-shift__doodle--2" viewBox="0 0 28 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8c3-6 6 4 9-1s6-5 9 1"/></svg>
+    </div>
+  {%- endif -%}
   <div class="waggly-os-shift__wrap waggly-os-shift__split">
     <div class="waggly-os-shift__text">
       {%- if s.eyebrow != blank -%}<span class="waggly-os-shift__kicker">{{ s.eyebrow | escape }}</span>{%- endif -%}
@@ -49,8 +55,14 @@
   --os-line: #F6D6DE;
   padding: 76px 0;
   color: var(--os-navy);
+  position: relative;
+  overflow: hidden;
 }
-.waggly-os-shift__wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.waggly-os-shift__doodles { position: absolute; inset: 0; pointer-events: none; color: var(--os-doodle, #E83D74); }
+.waggly-os-shift__doodle { position: absolute; opacity: .6; }
+.waggly-os-shift__doodle--1 { width: 22px; height: 22px; top: 12%; right: 7%; transform: rotate(10deg); }
+.waggly-os-shift__doodle--2 { width: 32px; height: 16px; top: 22%; right: 2%; opacity: .5; }
+.waggly-os-shift__wrap { position: relative; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 .waggly-os-shift__split {
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -90,19 +102,25 @@
 }
 .waggly-os-shift__photo {
   position: relative;
-  border-radius: 28px;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;
-  box-shadow: 0 18px 40px rgba(13, 56, 111, .12);
+  display: flex;
+  justify-content: center;
 }
-.waggly-os-shift__photo::after {
+.waggly-os-shift__photo::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 28px;
-  box-shadow: inset 0 0 0 6px #fff;
+  inset: 4%;
+  background: radial-gradient(58% 58% at 50% 48%, rgba(249, 203, 217, .8), rgba(249, 203, 217, 0) 70%);
+  z-index: 0;
 }
-.waggly-os-shift__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.waggly-os-shift__photo img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 28px rgba(13, 56, 111, .14));
+}
 
 .waggly-os-shift__roles {
   display: flex;
@@ -147,9 +165,10 @@
 @media (max-width: 900px) {
   .waggly-os-shift { padding: 56px 0; }
   .waggly-os-shift__split { grid-template-columns: 1fr; gap: 32px; }
-  .waggly-os-shift__photo { aspect-ratio: 4 / 3; }
+  .waggly-os-shift__photo { max-width: 420px; margin: 0 auto; }
   .waggly-os-shift__roles { flex-direction: column; align-items: stretch; }
   .waggly-os-shift__arrow { transform: rotate(90deg); }
+  .waggly-os-shift__doodles { display: none; }
 }
 {% endstylesheet %}
 
@@ -168,6 +187,9 @@
     { "type": "text", "id": "strip_label", "label": "Strip accessible label", "default": "How the role of pets is changing" },
     { "type": "text", "id": "arrow_label", "label": "Arrow label", "default": "Now →" },
     { "type": "range", "id": "arrow_after", "label": "Insert arrow before block #", "min": 0, "max": 6, "step": 1, "default": 2, "info": "e.g. 2 places the arrow between the 1st and 2nd role. 0 hides it." },
+    { "type": "header", "content": "Decoration" },
+    { "type": "checkbox", "id": "show_doodles", "label": "Show hand-drawn doodles", "default": true },
+    { "type": "color", "id": "doodle_color", "label": "Doodle colour", "default": "#E83D74" },
     {
       "type": "select",
       "id": "top_spacing",
