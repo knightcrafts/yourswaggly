@@ -1,0 +1,282 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="waggly-brands top-spacing-{{ s.top_spacing }}{% if s.heading_style == 'kalam' %} waggly-brands--hand{% endif %}{% if s.grayscale %} waggly-brands--gray{% endif %} waggly-brands--{{ s.item_shape }}" style="--wg-brands-bg: {{ s.bg_color }}; --wg-brand-size: {{ s.item_size }}px; --wg-ring: {{ s.ring_color }};">
+  <div class="{% if s.width == 'page-width' %}page-width{% else %}page-wide{% endif %}">
+    {%- if s.eyebrow != blank -%}<p class="waggly-brands__eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+    {%- if s.heading != blank -%}<h2 class="waggly-brands__heading">{{ s.heading | escape }}</h2>{%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <waggly-brands-slider class="waggly-brands__viewport">
+        {%- if s.show_arrows -%}
+          <button type="button" class="waggly-brands__arrow waggly-brands__arrow--prev" aria-label="Previous brands">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        {%- endif -%}
+
+        <div class="waggly-brands__track">
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            {%- assign logo = '' -%}
+            {%- if b.image != blank -%}
+              {%- assign logo = b.image | image_url: width: 400 -%}
+            {%- elsif b.image_asset != blank -%}
+              {%- assign logo = b.image_asset | asset_url -%}
+            {%- endif -%}
+            {%- capture item_inner -%}
+              <span class="waggly-brands__logo">
+                {%- if logo != blank -%}
+                  <img src="{{ logo }}" alt="{{ b.label | default: b.image.alt | escape }}" loading="lazy">
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'waggly-brands__placeholder' }}
+                {%- endif -%}
+              </span>
+              {%- if b.label != blank -%}<span class="waggly-brands__label">{{ b.label | escape }}</span>{%- endif -%}
+            {%- endcapture -%}
+            {%- if b.link != blank -%}
+              <a class="waggly-brands__item" href="{{ b.link }}" {{ block.shopify_attributes }}>{{ item_inner }}</a>
+            {%- else -%}
+              <div class="waggly-brands__item" {{ block.shopify_attributes }}>{{ item_inner }}</div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if s.show_arrows -%}
+          <button type="button" class="waggly-brands__arrow waggly-brands__arrow--next" aria-label="Next brands">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        {%- endif -%}
+      </waggly-brands-slider>
+    {%- endif -%}
+  </div>
+</section>
+
+{% javascript %}
+  class WagglyBrandsSlider extends HTMLElement {
+    constructor() {
+      super();
+      this.track = this.querySelector('.waggly-brands__track');
+      this.prev = this.querySelector('.waggly-brands__arrow--prev');
+      this.next = this.querySelector('.waggly-brands__arrow--next');
+      if (!this.track) return;
+      if (this.prev) this.prev.addEventListener('click', () => this.move(-1));
+      if (this.next) this.next.addEventListener('click', () => this.move(1));
+      this.track.addEventListener('scroll', () => this.update());
+      window.addEventListener('resize', () => this.update());
+      this.update();
+    }
+    step() {
+      const item = this.track.querySelector('.waggly-brands__item');
+      const gap = parseInt(getComputedStyle(this.track).columnGap || '28', 10) || 28;
+      const w = item ? item.offsetWidth + gap : 160;
+      return w * Math.max(1, Math.floor(this.track.clientWidth / w) - 1);
+    }
+    move(direction) {
+      this.track.scrollBy({ left: direction * this.step(), behavior: 'smooth' });
+    }
+    update() {
+      const max = this.track.scrollWidth - this.track.clientWidth - 2;
+      if (this.prev) this.prev.disabled = this.track.scrollLeft <= 0;
+      if (this.next) this.next.disabled = this.track.scrollLeft >= max;
+    }
+  }
+  customElements.define('waggly-brands-slider', WagglyBrandsSlider);
+{% endjavascript %}
+
+{% stylesheet %}
+.waggly-brands { background: var(--wg-brands-bg, transparent); }
+.waggly-brands__eyebrow {
+  font-family: var(--font-body-family);
+  font-weight: 600;
+  font-size: .85rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-align: center;
+  margin: 0 0 8px;
+}
+.waggly-brands__heading {
+  font-family: var(--font-heading-family);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-base);
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  margin: 0 0 28px;
+}
+.waggly-brands--hand .waggly-brands__heading { font-family: 'Kalam', cursive; }
+
+.waggly-brands__viewport { display: block; position: relative; padding: 0 52px; }
+.waggly-brands__track {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 6px 2px;
+}
+.waggly-brands__track::-webkit-scrollbar { display: none; }
+
+.waggly-brands__item {
+  flex: 0 0 auto;
+  width: var(--wg-brand-size, 120px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--color-base);
+}
+.waggly-brands__logo {
+  width: var(--wg-brand-size, 120px);
+  height: var(--wg-brand-size, 120px);
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--wg-ring, #F6D6DE);
+  box-shadow: 0 6px 18px rgba(13, 56, 111, .07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--duration-short, .2s) ease, box-shadow var(--duration-short, .2s) ease;
+}
+.waggly-brands--square .waggly-brands__logo { border-radius: 22px; }
+.waggly-brands__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18%;
+}
+.waggly-brands__placeholder { width: 60%; height: 60%; opacity: .35; }
+.waggly-brands--gray .waggly-brands__logo img { filter: grayscale(1); opacity: .75; transition: filter var(--duration-short, .2s) ease, opacity var(--duration-short, .2s) ease; }
+.waggly-brands__item:hover .waggly-brands__logo { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(13, 56, 111, .12); }
+.waggly-brands--gray .waggly-brands__item:hover .waggly-brands__logo img { filter: grayscale(0); opacity: 1; }
+.waggly-brands__label {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: .95rem;
+  text-align: center;
+  color: var(--color-base);
+  line-height: 1.25;
+}
+
+.waggly-brands__arrow {
+  position: absolute;
+  top: calc(var(--wg-brand-size, 120px) / 2 + 6px);
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--color-base);
+  box-shadow: 0 4px 16px rgba(13, 56, 111, .16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity var(--duration-short, .2s) ease;
+}
+.waggly-brands__arrow svg { width: 16px; height: 16px; }
+.waggly-brands__arrow--prev { left: 0; }
+.waggly-brands__arrow--next { right: 0; }
+.waggly-brands__arrow[disabled] { opacity: .3; cursor: default; box-shadow: none; }
+
+@media (max-width: 989px) {
+  .waggly-brands__viewport { padding: 0; }
+  .waggly-brands__arrow { display: none; }
+  .waggly-brands__track { scroll-snap-type: x mandatory; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Waggly brands",
+  "tag": "section",
+  "class": "waggly-brands-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow (optional)" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Our Brands" },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Heading style",
+      "options": [
+        { "value": "normal", "label": "Normal (Outfit)" },
+        { "value": "kalam", "label": "Handwritten (Kalam)" }
+      ],
+      "default": "normal"
+    },
+    { "type": "header", "content": "Carousel" },
+    { "type": "checkbox", "id": "show_arrows", "label": "Show left/right arrows", "default": true },
+    {
+      "type": "select",
+      "id": "item_shape",
+      "label": "Logo shape",
+      "options": [
+        { "value": "circle", "label": "Circle" },
+        { "value": "square", "label": "Rounded square" }
+      ],
+      "default": "circle"
+    },
+    { "type": "range", "id": "item_size", "label": "Logo size", "min": 80, "max": 180, "step": 10, "unit": "px", "default": 120 },
+    { "type": "checkbox", "id": "grayscale", "label": "Greyscale logos (colour on hover)", "default": false },
+    { "type": "color", "id": "ring_color", "label": "Ring colour", "default": "#F6D6DE" },
+    { "type": "header", "content": "Layout" },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "options": [
+        { "value": "page-width", "label": "Boxed" },
+        { "value": "page-wide", "label": "Full width" }
+      ],
+      "default": "page-width"
+    },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "rgba(0,0,0,0)" },
+    {
+      "type": "select",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "normal", "label": "Normal" }
+      ],
+      "default": "normal"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Logo" },
+        { "type": "text", "id": "image_asset", "label": "or theme-asset filename", "info": "Fallback when no logo is picked." },
+        { "type": "text", "id": "label", "label": "Brand name" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 24,
+  "presets": [
+    {
+      "name": "Waggly brands",
+      "blocks": [
+        { "type": "brand", "settings": { "label": "Brand 1" } },
+        { "type": "brand", "settings": { "label": "Brand 2" } },
+        { "type": "brand", "settings": { "label": "Brand 3" } },
+        { "type": "brand", "settings": { "label": "Brand 4" } },
+        { "type": "brand", "settings": { "label": "Brand 5" } },
+        { "type": "brand", "settings": { "label": "Brand 6" } },
+        { "type": "brand", "settings": { "label": "Brand 7" } },
+        { "type": "brand", "settings": { "label": "Brand 8" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

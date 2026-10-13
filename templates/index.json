@@ -30,7 +30,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/Pet_Banners.png",
+            "image": "shopify://shop_images/Happy_Dogs_Happier_Lives_2.png",
             "image_overlay_opacity": 0,
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
@@ -70,7 +70,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/HomeBannerSection.png",
+            "image": "shopify://shop_images/Curious_Cats_Brighter_Days_Banner.png",
             "image_overlay_opacity": 0,
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
@@ -110,7 +110,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "image": "shopify://shop_images/Home_Cat_Banner.png",
+            "image": "shopify://shop_images/Tamil_Nadu_s_Native_Dog_Pride_1.png",
             "image_overlay_opacity": 0,
             "image_overlay_opacity_mobile": 0,
             "subheading": "",
@@ -144,12 +144,94 @@
             "button_secondary_bg_m": "rgba(0,0,0,0)",
             "color_background_m": "rgba(0,0,0,0)"
           }
+        },
+        "slide_rXEHz4": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "shopify://shop_images/Happy_Tails_Protected_Tomorrows_1.png",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "none",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": true,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_MjeAfW": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "image": "shopify://shop_images/Happy_Tails_Protected_Tomorrows.png",
+            "image_overlay_opacity": 0,
+            "image_overlay_opacity_mobile": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "",
+            "url": "shopify://pages/insurance",
+            "button_secondary_name": "",
+            "button_secondary_url": "",
+            "content_aligment": "align-items-center justify-content-center",
+            "background_text_width": 76,
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "heading_tag_mobile": "h2--mobile",
+            "description_size": "normal",
+            "show_background": true,
+            "background_overlay_opacity": 90,
+            "hover_underline": false,
+            "content_aligment_mobile": "align-items-center-m justify-content-center-m",
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)",
+            "color_subheading_m": "rgba(0,0,0,0)",
+            "color_heading_m": "rgba(0,0,0,0)",
+            "color_description_m": "rgba(0,0,0,0)",
+            "button_primary_bg_m": "rgba(0,0,0,0)",
+            "button_secondary_bg_m": "rgba(0,0,0,0)",
+            "color_background_m": "rgba(0,0,0,0)"
+          }
         }
       },
       "block_order": [
         "slide_yQ6F8D",
         "slide_rJxjf6",
-        "slide_caPf7j"
+        "slide_caPf7j",
+        "slide_rXEHz4",
+        "slide_MjeAfW"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -161,12 +243,12 @@
         "texts_aligment_mobile": "text-center-mobile",
         "box_roundness": 3,
         "design_type": "image-banner__default",
-        "slider_animation": true,
+        "slider_animation": false,
         "desktop_navigation": "dots_arrows",
         "mobile_navigation": "dots_arrows",
         "dots_desktop_position": "center",
         "autoplay_enabled": true,
-        "autoplay_time": 5,
+        "autoplay_time": 10,
         "video_slide_mode": "autoplay_muted",
         "play_button_enabled": true,
         "color_media_bg": "rgba(0,0,0,0)",
@@ -194,8 +276,9 @@
         "secondary_link": "shopify://collections/all",
         "image": "shopify://shop_images/Asset_2_4x_7344d91a-4847-49d5-8144-b08b8521c91b.png",
         "show_decoration": false,
-        "bg_color": "#FCE1E7",
-        "accent_color": "#E83D74",
+        "bg_color": "#fce1e7",
+        "accent_color": "#e83d74",
+        "vertical_padding": 40,
         "top_spacing": "none"
       }
     },
@@ -254,88 +337,88 @@
           "type": "category",
           "settings": {
             "tab": "dogs",
-            "image": "shopify://shop_images/image_49.png",
+            "image": "shopify://shop_images/Dog_Food.png",
             "heading": "Nutrition They Love!",
             "cta_label": "Shop Food",
             "link": "",
-            "bg_color": "#F4A9C4"
+            "bg_color": "#f4a9c4"
           }
         },
         "c2": {
           "type": "category",
           "settings": {
             "tab": "dogs",
-            "image": "shopify://shop_images/image_50.png",
+            "image": "shopify://shop_images/Playful_Dog_and_Colorful_Toys.png",
             "heading": "Fun & Play Everyday!",
             "cta_label": "Shop Toys",
             "link": "",
-            "bg_color": "#AEC6E4"
+            "bg_color": "#aec6e4"
           }
         },
         "c3": {
           "type": "category",
           "settings": {
             "tab": "dogs",
-            "image": "shopify://shop_images/image_51.png",
+            "image": "shopify://shop_images/Grooming.png",
             "heading": "Grooming Made Easy!",
             "cta_label": "Shop Grooming",
             "link": "",
-            "bg_color": "#F9CBD9"
+            "bg_color": "#f9cbd9"
           }
         },
         "c4": {
           "type": "category",
           "settings": {
             "tab": "dogs",
-            "image": "shopify://shop_images/image_52.png",
-            "heading": "Essentials For Comfort!",
-            "cta_label": "Shop Essentials",
+            "image": "shopify://shop_images/Insurance.png",
+            "heading": "Pet Insurance",
+            "cta_label": "Insurance",
             "link": "",
-            "bg_color": "#7FA3D0"
+            "bg_color": "#7fa3d0"
           }
         },
         "c5": {
           "type": "category",
           "settings": {
             "tab": "cats",
-            "image": "shopify://shop_images/image_56.png",
+            "image": "shopify://shop_images/Three_Cats_Around_a_Kibble_Bowl.png",
             "heading": "Nutrition They Love!",
             "cta_label": "Shop Food",
             "link": "",
-            "bg_color": "#F4A9C4"
+            "bg_color": "#f4a9c4"
           }
         },
         "c6": {
           "type": "category",
           "settings": {
             "tab": "cats",
-            "image": "shopify://shop_images/image_54.png",
+            "image": "shopify://shop_images/Playful_Kittens_and_Colorful_Cat_Toys.png",
             "heading": "Fun & Play Everyday!",
             "cta_label": "Shop Toys",
             "link": "",
-            "bg_color": "#AEC6E4"
+            "bg_color": "#aec6e4"
           }
         },
         "c7": {
           "type": "category",
           "settings": {
             "tab": "cats",
-            "image": "shopify://shop_images/image_57.png",
+            "image": "shopify://shop_images/Cats_and_Grooming_Essentials_Collection.png",
             "heading": "Grooming Made Easy!",
             "cta_label": "Shop Grooming",
             "link": "",
-            "bg_color": "#F9CBD9"
+            "bg_color": "#f9cbd9"
           }
         },
         "c8": {
           "type": "category",
           "settings": {
             "tab": "cats",
-            "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
-            "heading": "Essentials For Comfort!",
-            "cta_label": "Shop Essentials",
+            "image": "shopify://shop_images/Pet_Insurance_Cats_with_Shield_and_Clipboard.png",
+            "heading": "Pet Insurance",
+            "cta_label": "Insurance",
             "link": "",
-            "bg_color": "#7FA3D0"
+            "bg_color": "#7fa3d0"
           }
         }
       },
@@ -359,7 +442,7 @@
         "tab1_label": "Dogs",
         "tab2_label": "Cats",
         "cta_bg": "#ffffff",
-        "cta_color": "#0D386F",
+        "cta_color": "#0d386f",
         "top_spacing": "normal"
       }
     },
@@ -419,12 +502,12 @@
         "heading": "Because They Deserve The Best",
         "heading_style": "kalam",
         "intro": "",
-        "image": "shopify://shop_images/6.png",
+        "image": "shopify://shop_images/Happy_Pets_Gathering_Cutout.png",
         "image_width": 520,
         "image_position": "right",
         "item_style": "compact",
         "width": "page-width",
-        "bg_color": "#FDE4EA",
+        "bg_color": "#fde4ea",
         "icon_bg": "#ffffff",
         "top_spacing": "normal"
       }
@@ -459,6 +542,33 @@
         "canvas_height": 0
       }
     },
+    "brands": {
+      "type": "waggly-brands",
+      "blocks": {
+        "b1": { "type": "brand", "settings": { "label": "Brand 1" } },
+        "b2": { "type": "brand", "settings": { "label": "Brand 2" } },
+        "b3": { "type": "brand", "settings": { "label": "Brand 3" } },
+        "b4": { "type": "brand", "settings": { "label": "Brand 4" } },
+        "b5": { "type": "brand", "settings": { "label": "Brand 5" } },
+        "b6": { "type": "brand", "settings": { "label": "Brand 6" } },
+        "b7": { "type": "brand", "settings": { "label": "Brand 7" } },
+        "b8": { "type": "brand", "settings": { "label": "Brand 8" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Our Brands",
+        "heading_style": "normal",
+        "show_arrows": true,
+        "item_shape": "circle",
+        "item_size": 120,
+        "grayscale": false,
+        "ring_color": "#F6D6DE",
+        "width": "page-width",
+        "bg_color": "rgba(0,0,0,0)",
+        "top_spacing": "normal"
+      }
+    },
     "products": {
       "type": "waggly-products",
       "settings": {
@@ -479,8 +589,8 @@
       "type": "waggly-banner",
       "name": "Waggly banner",
       "settings": {
-        "image": "shopify://shop_images/Banner_ead55748-d2e2-4126-acad-da98a3c70907.png",
-        "link": "",
+        "image": "shopify://shop_images/Complete_Care_for_Your_Furry_Family.png",
+        "link": "shopify://pages/insurance",
         "link_new_tab": false,
         "width": "wide",
         "rounded": true,
@@ -534,13 +644,25 @@
         "heading": "We Care Like You Do",
         "heading_style": "normal",
         "intro": "<p>Handpicked favorites for your furry friends - quality you can trust.</p>",
-        "image": "shopify://shop_images/6.png",
+        "image": "shopify://shop_images/Cuddly_Puppy_and_Kitten_Sticker.png",
         "image_width": 0,
         "image_position": "left",
         "item_style": "detailed",
         "width": "page-width",
         "bg_color": "rgba(0,0,0,0)",
         "icon_bg": "#ffffff",
+        "top_spacing": "normal"
+      }
+    },
+    "waggly_banner_7XRhc6": {
+      "type": "waggly-banner",
+      "name": "Waggly banner",
+      "settings": {
+        "image": "shopify://shop_images/Go_Spot__Clean_Comfort_for_Dogs.png",
+        "link": "shopify://pages/insurance",
+        "link_new_tab": false,
+        "width": "wide",
+        "rounded": true,
         "top_spacing": "normal"
       }
     },
@@ -563,8 +685,9 @@
         "secondary_link": "",
         "image": "shopify://shop_images/5HGL1U_4x_772ce759-c123-4aa4-ad4c-6e1e08c26a1b.png",
         "show_decoration": false,
-        "bg_color": "#FCE1E7",
-        "accent_color": "#E83D74",
+        "bg_color": "#fce1e7",
+        "accent_color": "#e83d74",
+        "vertical_padding": 40,
         "top_spacing": "normal"
       }
     },
@@ -605,9 +728,11 @@
     "categories",
     "value",
     "waggly_decorations_PXUtaX",
+    "brands",
     "products",
     "waggly_banner_kz48Ci",
     "waggly_value_RWVwhH",
+    "waggly_banner_7XRhc6",
     "intro",
     "ticker_XcY7HW"
   ]
