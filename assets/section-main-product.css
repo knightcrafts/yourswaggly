@@ -840,6 +840,11 @@ html.no-js .no-js-hidden+.product__tax{
 }
 .product__media img{
   border-radius: var(--radius);
+}
+/* Product gallery: show whole image (contain) instead of cropping (cover).
+   Higher specificity than `.media > img` so it wins regardless of load order. */
+.product__media.media > img,
+.product__media-item .product__media img{
   object-fit: contain;
 }
 .product-media-modal__dialog .product-media-modal__content>*:not(.active),
