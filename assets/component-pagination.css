@@ -16,6 +16,11 @@
 .pagination__item:not(.pagination__item--current){
   --background: var(--color-secondary-background);
   --radius-button: 50%;
+  background: #0D386F; /* other pages: navy */
+  color: #ffffff;
+}
+.pagination__item:not(.pagination__item--current):hover{
+  background: #0A2B57; /* navy-dark on hover */
 }
 .pagination__item{
   display: flex;
@@ -32,8 +37,8 @@
     		  background var(--duration-medium) var(--animation-bezier);
 }
 .pagination__item--current{
-  color: var(--color);
-  background: var(--background);
+  color: #ffffff;
+  background: #E83D74; /* current page: pink highlight */
 }
 .pagination__item--current{
   cursor: default;
