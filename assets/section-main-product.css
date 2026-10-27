@@ -840,6 +840,7 @@ html.no-js .no-js-hidden+.product__tax{
 }
 .product__media img{
   border-radius: var(--radius);
+  object-fit: contain;
 }
 .product-media-modal__dialog .product-media-modal__content>*:not(.active),
 .slider-mobile-product .deferred-media{

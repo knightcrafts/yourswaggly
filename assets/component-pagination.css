@@ -26,7 +26,7 @@
   font-weight: var(--font-body-bold-weight);
   border-radius: 50%;
   text-decoration: none;
-  color: var(--color-base);
+  color: #ffffff;
   background: var(--background);
   transition: color var(--duration-medium) var(--animation-bezier),
     		  background var(--duration-medium) var(--animation-bezier);
