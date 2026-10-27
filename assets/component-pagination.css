@@ -13,13 +13,13 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.pagination__item:not(.pagination__item--current){
+.pagination__item:not(.pagination__item--current):not(.pagination__item-arrow){
   --background: var(--color-secondary-background);
   --radius-button: 50%;
   background: #0D386F; /* other pages: navy */
   color: #ffffff;
 }
-.pagination__item:not(.pagination__item--current):hover{
+.pagination__item:not(.pagination__item--current):not(.pagination__item-arrow):hover{
   background: #0A2B57; /* navy-dark on hover */
 }
 .pagination__item{
@@ -46,7 +46,8 @@
 .pagination__item-arrow{
   width: 30px;
   border-radius: 0;
-  background: transparent;
+  background: transparent; /* no box — plain icon only */
+  color: #0D386F; /* navy arrow icon */
 }
 .pagination__item-arrow{
   opacity: 0.3;
